@@ -1,5 +1,5 @@
 
-# Data Analyst
+# Data Analyst | Business Analyst | Research Analyst.
 
 ## Summary
 
