@@ -1,5 +1,5 @@
-title: Victor S. Dipeolu
-#logo: {https://github.com/Vicmandip1/Portfolio/issues/1#issuecomment-2670390338}
-#desciption text below image
-#show_downloads: true
-theme: jekyll-theme-minimal
+title: Hacker theme
+description: Hacker is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-hacker
