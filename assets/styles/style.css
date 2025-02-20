@@ -111,14 +111,14 @@ footer {
 }
 
 .hero h1 {
-  font-size: 80px;
+  font-size: 120px; !important;
   font-weight: bold;
   color: #333;
   margin: 0;
 }
 
 .hero p {
-  font-size: 30px;
+  font-size: 50px; !important;
   font-weight: bold;
   color: #555;
   margin-top: 15px;
