@@ -7,7 +7,7 @@ I am an experienced data professional with a strong background in data analytics
 
 
 ## Education
----
+
 Big Data Analytics Post-Graduate Certificate
 
 Bachelor of Social Science in Economics
