@@ -1,13 +1,13 @@
 
-<h1 style="font-size: 45px;">Data Analyst | Business Analyst |    Research Analyst</h1>
+<h1 style="font-size: 35px;">Data Analyst | Business Analyst |    Research Analyst</h1>
 
 
-## Summary
+<h1 style="font-size: 28px;">SUMMARY</h1>
 
 I am an experienced data professional with a strong background in data analytics, business intelligence, and statistical analysis. Proficient in leveraging data to drive insights, optimize processes, and support decision-making. Skilled in SQL, Python, Power BI, Tableau, PowerPoint, ArcGIS, and cloud technologies. Adept at handling large datasets, developing automated workflows, and delivering data-driven solutions. I am a proactive problem-solver with strong communication and leadership skills, able to collaborate effectively with cross-functional teams. Passionate about utilizing data to generate meaningful business insights and improve organizational performance.
 
 
-## Education
+<h1 style="font-size: 28px;">EDUCATION</h1>
 ---
 
 Big Data Analytics Post-Graduate Certificate
@@ -16,9 +16,8 @@ Bachelor of Social Science in Economics
 
 National Diploma in Accountancy
 
-![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
 
-## Training & Certificates
+<h1 style="font-size: 28px;">TRAINING & CERTIFICATES</h1>
 ---
 -	Data Analytics Professional Certificate | AWS Cloud Architecting | SAS Programming
 - SAS Visual Analytics |	TCPS 2: CORE 2022 |	Standard First Aid – CPR / AED
@@ -29,7 +28,7 @@ National Diploma in Accountancy
 - Amazon RDS Service Primer |	Amazon Relational Database Service (Amazon RDS) for PostgreSQL – Troubleshooting |	Getting Started with Amazon RDS for MariaDB
 
 
-## Work Experience
+<h1 style="font-size: 28px;">WORK EXPERIENCE</h1>
 ---
 
 ### Boots On The Ground (BOTG) | Feb 2024 – Aug 2024 
@@ -54,12 +53,32 @@ National Diploma in Accountancy
 -	Delivered training sessions on advanced Excel functions, report writing, and KPI development to internal teams.
 
 
-### Projects
+<h1 style="font-size: 28px;">PROJECTS</h1>
 ---
 - Seemless Veteran Dashboard
+![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
 
 - Figma (Healthy Lifestyle)
+  ![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
 
 - ArcGIS Geospartial Analysis (Impact of Covid-19)
+  ![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
 
 - 
+
+<h1 style="font-size: 28px;">REFERENCES</h1>
+---
+## WayPoint Center for Mental Healthcare
+### Obinna Emeruwa 
+(647) 618-5654
+oemeruwa@waypointcentre.ca 
+
+## Boots On The Ground LLC.
+### Monto Joseph
+(434) 818-7868
+monto@botgsolutions.com
+
+## Boots On The Ground LLC.
+### Barbara J. Hamilton
+781-789-9171
+barbara@botgsolutions.com
