@@ -14,7 +14,7 @@ Bachelor of Social Science in Economics
 ## Work Experience
 
 ### Boots On The Ground (BOTG)
-Feb 2024 – Aug 2024 
+  Feb 2024 – Aug 2024 
 ### Data Analyst & Team Lead		
 -	Designed and maintained interactive dashboards and reports using Power BI and SSRS, delivering actionable insights for executive and operational decision-making.
 -	Performed advanced SQL queries to extract and analyze data from diverse sources, improving organizational data accessibility and accuracy.
