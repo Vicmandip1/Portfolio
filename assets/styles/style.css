@@ -1,89 +1,79 @@
-/* assets/styles/styles.css */
+/* body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
+/*This section is for the Navigation*/
 header nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 header nav ul li {
-  display: inline;
-  margin: 0 10px;
+  display: inline-block;
 }
 
-header nav ul li a {
-  color: white;
-  text-decoration: none;
+/*Make sure every section is centered with consistent alignment*/
+section {
+  width: 80%;   /* Adjust the width as needed */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
+section h2 {
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+/*To ensure the footer is also centered, use*/
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
   width: 100%;
+  position: relative;
   bottom: 0;
 }
 
-section {
-  padding: 20px;
-  text-align: center;
-}
-
+/*For the project section, make the cards centered*/
 .project-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .project {
   width: 200px;
   background-color: white;
   border: 1px solid #ccc;
-  margin: 10px;
   padding: 15px;
+  text-align: center;
 }
-/* Center and Underline the Summary Section Heading */
+
+/*If you want the headings to be even more prominent*/
+
 .summary h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-    color: #333;
-}
-
-/* Underline Styling */
-.summary h2::after {
-    content: '';
-    display: block;
-    width: 50%;
-    margin: 5px auto 0;
-    border-bottom: 3px solid #007bff;
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.navbar ul li a i {
-    font-size: 30px;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  color: #333;
+  width: 100%;
 }
