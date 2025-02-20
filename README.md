@@ -59,7 +59,7 @@ National Diploma in Accountancy
 ![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
 
 - Figma (Healthy Lifestyle)
-  ![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
+  ![Alt text](assets/Figma Healthy Lifestyle.jpg)
 
 - ArcGIS Geospartial Analysis (Impact of Covid-19)
   ![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
