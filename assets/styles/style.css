@@ -33,10 +33,11 @@ header nav ul li {
 
 header nav ul li a {
   color: white;
-  text-decoration: none;
+  text-decoration: none !important; /* Adding !important to force the removal of underlines */
   font-size: 18px;
   padding: 10px;
 }
+
 
 header nav ul li a:hover {
   background-color: #555;
