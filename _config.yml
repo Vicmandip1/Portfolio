@@ -1,5 +1,5 @@
 title: Victor S. Dipeolu
-Data Analyst | Business Analyst | Research Analyst.
+logo: Data Analyst | Business Analyst | Research Analyst.
 #show_downloads: true
-#google_analytics:
-theme: jekyll-theme-hacker
+google_analytics: 1.6
+theme: jekyll-theme-minimal
