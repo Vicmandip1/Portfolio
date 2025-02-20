@@ -1,4 +1,4 @@
-
+https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true
 # Data Analyst | Business Analyst | Research Analyst.
 
 ## Summary
