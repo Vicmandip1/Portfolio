@@ -18,7 +18,7 @@ National Diploma in Accountancy
 
 ## Training & Certificates
 ---
-•	Data Analytics Professional Certificate - AWS Cloud Architecting - SAS Programming -	SAS Visual Analytics -	TCPS 2: CORE 2022 -	Standard First Aid – CPR / AED -	SAS Visual Analytics 1 for SAS Viya: Basics (8.5)
+-	Data Analytics Professional Certificate - AWS Cloud Architecting - SAS Programming -	SAS Visual Analytics |	TCPS 2: CORE 2022 |	Standard First Aid – CPR / AED |	SAS Visual Analytics 1 for SAS Viya: Basics (8.5)
 -	Amazon Aurora MySQL and Amazon RDS MySQL
 -	Amazon QuickSight Advanced Business Intelligence Authoring (Part 1 & 2)
 -	Amazon Relational Database Service for MySQL – Troubleshooting
