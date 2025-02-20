@@ -77,3 +77,27 @@ footer {
   color: #333;
   width: 100%;
 }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+/* Name Styling */
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Title Styling */
+.hero p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
