@@ -7,12 +7,35 @@ I am an experienced data professional with a strong background in data analytics
 
 
 ## Education
+---
 
 Big Data Analytics Post-Graduate Certificate
 
 Bachelor of Social Science in Economics
 
+National Diploma in Accountancy
+
+
+## Training & Certificates
+---
+•	Data Analytics Professional Certificate - AWS Cloud Architecting - SAS Programming -	SAS Visual Analytics -	TCPS 2: CORE 2022 -	Standard First Aid – CPR / AED -	SAS Visual Analytics 1 for SAS Viya: Basics (8.5)
+-	Amazon Aurora MySQL and Amazon RDS MySQL
+-	Amazon QuickSight Advanced Business Intelligence Authoring (Part 1 & 2)
+-	Amazon Relational Database Service for MySQL – Troubleshooting
+-	Introduction to Building with AWS Databases		•	AWS Data Engineering
+-	AWS Cloud Foundation
+-	AWS Cloud Developing
+-	Applied Project Management
+-	Workplace Hazardous Materials Information System (WHMIS)
+-	Amazon Aurora MySQL – Basics
+-	Amazon Aurora PostgreSQL and Amazon RDS PostgreSQL
+-	Amazon RDS Service Primer
+-	Amazon Relational Database Service (Amazon RDS) for PostgreSQL – Troubleshooting
+-	Getting Started with Amazon RDS for MariaDB
+
+
 ## Work Experience
+---
 
 ### Boots On The Ground (BOTG)
   Feb 2024 – Aug 2024 
@@ -31,6 +54,7 @@ Terragon Group
 -big impact project!
 
 ### Projects
+---
 - Seemless Veteran Dashboard
 
 - Figma (Healthy Lifestyle)
