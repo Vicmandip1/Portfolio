@@ -16,6 +16,7 @@ Bachelor of Social Science in Economics
 
 National Diploma in Accountancy
 
+![Alt text](https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true)
 
 ## Training & Certificates
 ---
