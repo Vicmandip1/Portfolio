@@ -1,5 +1,6 @@
-https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true
-# Data Analyst | Business Analyst | Research Analyst.
+logo : https://github.com/Vicmandip1/Portfolio/blob/main/Picture1.jpg?raw=true
+<h1 style="font-size: 35px;">Data Analyst | Business Analyst |    Research Analyst</h1>
+
 
 ## Summary
 
