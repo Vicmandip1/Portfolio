@@ -56,3 +56,21 @@ section {
   margin: 10px;
   padding: 15px;
 }
+/* Center and Underline the Summary Section Heading */
+.summary h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #333;
+}
+
+/* Underline Styling */
+.summary h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: 5px auto 0;
+    border-bottom: 3px solid #007bff;
+}
