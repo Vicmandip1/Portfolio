@@ -1,115 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor S. Dipeolu - Data Analyst</title>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on different devices -->
+    <title>Victor S. Dipeolu - Data Analyst</title> <!-- Title that appears in the browser tab -->
+    
+    <!-- Link to external Font Awesome icons stylesheet for using icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Link to an external stylesheet for custom styling (styles.css) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Navigation -->
+
+<!-- Navigation bar section -->
 <nav class="navbar">
+    <!-- Unordered list of navigation links, styled for a horizontal display -->
     <ul style="list-style: none; padding: 0; display: flex; gap: 35px; justify-content: flex-end;">
-        <!-- Home Icon Link -->
-        <!-- Links to the home page and displays only the home icon with adjustable size and background -->
+        <!-- Home Icon Link: This section links to the home page and displays the home icon -->
         <li>
             <a href="index.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                <i class="fas fa-home" style="font-size: 32px; color: #5768e5;"></i>
+                <i class="fas fa-home" style="font-size: 32px; color: #5768e5;"></i> <!-- Home icon with custom size and color -->
             </a>
         </li>
         
-        <!-- Projects Icon Link -->
-        <!-- Links to the projects page and displays only the briefcase icon with adjustable size and background -->
+        <!-- Projects Icon Link: This section links to the projects page and displays the briefcase icon -->
         <li>
             <a href="projects.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                <i class="fas fa-briefcase" style="font-size: 32px; color: #5ae295;"></i>
+                <i class="fas fa-briefcase" style="font-size: 32px; color: #5ae295;"></i> <!-- Projects icon with custom size and color -->
             </a>
         </li>
         
-        <!-- About Icon Link -->
-        <!-- Links to the about page and displays only the user icon with adjustable size and background -->
+        <!-- About Icon Link: This section links to the about page and displays the user icon -->
         <li>
             <a href="about.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                <i class="fas fa-user" style="font-size: 32px; color: #8a48f4;"></i>
+                <i class="fas fa-user" style="font-size: 32px; color: #8a48f4;"></i> <!-- About icon with custom size and color -->
             </a>
         </li>
         
-        <!-- Contact Icon Link -->
-        <!-- Links to the contact page and displays only the envelope icon with adjustable size and background -->
+        <!-- Contact Icon Link: This section links to the contact page and displays the envelope icon -->
         <li>
             <a href="contact.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                <i class="fas fa-envelope" style="font-size: 32px; color: #ab78c4;"></i>
+                <i class="fas fa-envelope" style="font-size: 32px; color: #ab78c4;"></i> <!-- Contact icon with custom size and color -->
             </a>
         </li>
     </ul>
 </nav>
 
-
-<!-- Hero Section -->
+<!-- Hero Section: The main introductory area of the webpage -->
 <section class="hero">
+    <!-- Main heading displaying the name -->
     <h1 style="font-size: 80px; font-weight: bold; margin-bottom: 10px;">Victor S. Dipeolu</h1>
+    <!-- Subheading displaying the professional titles -->
     <p style="font-size: 28px; margin-top: 0;">Data Analyst | Business Analyst | Research Analyst</p>
 </section>
 
+<!-- About Me Section: Provides a brief summary of the individual -->
+<section class="about">
+    <h2>Summary</h2> <!-- Heading for the summary section -->
+    <p>
+        I am an experienced data professional with a strong background in data analytics, business intelligence, and statistical analysis. Proficient in leveraging data to drive insights, optimize processes, and support decision-making. Skilled in SQL, Python, Power BI, Tableau, PowerPoint, ArcGIS, and cloud technologies. Adept at handling large datasets, developing automated workflows, and delivering data-driven solutions. I am a proactive problem-solver with strong communication and leadership skills, able to collaborate effectively with cross-functional teams. Passionate about utilizing data to generate meaningful business insights and improve organizational performance.
+    </p>
+    <!-- Link to the detailed About page -->
+    <a href="about.html" class="learn-more">Learn More</a>
+</section>
 
+<!-- Skills Section: Displays a list of skills and expertise -->
+<section class="skills">
+    <h2>Skills & Expertise</h2> <!-- Heading for skills section -->
+    <!-- Unordered list of key skills -->
+    <ul>
+        <li>Data Analysis</li>
+        <li>SQL & Python</li>
+        <li>Power BI & Tableau</li>
+        <li>Digital Transformation</li>
+    </ul>
+</section>
 
-    <!-- Summary Me Section -->
-    <section class="about">
-        <h2>Summary</h2>
-        <p>I am an experienced data professional with a strong background in data analytics, business intelligence, and statistical analysis. Proficient in leveraging data to drive insights, optimize processes, and support decision-making. Skilled in SQL, Python, Power BI, Tableau, PowerPoint, ArcGIS, and cloud technologies. Adept at handling large datasets, developing automated workflows, and delivering data-driven solutions. I am a proactive problem-solver with strong communication and leadership skills, able to collaborate effectively with cross-functional teams. Passionate about utilizing data to generate meaningful business insights and improve organizational performance.</p>
-        <a href="about.html" class="learn-more">Learn More</a>
-    </section>
+<!-- Featured Projects Section: Highlights key projects -->
+<section class="projects">
+    <h2>Featured Projects</h2> <!-- Heading for featured projects -->
+    
+    <!-- Project 1 -->
+    <div class="project-item">
+        <h3>Healthy Lifestyle Dashboard</h3> <!-- Project name -->
+        <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Project 1"> <!-- Project image -->
+        <p>This is Figma dashboard to track client's healthy lifestyles.</p> <!-- Project description -->
+        <a href="projects.html">See More</a> <!-- Link to view more about the project -->
+    </div>
 
-    <!-- Skills Section -->
-    <section class="skills">
-        <h2>Skills & Expertise</h2>
-        <ul>
-            <li>Data Analysis</li>
-            <li>SQL & Python</li>
-            <li>Power BI & Tableau</li>
-            <li>Digital Transformation</li>
-        </ul>
-    </section>
+    <!-- Project 2 -->
+    <div class="project-item">
+        <img src="assets/project2.jpg" alt="Project 2"> <!-- Project image -->
+        <h3>Customer Data Integration System</h3> <!-- Project name -->
+        <p>ETL system for integrating and analyzing customer data using Talend.</p> <!-- Project description -->
+        <a href="projects.html">See More</a> <!-- Link to view more about the project -->
+    </div>
+</section>
 
-    <!-- Featured Projects Section -->
-    <section class="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-item">
-            <h3>Healthy Lifestlye Dashboard</h3>
-            <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Project 1">
-            <p> This is Figma dashboard to track client's healthy lifestlyes.</p>
-            <a href="projects.html">See More</a>
-        </div>
-        <div class="project-item">
-            <img src="assets/project2.jpg" alt="Project 2">
-            <h3>Customer Data Integration System</h3>
-            <p>ETL system for integrating and analyzing customer data using Talend.</p>
-            <a href="projects.html">See More</a>
-        </div>
-    </section>
-
-<!-- Contact Section -->
+<!-- Contact Section: Displays contact information -->
 <section class="contact">
-    <h2>Contact Me</h2>
+    <h2>Contact Me</h2> <!-- Heading for contact section -->
+    
+    <!-- Email contact -->
     <p>
         <i class="fas fa-envelope"></i> 
-        <a href="mailto:dipeoluvictors@gmail.com">dipeoluvictors@gmail.com</a>
+        <a href="mailto:dipeoluvictors@gmail.com">dipeoluvictors@gmail.com</a> <!-- Email link -->
     </p>
+
+    <!-- LinkedIn contact -->
     <p>
         <i class="fab fa-linkedin"></i> 
-        <a href="https://linkedin.com/in/victor-dipeolu-685893267" target="_blank">Victor S. Dipeolu</a>
+        <a href="https://linkedin.com/in/victor-dipeolu-685893267" target="_blank">Victor S. Dipeolu</a> <!-- LinkedIn profile link -->
     </p>
+
+    <!-- Phone number contact -->
     <p>
         <i class="fas fa-phone"></i> 
-        <a href="tel:+16476681292">+1 (647) 668-1292</a>
+        <a href="tel:+16476681292">+1 (647) 668-1292</a> <!-- Phone number link -->
     </p>
 </section>
 
+<!-- Footer: Footer section at the bottom of the page -->
+<footer>
+    <p>&copy; 2025 Victor S. Dipeolu. All Rights Reserved.</p> <!-- Copyright text -->
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Victor S. Dipeolu. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
