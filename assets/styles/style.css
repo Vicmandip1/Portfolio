@@ -12,38 +12,43 @@ background-color: rgb(191, 195, 196); /* This controls the background color of t
 }
 
 
-/* Header Styling - Navigation */
-header {
+/* Navbar Styling */
+.navbar {
   background-color: #333;
-  color: Yellow;
-  padding: 10px 0;
-  text-align: center;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex; /* This will make the items display horizontally */
-  justify-content: flex-end; /* Align items to the left (default behavior) */
-  gap: 20px;
-}
-
-header nav ul li {
-  display: inline-block; /* This will display items horizontally */
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none !important; /* Adding !important to force the removal of underlines */
-  font-size: 18px;
   padding: 10px;
 }
 
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* This will make the items display horizontally */
+  justify-content: center; /* Center the navigation items */
+  gap: 20px;
+}
 
+.navbar ul li {
+  display: inline-block; /* Keeps the items in a row */
+}
 
-header nav ul li a:hover {
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: flex;
+  align-items: center; /* Align text and icon vertically */
+}
+
+.navbar ul li a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+/* Icon Size */
+.navbar ul li a i {
+  font-size: 32px; /* Increase icon size */
+  margin-right: 8px; /* Space between icon and text */
 }
 
 /* Main Section Styling */
