@@ -12,38 +12,34 @@ background-color: rgb(191, 195, 196); /* This controls the background color of t
 }
 
 
-/* Navbar Styling */
-.navbar {
-  background-color: #333;
-  padding: 10px;
-}
-
+/* Style the navigation bar */
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; /* This will make the items display horizontally */
-  justify-content: center; /* Center the navigation items */
-  gap: 20px;
+  list-style: none;            /* Remove default bullet points */
+  display: flex;               /* Arrange list items in a row */
+  gap: 38px;                   /* Space between each navigation item */
+  padding: 0;                  /* Remove default padding */
+  justify-content: center;     /* Center the navigation items */
 }
 
+/* Style each list item */
 .navbar ul li {
-  display: inline-block; /* Keeps the items in a row */
+  display: inline-block;       /* Display items side by side */
 }
 
+/* Style the navigation links */
 .navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  display: flex;
-  align-items: center; /* Align text and icon vertically */
+  text-decoration: none;       /* Remove underline from links */
+  color: #333;                 /* Set text color */
+  font-size: 0;                /* Hide the text but keep the link clickable */
 }
 
-.navbar ul li a:hover {
-  background-color: #555;
-  border-radius: 5px;
+/* Style the icons */
+.navbar ul li a i {
+  font-size: 50px;             /* Increase the icon size */
+  color: #5768e5;              /* Set icon color (blue) */
 }
+
+
 
 /* Icon Size */
 .navbar ul li a i {
