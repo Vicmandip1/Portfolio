@@ -7,16 +7,32 @@
   <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Navigation bar section -->
+<nav class="navbar">
+    <!-- Unordered list of navigation links, styled for a horizontal display -->
+    <ul style="list-style: none; padding: 0; display: flex; gap: 35px; justify-content: flex-end;">
+        <!-- Home Icon Link: This section links to the home page and displays the home icon -->
+        <li>
+            <a href="index.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
+                <i class="fas fa-home" style="font-size: 32px; color: #5768e5;"></i> <!-- Home icon with custom size and color -->
+            </a>
+        </li>
+        
+        <!-- Projects Icon Link: This section links to the projects page and displays the briefcase icon -->
+        <li>
+            <a href="projects.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
+                <i class="fas fa-briefcase" style="font-size: 32px; color: #5ae295;"></i> <!-- Projects icon with custom size and color -->
+            </a>
+        </li>
+        
+        <!-- About Icon Link: This section links to the about page and displays the user icon -->
+        <li>
+            <a href="about.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
+                <i class="fas fa-user" style="font-size: 32px; color: #8a48f4;"></i> <!-- About icon with custom size and color -->
+            </a>
+        </li>
+    </ul>
+</nav>
 
   <section>
     <h1>Contact Me</h1>
