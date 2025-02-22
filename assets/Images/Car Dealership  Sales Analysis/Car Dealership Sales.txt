@@ -1,0 +1,5 @@
+Car Dealership Sales
+
+1. Top 10 Electric Vehicles Sold (Histogram side to side chart)
+2.Trend of Electric Vehicle Sales (Line chart)
+3. Percentage of Electric Vehicles Sold by Year (bar chart standing tall)
