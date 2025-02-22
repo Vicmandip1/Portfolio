@@ -98,54 +98,56 @@ section p {
     color: #555;
 }
 
-/* Project Section Container */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Project Card Style */
+/* Project Section Styling */
 .project {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
-/* Project Title */
 .project h2 {
-  font-size: 1.5em;
+    color: #333;
 }
 
-/* Project Images */
-.project img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
-/* Hidden Details Section */
-.project-details {
-  display: none;
-  margin-top: 10px;
-}
-
-/* More Button Style */
+/* More Button Styling */
 .more-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* More Button Hover Effect */
 .more-btn:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
+/* Project Details Styling */
+.project-details {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.project-details img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
 
 /* Summary Section */
 .summary h2 {
