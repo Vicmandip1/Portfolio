@@ -1,89 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
-
-    <!-- Link to External Stylesheet -->
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="assets/styles/styles.css">
-
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar Section -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <!-- List of Navigation Links -->
-        <ul class="nav-links">
-            <!-- Home Link with Icon -->
+        <ul style="list-style: none; padding: 0; display: flex; gap: 35px; justify-content: flex-end;">
             <li>
-                <a href="index.html" class="nav-icon">
-                    <i class="fas fa-home"></i> <!-- Home icon -->
+                <a href="index.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
+                    <i class="fas fa-home" style="font-size: 32px; color: #5768e5;"></i>
                 </a>
             </li>
-            <!-- About Link with Icon -->
             <li>
-                <a href="about.html" class="nav-icon">
-                    <i class="fas fa-user"></i> <!-- About icon -->
+                <a href="about.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
+                    <i class="fas fa-user" style="font-size: 32px; color: #8a48f4;"></i>
                 </a>
             </li>
-            <!-- Contact Link with Icon -->
             <li>
-                <a href="contact.html" class="nav-icon">
-                    <i class="fas fa-envelope"></i> <!-- Contact icon -->
+                <a href="contact.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
+                    <i class="fas fa-envelope" style="font-size: 32px; color: #ab78c4;"></i>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <!-- Main Section for Projects -->
-    <section class="projects-section">
-        <!-- Section Title -->
-        <h1>My Projects</h1>
-
+    <!-- Project Section Start -->
+    <section class="projects">
         <!-- Project 1: Wire Framework -->
         <div class="project">
-            <!-- Project Title and Short Description -->
+            <!-- Project Title Only -->
             <h2>WIRE FRAMEWORK</h2>
-            <p>This is the framework sketch for the dashboard created for my client.</p>
-            <!-- More Button to Expand Details -->
+            <!-- More Button to Show Details -->
             <button class="more-btn" onclick="toggleDetails('project1-details')">More</button>
-            <!-- Hidden Detailed Section -->
-            <div class="project-details" id="project1-details">
-                <!-- Project Image -->
-                <!-- <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework"> --!>
-                <p>Detailed description of the wire framework project goes here...</p>
-                <!-- Link to Full Document -->
-                <a href="assets/Images/BOTG Project" target="_blank">View Full Document</a>
-            </div>
-        </div>
-
-        <!-- Project 2: Figma Healthy Lifestyle -->
-        <div class="project">
-            <!-- Project Title and Short Description -->
-            <h2>Figma Healthy Lifestyle</h2>
-            <p>Dashboard created to track my client's healthy living.</p>
-            <!-- More Button to Expand Details -->
-            <button class="more-btn" onclick="toggleDetails('project2-details')">More</button>
-            <!-- Hidden Detailed Section -->
-            <div class="project-details" id="project2-details">
-                <!-- Project Image -->
-                <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Figma Healthy Lifestyle">
-                <p>Complete story of the Figma Healthy Lifestyle project...</p>
-                <!-- Link to Full Document -->
-                <a href="assets/files/figma-healthy-lifestyle.pdf" target="_blank">View Full Document</a>
+            <!-- Detailed Section Hidden Initially -->
+            <div class="project-details" id="project1-details" style="display: none;">
+                <!-- Image Related to the Project -->
+                <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework">
+                <!-- Full Description -->
+                <p>
+                    This is the detailed description of the Wire Framework project. 
+                    It showcases the initial sketches and structural layout designed for the client's dashboard.
+                    The framework includes:
+                    <ul>
+                        <li>Clear section divisions for data visualization.</li>
+                        <li>User journey mapping for better navigation.</li>
+                        <li>Responsive design considerations for various devices.</li>
+                    </ul>
+                </p>
+                <!-- Link to the Full Document -->
+                <a href="assets/files/wire-framework.pdf" target="_blank">View Full Document</a>
             </div>
         </div>
     </section>
+    <!-- Project Section End -->
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Victor S. Dipeolu</p>
-    </footer>
-
-    <!-- Link to External JavaScript File -->
+    <!-- Link to External JavaScript -->
     <script src="assets/scripts/scripts.js"></script>
 </body>
 </html>
