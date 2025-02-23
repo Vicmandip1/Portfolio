@@ -6,19 +6,21 @@ const projectDetails = document.querySelectorAll('.project-details');
 // Add event listeners to "See More" buttons
 moreButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // Show the project details
+        // Show the project details and the "See Less" button
         projectDetails[index].style.display = 'block';
         projectDetails[index].style.opacity = 1;  // Ensure it's visible immediately
         button.style.display = 'none';  // Hide the "See More" button
+        seeLessButtons[index].style.display = 'inline-block';  // Show the "See Less" button
     });
 });
 
 // Add event listeners to "See Less" buttons
 seeLessButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // Hide the project details
+        // Hide the project details and the "See Less" button
         projectDetails[index].style.display = 'none';
         projectDetails[index].style.opacity = 0;  // Fade out the details
         moreButtons[index].style.display = 'inline-block';  // Show the "See More" button
+        button.style.display = 'none';  // Hide the "See Less" button
     });
 });
