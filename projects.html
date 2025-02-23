@@ -35,34 +35,37 @@
         </ul>
     </nav>
 
-    <!-- Project Section Start -->
-    <section class="projects">
-        <!-- Project 1: Wire Framework -->
-        <div class="project">
-            <!-- Project Title Only -->
-            <h2>WIRE FRAMEWORK</h2>
-            <!-- More Button to Toggle Details -->
-            <button class="more-btn" onclick="toggleDetails('project1-details')" aria-expanded="false">More</button>
-            <!-- Detailed Section Hidden Initially -->
-            <div class="project-details" id="project1-details" style="display: none;">
-                <!-- Image Related to the Project -->
-                <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework">
-                <!-- Full Description -->
-                <p>
-                    This is the detailed description of the Wire Framework project. 
-                    It showcases the initial sketches and structural layout designed for the client's dashboard.
-                    The framework includes:
-                </p>
-                <ul>
-                    <li>Clear section divisions for data visualization.</li>
-                    <li>User journey mapping for better navigation.</li>
-                    <li>Responsive design considerations for various devices.</li>
-                </ul>
-                <!-- Link to the Full Document -->
-                <a href="assets/files/wire-framework.pdf" target="_blank">View Full Document</a>
-            </div>
+<!-- Project Section Start -->
+<section class="projects">
+    <!-- Project 1: Wire Framework -->
+    <div class="project">
+        <!-- Project Title Only -->
+        <h2>WIRE FRAMEWORK</h2>
+        <!-- More Button to Toggle Details -->
+        <button class="more-btn" onclick="toggleDetails(this)" aria-expanded="false">More</button>
+        <!-- Detailed Section Hidden Initially -->
+        <div class="project-details" style="display: none;">
+            <!-- Image Related to the Project -->
+            <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework">
+            <!-- Full Description -->
+            <p>
+                This is the detailed description of the Wire Framework project. 
+                It showcases the initial sketches and structural layout designed for the client's dashboard.
+                The framework includes:
+            </p>
+            <ul>
+                <li>Clear section divisions for data visualization.</li>
+                <li>User journey mapping for better navigation.</li>
+                <li>Responsive design considerations for various devices.</li>
+            </ul>
+            <!-- See Less Button -->
+            <button class="see-less-btn" onclick="toggleDetails(this)">See Less</button>
         </div>
-    </section>
+        <!-- Link to the Full Document -->
+        <a href="assets/files/wire-framework.pdf" target="_blank">View Full Document</a>
+    </div>
+</section>
+
 
     <!-- Link to External JavaScript for Functionality -->
     <script src="assets/script.js" defer></script>
