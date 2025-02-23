@@ -1,20 +1,20 @@
 /* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Sets the font for the entire body */
     margin: 0;
     padding: 0;
-    background-color: rgb(191, 195, 196); 
+    background-color: rgb(191, 195, 196); /* Light gray background */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.6; /* Improves text readability */
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    height: 50vh; 
+    height: 50vh; /* Hero section height: 50% of viewport */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body {
     color: white;
     overflow: hidden;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), 
-                url('path/to/your/image.jpg') center/cover no-repeat;
+                url('path/to/your/image.jpg') center/cover no-repeat; /* Background image with gradient overlay */
     padding: 50px 0;
 }
 
@@ -34,19 +34,19 @@ body {
     height: 100%;
     z-index: -1;
     background: inherit;
-    filter: blur(3px);
+    filter: blur(3px); /* Blurs the background for a frosted glass effect */
 }
 
 .hero h1 {
-    font-size: 55px;
+    font-size: 55px; /* Large heading for hero section */
     font-weight: bold;
     color: #fff;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow to text for better visibility */
 }
 
 .hero p {
-    font-size: 35px;
+    font-size: 35px; /* Subtitle text size */
     font-weight: bold;
     color: #f1f1f1;
     margin-top: 15px;
@@ -59,7 +59,7 @@ body {
     display: flex;
     gap: 38px;
     padding: 0;
-    justify-content: center;
+    justify-content: center; /* Centers navigation items */
 }
 
 .navbar ul li {
@@ -73,7 +73,7 @@ body {
 }
 
 .navbar ul li a i {
-    font-size: 32px;
+    font-size: 32px; /* Icon size in navigation */
     color: #5768e5;
     margin-right: 8px;
 }
@@ -81,7 +81,7 @@ body {
 /* Main Section Styling */
 section {
     width: 80%;   
-    max-width: 800px;
+    max-width: 800px; /* Limits section width for better readability */
     margin: 0 auto;
     text-align: center;
 }
@@ -119,18 +119,22 @@ section p {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 .more-btn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 /* Project Details Styling */
 .project-details {
-    margin-top: 15px;
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.project-details[style*="display: block;"] {
+    opacity: 1; /* Fades in when displayed */
 }
 
 .project-details img {
@@ -165,7 +169,7 @@ section p {
     display: block;
     width: 50%;
     margin: 5px auto 0;
-    border-bottom: 3px solid #007bff;
+    border-bottom: 3px solid #007bff; /* Blue underline */
 }
 
 /* Contact Section */
@@ -207,7 +211,7 @@ footer {
     margin-top: 50px;
 }
 
-/* Responsive Design */
+/* Responsive Design for Tablets */
 @media (max-width: 768px) {
     .hero {
         height: 40vh;
@@ -230,6 +234,7 @@ footer {
     }
 }
 
+/* Responsive Design for Mobile */
 @media (max-width: 480px) {
     .hero {
         height: 35vh;
