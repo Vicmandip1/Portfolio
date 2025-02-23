@@ -1,10 +1,9 @@
-// Function to Toggle Project Details
 function toggleDetails(id) {
+  console.log("Toggle button clicked for: " + id); // Debugging line
   const details = document.getElementById(id);
-  // Check if the details section is hidden or visible
   if (details.style.display === "none" || details.style.display === "") {
-    details.style.display = "block"; // Show details
+    details.style.display = "block";
   } else {
-    details.style.display = "none"; // Hide details
+    details.style.display = "none";
   }
 }
