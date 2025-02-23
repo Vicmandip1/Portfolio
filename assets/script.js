@@ -8,10 +8,12 @@ function toggleDetails(button) {
     var moreBtn = project.querySelector('.more-btn');
 
     if (projectDetails.style.display === 'block') {
+        // Hide the details and show the "More" button
         projectDetails.style.display = 'none';
         moreBtn.style.display = 'inline-block';
         moreBtn.setAttribute('aria-expanded', 'false');
     } else {
+        // Show the details and hide the "More" button
         projectDetails.style.display = 'block';
         moreBtn.style.display = 'none';
         moreBtn.setAttribute('aria-expanded', 'true');
