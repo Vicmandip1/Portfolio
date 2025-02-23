@@ -1,21 +1,24 @@
-// Function to toggle the project details and buttons
-function toggleDetails(button) {
-    // Select the closest project container
-    var project = button.closest('.project');
-    // Find the project-details section within the container
-    var projectDetails = project.querySelector('.project-details');
-    // Find the more button within the container
-    var moreBtn = project.querySelector('.more-btn');
+// Get the buttons and details container
+const moreButtons = document.querySelectorAll('.more-btn');
+const seeLessButtons = document.querySelectorAll('.see-less-btn');
+const projectDetails = document.querySelectorAll('.project-details');
 
-    if (projectDetails.style.display === 'block') {
-        // Hide the details and show the "More" button
-        projectDetails.style.display = 'none';
-        moreBtn.style.display = 'inline-block';
-        moreBtn.setAttribute('aria-expanded', 'false');
-    } else {
-        // Show the details and hide the "More" button
-        projectDetails.style.display = 'block';
-        moreBtn.style.display = 'none';
-        moreBtn.setAttribute('aria-expanded', 'true');
-    }
-}
+// Add event listeners to "See More" buttons
+moreButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Show the project details
+        projectDetails[index].style.display = 'block';
+        projectDetails[index].style.opacity = 1;  // Ensure it's visible immediately
+        button.style.display = 'none';  // Hide the "See More" button
+    });
+});
+
+// Add event listeners to "See Less" buttons
+seeLessButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Hide the project details
+        projectDetails[index].style.display = 'none';
+        projectDetails[index].style.opacity = 0;  // Fade out the details
+        moreButtons[index].style.display = 'inline-block';  // Show the "See More" button
+    });
+});
