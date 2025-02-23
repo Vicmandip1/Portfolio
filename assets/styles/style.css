@@ -9,9 +9,10 @@ body {
     align-items: center;
     text-align: center;
     line-height: 1.6; /* Improves text readability */
+    min-height: 100vh; /* Ensures full-screen height */
 }
 
-/* Hero Section */
+/* Hero Section Styling */
 .hero {
     position: relative;
     height: 50vh; /* Hero section height: 50% of viewport */
@@ -26,6 +27,7 @@ body {
     padding: 50px 0;
 }
 
+/* Finisher Header: Blur effect on background */
 .finisher-header {
     position: absolute;
     top: 0;
@@ -37,6 +39,7 @@ body {
     filter: blur(3px); /* Blurs the background for a frosted glass effect */
 }
 
+/* Hero Section Heading */
 .hero h1 {
     font-size: 55px; /* Large heading for hero section */
     font-weight: bold;
@@ -45,6 +48,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow to text for better visibility */
 }
 
+/* Hero Section Subtitle */
 .hero p {
     font-size: 35px; /* Subtitle text size */
     font-weight: bold;
@@ -53,7 +57,7 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styling */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -139,6 +143,7 @@ section p {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    display: none; /* Initially hidden */
 }
 
 .see-less-btn:hover {
@@ -157,39 +162,7 @@ section p {
     opacity: 1;
 }
 
-/* More Button Styling */
-.more-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-.more-btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-/* See Less Button Styling */
-.see-less-btn {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    display: none; /* Initially hidden */
-}
-
-.see-less-btn:hover {
-    background-color: #c82333;
-}
-
-/* Summary Section */
+/* Summary Section Styling */
 .summary h2 {
     text-align: center;
     font-size: 2.5em;
@@ -208,7 +181,7 @@ section p {
     border-bottom: 3px solid #007bff; /* Blue underline */
 }
 
-/* Contact Section */
+/* Contact Section Styling */
 .contact {
     text-align: center;
     padding: 40px 0;
