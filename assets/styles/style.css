@@ -126,6 +126,23 @@ section p {
     background-color: #0056b3; /* Darker shade on hover */
 }
 
+/* See Less Button Styling */
+.see-less-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.see-less-btn:hover {
+    background-color: #c82333;
+}
+
+
 /* Project Details Styling */
 .project-details {
     display: none;
