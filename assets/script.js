@@ -1,15 +1,14 @@
-// Function to Toggle Details and Change Button Text
-function toggleDetails(id) {
-    console.log("Toggle button clicked for: " + id); // Debugging line
-    const details = document.getElementById(id);
-    const button = details.previousElementSibling;
+// Function to toggle the project details and buttons
+function toggleDetails(button) {
+    var projectDetails = button.parentElement;
+    var moreBtn = projectDetails.previousElementSibling;
+    var seeLessBtn = projectDetails.querySelector('.see-less-btn');
 
-    // Check current display state of the details section
-    if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block";
-        button.innerText = "See Less";
+    if (projectDetails.style.display === 'block') {
+        projectDetails.style.display = 'none';
+        moreBtn.style.display = 'inline-block';
     } else {
-        details.style.display = "none";
-        button.innerText = "More";
+        projectDetails.style.display = 'block';
+        moreBtn.style.display = 'none';
     }
 }
