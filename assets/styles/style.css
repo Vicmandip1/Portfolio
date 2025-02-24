@@ -162,52 +162,6 @@ section p {
     opacity: 1;
 }
 
-/* Summary Section Styling */
-.summary h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-    color: #333;
-    width: 100%;
-}
-
-.summary h2::after {
-    content: '';
-    display: block;
-    width: 50%;
-    margin: 5px auto 0;
-    border-bottom: 3px solid #007bff; /* Blue underline */
-}
-
-/* Contact Section Styling */
-.contact {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f9f9f9;
-}
-
-.contact i {
-    font-size: 25px;
-    margin: 0 10px;
-    color: #007bff;
-}
-
-.contact p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.contact a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
 /* Footer Styling */
 footer {
     background-color: #333;
@@ -220,40 +174,7 @@ footer {
     margin-top: 50px;
 }
 
-/* Responsive Design for Tablets */
-@media (max-width: 768px) {
-    .hero {
-        height: 40vh;
-    }
-
-    .hero h1 {
-        font-size: 50px;
-    }
-
-    .hero p {
-        font-size: 22px;
-    }
-
-    section {
-        width: 90%;
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 480px) {
-    .hero {
-        height: 35vh;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 0.9em;
-    }
+/* Hidden Class: Hides elements when applied */
+.hidden {
+    display: none;
 }
