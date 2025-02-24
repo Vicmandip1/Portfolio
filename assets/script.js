@@ -15,15 +15,7 @@ function hideDetails(id) {
     details.style.display = "none";  // Hide the Details
     button.textContent = "See More"; // Change the button text to "See More"
 }
-// Optional JS to toggle sidenav (if needed in the future)
-const sidenav = document.getElementById("mySidenav");
-
-// Toggle Sidenav on Click (Optional)
-sidenav.addEventListener("click", function() {
-    if (sidenav.style.width === "250px") {
-        sidenav.style.width = "0";
-    } else {
-        sidenav.style.width = "250px";
-    }
-});
+function myFunction(x) {
+  x.classList.toggle("change");
+}
 
