@@ -19,3 +19,23 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
+// Function to Set Active Class Based on Clicked Link
+const links = document.querySelectorAll('.nav-link');
+links.forEach(link => {
+    link.addEventListener('click', function() {
+        // Remove active class from all links
+        links.forEach(item => item.classList.remove('active'));
+        // Add active class to clicked link
+        this.classList.add('active');
+    });
+});
+
+// Function to Retain Active Class on Page Load
+window.addEventListener('load', function() {
+    const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+    links.forEach(link => {
+        if (link.getAttribute('data-page') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
