@@ -13,3 +13,7 @@ function toggleDetails(id) {
         details.style.display = "none";  // Hide the Details
     }
 }
+// Initialize the "See Less" button to be hidden initially
+seeLessButtons.forEach(button => {
+    button.style.display = 'none';
+});
