@@ -1,19 +1,17 @@
-// Function to Toggle the Display of Project Details
-function toggleDetails(id) {
-    // Debugging Line to Confirm Button Click
-    console.log("Toggle button clicked for: " + id);
-    
-    // Get the Details Section by ID
+// Function to Show the Details
+function showDetails(id) {
     const details = document.getElementById(id);
+    const button = details.previousElementSibling; // Get the button element
 
-    // Check the Current Display Style and Toggle
-    if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block"; // Show the Details
-    } else {
-        details.style.display = "none";  // Hide the Details
-    }
+    details.style.display = "block"; // Show the Details
+    button.textContent = "See Less"; // Change the button text to "See Less"
 }
-// Initialize the "See Less" button to be hidden initially
-seeLessButtons.forEach(button => {
-    button.style.display = 'none';
-});
+
+// Function to Hide the Details
+function hideDetails(id) {
+    const details = document.getElementById(id);
+    const button = details.previousElementSibling; // Get the button element
+
+    details.style.display = "none";  // Hide the Details
+    button.textContent = "See More"; // Change the button text to "See More"
+}
