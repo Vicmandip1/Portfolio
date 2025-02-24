@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
-    <!-- Link to the external CSS file -->
+    <!-- Linking External CSS for Styling -->
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <!-- Font Awesome for icons -->
+    <!-- Linking Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar Section -->
     <nav class="navbar">
+        <!-- Navigation List Items Styled as Flexbox for Alignment -->
         <ul style="list-style: none; padding: 0; display: flex; gap: 35px; justify-content: flex-end;">
+            <!-- Home Icon -->
             <li>
                 <a href="index.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
                     <i class="fas fa-home" style="font-size: 32px; color: #5768e5;"></i>
                 </a>
             </li>
+            <!-- About Icon -->
             <li>
                 <a href="about.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
                     <i class="fas fa-user" style="font-size: 32px; color: #8a48f4;"></i>
                 </a>
             </li>
+            <!-- Contact Icon -->
             <li>
                 <a href="contact.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
                     <i class="fas fa-envelope" style="font-size: 32px; color: #ab78c4;"></i>
@@ -31,27 +35,34 @@
         </ul>
     </nav>
 
-    <!-- Projects Section -->
+    <!-- Project Section Start -->
     <section class="projects">
-<div class="project">
-    <h3>Wire Framework</h3>
-    <button class="more-btn">See More</button>
-
-    <div class="project-details hidden">
-        <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework">
-        <p>This is the detailed description of the Wire Framework project. It showcases the initial sketches and structural layout designed for the client's dashboard. The framework includes:</p>
-        <ul>
-            <li>Clear section divisions for data visualization.</li>
-            <li>User journey mapping for better navigation.</li>
-            <li>Responsive design considerations for various devices.</li>
-        </ul>
-        <button class="see-less-btn">See Less</button>
-</div>
-
+        <!-- Project 1: Wire Framework -->
+        <div class="project">
+            <!-- Project Title Only -->
+            <h2>WIRE FRAMEWORK</h2>
+            <!-- More Button to Toggle Details -->
+            <button class="more-btn" onclick="toggleDetails('project1-details')">More</button>
+            <!-- Detailed Section Hidden Initially -->
+            <div class="project-details" id="project1-details" style="display: none;">
+                <!-- Image Related to the Project -->
+                <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework">
+                <!-- Full Description -->
+                <p>
+                    This is the detailed description of the Wire Framework project. 
+                    It showcases the initial sketches and structural layout designed for the client's dashboard.
+                    The framework includes:
+                </p>
+                <ul>
+                    <li>Clear section divisions for data visualization.</li>
+                    <li>User journey mapping for better navigation.</li>
+                    <li>Responsive design considerations for various devices.</li>
                 </ul>
+            </div>
+        </div>
     </section>
 
-    <!-- Link to the external JS file -->
+    <!-- Link to External JavaScript for Functionality -->
     <script src="assets/script.js" defer></script>
 </body>
 </html>
