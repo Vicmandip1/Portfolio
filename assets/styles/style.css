@@ -126,6 +126,20 @@ section p {
     background-color: #0056b3; /* Darker shade on hover */
 }
 
+/* More Button Styling */
+.see less-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.see less-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+
 /* Project Details Styling */
 .project-details {
     display: none;
