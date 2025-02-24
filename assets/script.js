@@ -1,25 +1,15 @@
-// Get all "See More" buttons
-const moreButtons = document.querySelectorAll('.more-btn');
+// Function to Toggle the Display of Project Details
+function toggleDetails(id) {
+    // Debugging Line to Confirm Button Click
+    console.log("Toggle button clicked for: " + id);
+    
+    // Get the Details Section by ID
+    const details = document.getElementById(id);
 
-// Function to toggle project details visibility
-function toggleDetails(button) {
-    const projectDetails = button.nextElementSibling;
-    const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-    if (isExpanded) {
-        projectDetails.classList.add('hidden');
-        button.textContent = 'More';
-        button.setAttribute('aria-expanded', 'false');
+    // Check the Current Display Style and Toggle
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block"; // Show the Details
     } else {
-        projectDetails.classList.remove('hidden');
-        button.textContent = 'See Less';
-        button.setAttribute('aria-expanded', 'true');
+        details.style.display = "none";  // Hide the Details
     }
 }
-
-// Add event listeners to all "See More" buttons
-moreButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-        toggleDetails(button);
-    });
-});
