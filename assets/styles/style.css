@@ -66,41 +66,19 @@ body {
   transition: 0.4s;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+
+
+/* Hover Effect */
+.nav-link:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+    transition: background-color 0.3s;
 }
 
-/* Fade out the second bar */
-.change .bar2 {opacity: 0;}
-
-/* Rotate last bar */
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+/* Active Link Effect */
+.nav-link.active {
+    background-color: #d4d4d4; /* Highlight color for active page */
 }
 
-/* Hover Effect for Links */
-.sidenav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Specific Colors for Each Link */
-#home { background-color: #04AA6D; }
-#projects { background-color: #5ae295; }
-#about { background-color: #2196F3; }
-#contact { background-color: #ab78c4; }
-
-/* Main Content Area */
-.main-content {
-    margin-left: 80px;
-    padding: 20px;
-}
-
-/* Hover to Expand Sidenav */
-.sidenav:hover {
-    width: 250px; /* Expand to 250px when hovered */
-}
 
 
 /* Link IDs */
