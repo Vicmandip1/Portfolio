@@ -7,6 +7,19 @@ function showDetails(id) {
     button.textContent = "See Less"; // Change the button text to "See Less"
 }
 
+function toggleDetails(detailId) {
+    var details = document.getElementById(detailId);
+    var button = event.target;
+
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block"; // Show details
+        button.textContent = "See Less"; // Change button text to "See Less"
+    } else {
+        details.style.display = "none"; // Hide details
+        button.textContent = "More"; // Change button text back to "More"
+    }
+}
+
 // Function to Hide the Details
 function hideDetails(id) {
     const details = document.getElementById(id);
