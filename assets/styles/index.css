@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 13px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #5768e5, #5ae295);
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #5768e5;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about .learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #5768e5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about .learn-more:hover {
+    background-color: #4453c5;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #8a48f4;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #5ae295;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.02);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+    color: #5768e5;
+}
+
+.project-item p {
+    font-size: 18px;
+    color: #555;
+    padding: 0 15px;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    background-color: #5768e5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #4453c5;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #ab78c4;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact a {
+    color: #5768e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #4453c5;
+}
+
+/* Footer */
+footer {
+    background-color: #201e30;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+    
+    .hero p {
+        font-size: 22px;
+    }
+
+    .skills ul li,
+    .projects ul li {
+        font-size: 16px;
+    }
+}
