@@ -60,35 +60,62 @@ img {
 
 /* Hero Section */
 .hero {
-    background: url('../assets/Images/project-banner.jpg') no-repeat center center/cover;
+    /* Sets the background image for the hero section */
+    background: url('../assets/Images/Portfolio wallpaper.jpeg') no-repeat center center/cover;
+    /* The background image is placed at the center and covers the entire section */
+    
+    /* White text color for content in the hero section */
     color: #fff;
+    
+    /* Centers the text inside the hero section */
     text-align: center;
+    
+    /* Adds padding around the hero section for spacing */
     padding: 100px 20px;
+    
+    /* Allows the hero section to be positioned relative to its normal flow, which might be used for positioning child elements */
     position: relative;
 }
 
+/* Style for the main heading (h1) inside the hero section */
 .hero h1 {
-    font-size: 48px;
+    /* Increases the font size of the main heading */
+    font-size: 35px;
+    
+    /* Adds space below the heading */
     margin-bottom: 10px;
 }
 
+/* Style for the paragraph (p) text inside the hero section */
 .hero p {
+    /* Increases the font size of the paragraph */
     font-size: 24px;
-    margin-bottom: 20px;
+    
+    /* Adds space below the paragraph */
+    margin-bottom: 14px;
 }
 
+/* Style for the Call-to-Action button inside the hero section */
 .hero .cta {
+    /* Displays the button inline with other content, ensuring it doesn't take up the whole line */
     display: inline-block;
+    
+    /* Adds padding to the button to make it larger */
     padding: 10px 20px;
+    
+    /* Sets the background color of the button */
     background-color: #5768e5;
+    
+    /* Sets the text color to white */
     color: #fff;
+    
+    /* Rounds the corners of the button */
     border-radius: 5px;
-    transition: background-color 0.3s;
+    
+    /* Adds a smooth transition effect when the background color changes (e.g., on hover) */
+    transition: background-color 0.5s;
 }
 
-.hero .cta:hover {
-    background-color: #4054cc;
-}
 
 /* Projects Section */
 .projects {
