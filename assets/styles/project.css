@@ -26,8 +26,8 @@ img {
 /* Navigation Bar */
 .navbar {
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -36,9 +36,10 @@ img {
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0;
     margin: 0;
+    gap: 25px
 }
 
 .navbar ul li {
@@ -98,7 +99,7 @@ img {
 
 .projects h2 {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .project-item {
