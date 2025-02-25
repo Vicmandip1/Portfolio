@@ -22,42 +22,28 @@ img {
     max-width: 100%;
     border-radius: 8px;
 }
-
-/* Navigation Bar */
+/* Navigation Bar Styles */
 .navbar {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
-    gap: 25px
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
 }
 
-.navbar ul li {
-    margin: 0 15px;
+.navbar a {
+  text-decoration: none;
 }
 
-.navbar ul li a {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s;
+.navbar a:hover i {
+  color: #ff6b6b;
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
-
-.navbar ul li a:hover {
-    background-color: #e1e1e1;
-}
-
 /* Hero Section */
 .hero {
     /* Sets the background image for the hero section */
