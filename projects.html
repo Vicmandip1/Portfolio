@@ -48,23 +48,50 @@
         <!-- Project 1: Wire Framework -->
         <div class="project">
             <!-- Project Title Only -->
-            <h2>WIRE FRAMEWORK</h2>
+            <h2>Equitable Recruitment Analysis</h2>
             <!-- More Button to Toggle Details -->
             <button class="more-btn" onclick="showDetails('project1-details')">More</button>
             <!-- Detailed Section Hidden Initially -->
             <div class="project-details" id="project1-details" style="display: none;">
+                <p>
+                    Developed an advanced data visualization solution to analyze resume data, enabling a comprehensive evaluation of candidate demographics, education, IT experience, and location. Utilized SQL and Python for data integration and extraction from AI-powered application tracking systems (ATS). Leveraged Power BI for data segmentation and insights, supporting strategic recruitment decisions with a focus on veterans, veteran spouses, and individuals with disabilities. Designed scalable databases and an intuitive front-end interface for efficient data querying, enhancing diversity-focused talent acquisition.
+                </p>
                 <!-- Image Related to the Project -->
-                <img src="assets/Images/WIRE FRAMEWORK.jpg" alt="Wire Framework">
+                     <img src="assets/Images/BOTG Project/Landing Page.png" alt="Landing Page">
                 <!-- Full Description -->
                 <p>
-                    This is the detailed description of the Wire Framework project. 
-                    It showcases the initial sketches and structural layout designed for the client's dashboard.
-                    The framework includes:
+                    The Veteran Resume Analysis Page serves as the landing page of the Decision Support Dashboard, summarizing all the information related to the data available in the database.         
                 </p>
+                <!-- Image Related to the Project -->
+                <img src="assets/Images/BOTG Project/Experience Analysis.png" alt="Experience Analysis">
+                <!-- Full Description -->
+                <p>
+                  The Experience Analysis Page provides visuals of top applicants across different sectors, analyzing experience by state and the skills applicants possess. This helps answer business questions about the best applicants with specific experience levels by sector, state, and the skills they bring to the job. 
+                </p>
+                                <!-- Image Related to the Project -->
+                <img src="assets/Images/BOTG Project/Applicant Profile.png" alt="Applicant Profile">
+                <!-- Full Description -->
+                <p>
+                  The Applicant Profile Dashboard simplifies the search for applicants, allowing employers to closely review selected applicant information. Searches can be conducted using the applicant's name or job title. This dashboard also provides the option for employers to initiate contact via email or phone with the selected applicants.
+                </p>
+                                                <!-- Image Related to the Project -->
+                <img src="assets/Images/BOTG Project/Location Analysis.png" alt="Location Analysis">
+                <!-- Full Description -->
+                <p>
+                  The Location Analysis Dashboard utilizes ArcGIS to conduct a deeper analysis of applicant locations, identifying the cities and states where veterans, their families, and disabled applicants reside. Additionally, this dashboard helps visualize which cities or states have the most qualified applicants in specific sectors. This analysis enables employment-focused decision-making based on geographic insights and sector-specific applicant data.
+                </p>
+                                                                <!-- Image Related to the Project -->
+                <img src="assets/Images/BOTG Project/Resume Database.png" alt="Resume Database">
+                <!-- Full Description -->
+                <p>
+                  The Resume Database Dashboard visualizes all the data in the database in a tabular format, allowing users to easily track applicants and their resume information. This page serves as a centralized view of the raw data, eliminating the need to return to the ATS to access the dataset.
+                </p>
+
                 <ul>
-                    <li>Clear section divisions for data visualization.</li>
-                    <li>User journey mapping for better navigation.</li>
-                    <li>Responsive design considerations for various devices.</li>
+                    <li>The dashboards I created facilitated data-driven decision-making in recruitment and applicant management by providing clear insights into applicant demographics, experience, and skills. These visualizations enabled the team to quickly identify top candidates based on location, sector, and expertise, ensuring that the hiring process was more efficient and targeted.</li>
+                    <li>**Challenge**: The project faced difficulties extracting structured data from unstructured resumes due to varied formats and inconsistencies in presenting key details like education, experience, and skills. Advanced text extraction techniques and natural language processing methods were applied to convert this unstructured data into usable formats.</li>
+                    <li>Streamlined the data pipeline process, minimizing the need for manual data entry by automating key workflows. New data in the database is automatically updated on the dashboard.</li>
+                    <li>I used SQL queries to extract, join, and transform raw data from the ATS into structured formats for analysis. Additionally, Python (with libraries like Pandas) was utilized for data cleansing, validation, and advanced integration tasks to ensure consistency and accuracy across datasets.</li>
                 </ul>
                 <!-- "See Less" button inside the paragraph -->
             <button class="see-less-btn" onclick="hideDetails('project1-details')">See Less</button>
