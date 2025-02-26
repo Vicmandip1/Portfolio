@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1G6ZW9B3E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F1G6ZW9B3E');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <link rel="stylesheet" href="assets/styles/about.css">
-      <!-- Linking Font Awesome for Icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Victor S. Dipeolu</title>
+    <link rel="stylesheet" href="assets/styles/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  
+
 <!-- Navigation Bar -->
 <nav class="navbar">
     <div class="nav-container">
-        <!-- Logo -->
         <a href="index.html" class="nav-logo">My Portfolio</a>
-
-        <!-- Navigation Links -->
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-
-        <!-- Hamburger Icon (For Mobile) -->
         <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
     </div>
 </nav>
 
-  <section>
-    <h1>About Me</h1>
-    <img src="assets/Images/Picture1.jpg" alt="Victor S. Dipeolu" class="profile-image">
-    <p>Hello! I'm Victor, a passionate Data Analyst with over 7 years of experience. I specialize in digital transformation, data analysis, and project management.</p>
-    <p>Feel free to browse my projects and learn more about my journey in the tech industry.</p>
-  </section>
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome to My World</h1>
+        <p>Transforming data into insights, and insights into action.</p>
+    </div>
+</header>
 
-<p>A testimonial or review or references from people section add here</p>
+<!-- About Me Section -->
+<section class="about">
+    <div class="about-container">
+        <img src="assets/Images/Picture1.jpg" alt="Victor S. Dipeolu" class="profile-image">
+        <div class="about-content">
+            <h2>I'm Victor S. Dipeolu</h2>
+            <p>A passionate Data Analyst with over 7 years of experience. I specialize in digital transformation, data analysis, and project management.</p>
+            <p>My mission is to empower businesses with data-driven decisions, bridging the gap between analytics and strategy.</p>
+        </div>
+    </div>
+</section>
 
+<!-- Certifications Section -->
+<section class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+        <div class="cert-item">
+            <i class="fas fa-award"></i>
+            <h3>Certified Data Analyst</h3>
+            <p>Issued by Google</p>
+        </div>
+        <div class="cert-item">
+            <i class="fas fa-database"></i>
+            <h3>SQL Expert</h3>
+            <p>Issued by Microsoft</p>
+        </div>
+        <div class="cert-item">
+            <i class="fas fa-chart-line"></i>
+            <h3>Business Analytics</h3>
+            <p>Issued by HarvardX</p>
+        </div>
+    </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Victor S. Dipeolu</p>
-  </footer>
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial">
+            <p>"Victor is an exceptional analyst who always delivers insightful data-driven solutions!"</p>
+            <h4>- John Doe, Tech Lead</h4>
+        </div>
+        <div class="testimonial">
+            <p>"His ability to transform data into business growth is truly remarkable."</p>
+            <h4>- Jane Smith, CEO</h4>
+        </div>
+    </div>
+</section>
 
-    <!-- Link to External JavaScript for Functionality -->
-<script src="assets/script.js" defer></script>  <!-- Project smooth scrolling -->
-<script src="assets/nav.js" defer></script>  <!-- Navigation functionality -->
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Victor S. Dipeolu | All Rights Reserved</p>
+</footer>
 
+<script src="assets/script.js" defer></script>
+<script src="assets/nav.js" defer></script>
 </body>
 </html>
