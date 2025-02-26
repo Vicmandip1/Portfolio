@@ -16,13 +16,15 @@ body {
     width: 100%;
     background: rgba(30, 30, 30, 0.9); /* Slight transparency */
     backdrop-filter: blur(10px); /* Frosted glass effect */
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: 0.3s ease-in-out;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 /* Navigation Container */
@@ -135,7 +137,7 @@ body {
     }
 
     .nav-menu.active {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-item {
@@ -163,6 +165,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
+    margin-top: 80px; /* Adds space so navbar doesn’t cover content */
     height: 60vh;
     overflow: hidden;
     background: linear-gradient(to right, #5768e5, #5ae295);
