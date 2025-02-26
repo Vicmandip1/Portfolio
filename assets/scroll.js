@@ -8,8 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
+                const offset = 80; // Adjust for fixed navbar height
+                const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
+                
                 window.scrollTo({
-                    top: targetSection.offsetTop - 50,
+                    top: targetPosition,
                     behavior: "smooth"
                 });
             }
