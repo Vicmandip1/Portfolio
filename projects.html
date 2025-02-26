@@ -31,55 +31,48 @@
 </section>
 
 
-    <!-- Projects Grid -->
-    <section class="projects">
-        <div class="container">
-            <!-- Project Card Template -->
-            <div class="project-card">
-                <img src="assets/Images/BOTG Project/Landing Page.png" alt="Project Image">
-                <h3>Equitable Recruitment Analysis</h3>
-                <p>Leveraging SQL, Python, and Power BI for data-driven recruitment strategies.</p>
-                <button class="view-btn" onclick="toggleDetails('project1')">View Details</button>
-                <div class="project-details" id="project1">
-                    <p>Advanced analytics on resumes, with visual insights on demographics, experience, and skills.</p>
-                    <button class="close-btn" onclick="toggleDetails('project1')">Close</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Project Image">
-                <h3>Auto Insurance Analysis</h3>
-                <p>Interactive dashboards in Power BI for sales and claims insights.</p>
-                <button class="view-btn" onclick="toggleDetails('project2')">View Details</button>
-                <div class="project-details" id="project2">
-                    <p>Analyzed customer trends, policy types, and claims performance.</p>
-                    <button class="close-btn" onclick="toggleDetails('project2')">Close</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/Images/Covid-19-Global-Mapping/Mapping Covid-19.pdf" alt="Project Image">
-                <h3>COVID-19 Mapping</h3>
-                <p>ArcGIS-based storytelling for pandemic impact visualization.</p>
-                <button class="view-btn" onclick="toggleDetails('project3')">View Details</button>
-                <div class="project-details" id="project3">
-                    <p>Real-time tracking of cases, restrictions, and regional impact.</p>
-                    <button class="close-btn" onclick="toggleDetails('project3')">Close</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/Images/Healthy living Figma'/Figma Healthy Lifestyle.jpg" alt="Project Image">
-                <h3>Healthy Lifestyle Dashboard</h3>
-                <p>Figma-designed health tracker based on user-centered research.</p>
-                <button class="view-btn" onclick="toggleDetails('project4')">View Details</button>
-                <div class="project-details" id="project4">
-                    <p>Includes steps tracking, heart rate monitoring, and goal setting.</p>
-                    <button class="close-btn" onclick="toggleDetails('project4')">Close</button>
-                </div>
-            </div>
+<!-- Projects Grid -->
+<section class="projects">
+    <div class="container">
+        <!-- Project Card Template -->
+        <div class="project-card">
+            <img src="assets/Images/BOTG Project/Landing Page.png" alt="Project Image">
+            <h3>Equitable Recruitment Analysis</h3>
+            <p>Leveraging SQL, Python, and Power BI for data-driven recruitment strategies.</p>
+            <button class="view-btn" onclick="openProject('project1')">View Details</button>
         </div>
-    </section>
+
+        <div class="project-card">
+            <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Project Image">
+            <h3>Auto Insurance Analysis</h3>
+            <p>Interactive dashboards in Power BI for sales and claims insights.</p>
+            <button class="view-btn" onclick="openProject('project2')">View Details</button>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/Images/Covid-19-Global-Mapping/Mapping Covid-19.pdf" alt="Project Image">
+            <h3>COVID-19 Mapping</h3>
+            <p>ArcGIS-based storytelling for pandemic impact visualization.</p>
+            <button class="view-btn" onclick="openProject('project3')">View Details</button>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/Images/Healthy living Figma'/Figma Healthy Lifestyle.jpg" alt="Project Image">
+            <h3>Healthy Lifestyle Dashboard</h3>
+            <p>Figma-designed health tracker based on user-centered research.</p>
+            <button class="view-btn" onclick="openProject('project4')">View Details</button>
+        </div>
+    </div>
+</section>
+
+<!-- Full-Screen Project Details Modal -->
+<div id="project-modal" class="project-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeProject()">&times;</span>
+        <div id="project-details"></div>
+    </div>
+</div>
+
 
     <!-- Footer -->
     <footer>
