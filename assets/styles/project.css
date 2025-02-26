@@ -1,4 +1,6 @@
 /* General Styles */
+
+/* Sets the overall font for the website and applies a light background color */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,118 +9,106 @@ body {
     color: #333;
 }
 
+/* Styles for all heading tags to maintain consistent color and remove default margins */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     color: #444;
 }
 
+/* General link styles to set default color and remove underline */
 a {
     text-decoration: none;
     color: #5768e5;
 }
 
+/* Ensures all images are responsive and have rounded corners */
 img {
     max-width: 100%;
     border-radius: 8px;
 }
+
 /* Navigation Bar Styles */
+
+/* Styles the navigation bar with a light background and subtle shadow */
 .navbar {
   background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
 
+/* Arranges navigation links horizontally with even spacing */
 .navbar ul {
   display: flex;
   justify-content: flex-start;
   gap: 25px;
 }
 
+/* Removes underline from navbar links */
 .navbar a {
   text-decoration: none;
 }
 
+/* Adds hover effect to navbar icons for interactivity */
 .navbar a:hover i {
   color: #ff6b6b;
   transform: scale(1.1);
   transition: all 0.3s;
 }
+
 /* Hero Section */
+
+/* Styles the hero section with a background image and centers the text */
 .hero {
-    /* Sets the background image for the hero section */
-    background: url('../assets/Images/Portfolio wallpaper.jpeg') no-repeat center center/cover;
-    /* The background image is placed at the center and covers the entire section */
-    
-    /* White text color for content in the hero section */
+    background: url('./assets/Images/Portfolio wallpaper.jpeg') no-repeat center center/cover;
     color: #fff;
-    
-    /* Centers the text inside the hero section */
     text-align: center;
-    
-    /* Adds padding around the hero section for spacing */
     padding: 100px 20px;
-    
-    /* Allows the hero section to be positioned relative to its normal flow, which might be used for positioning child elements */
     position: relative;
 }
 
-/* Style for the main heading (h1) inside the hero section */
+/* Increases the font size of the main heading in the hero section */
 .hero h1 {
-    /* Increases the font size of the main heading */
     font-size: 35px;
-    
-    /* Adds space below the heading */
     margin-bottom: 10px;
 }
 
-/* Style for the paragraph (p) text inside the hero section */
+/* Increases the font size of the paragraph text in the hero section */
 .hero p {
-    /* Increases the font size of the paragraph */
     font-size: 24px;
-    
-    /* Adds space below the paragraph */
     margin-bottom: 14px;
 }
 
-/* Style for the Call-to-Action button inside the hero section */
+/* Styles the Call-to-Action button for the hero section */
 .hero .cta {
-    /* Displays the button inline with other content, ensuring it doesn't take up the whole line */
     display: inline-block;
-    
-    /* Adds padding to the button to make it larger */
     padding: 10px 20px;
-    
-    /* Sets the background color of the button */
     background-color: #5768e5;
-    
-    /* Sets the text color to white */
     color: #fff;
-    
-    /* Rounds the corners of the button */
     border-radius: 5px;
-    
-    /* Adds a smooth transition effect when the background color changes (e.g., on hover) */
     transition: background-color 0.5s;
 }
 
-
 /* Projects Section */
+
+/* Centers and styles the projects section with padding and white background */
 .projects {
     padding: 50px 20px;
     text-align: center;
     background-color: #fff;
 }
 
+/* Styles the heading of the projects section */
 .projects h2 {
     font-size: 36px;
     margin-bottom: 10px;
 }
 
+/* Styles each project card with consistent sizing and shadow */
 .project-item {
-    max-width: 800px;
+    max-width: 400px;
     width: 100%;
-    margin: 0 auto 30px;
+    margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -126,24 +116,32 @@ img {
     transition: transform 0.3s;
 }
 
+/* Adds hover effect to lift the project card slightly */
 .project-item:hover {
     transform: translateY(-10px);
 }
 
+/* Makes project images responsive and consistent in size */
 .project-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
 
+/* Styles the project title with spacing */
 .project-item h3 {
     font-size: 28px;
     margin: 20px 0 10px;
 }
 
+/* Styles the project description with padding */
 .project-item p {
     font-size: 18px;
     padding: 0 20px 20px;
 }
 
+/* Styles the project link button with rounded corners and hover effect */
 .project-item a {
     display: inline-block;
     padding: 10px 20px;
@@ -154,11 +152,9 @@ img {
     transition: background-color 0.3s;
 }
 
-.project-item a:hover {
-    background-color: #4054cc;
-}
+/* Footer Section */
 
-/* Footer */
+/* Styles the footer with dark background and white text */
 .footer {
     background-color: #201e30;
     color: #fff;
@@ -167,23 +163,16 @@ img {
     margin-top: 50px;
 }
 
-.footer p {
-    margin: 0;
-}
+/* Responsive Styles for Mobile Devices */
 
-.footer a {
-    color: #5768e5;
-    text-decoration: underline;
-}
-
-/* Responsive Styles */
+/* Adjusts the font size for smaller screens */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .projects h2 {
