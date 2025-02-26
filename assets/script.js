@@ -82,6 +82,17 @@ const projects = {
             <p>Developed a user-centered health dashboard with interactive tracking for physical activity, nutrition, and wellness goals.</p>
             <img src="assets/Images/Healthy living Figma'/WIRE FRAMEWORK.jpg" alt="Wireframe">
         `
+    project5: {
+        title: "Car Dealership Sales Analysis",
+        image: "assets/Images/Car Dealership  Sales Analysis/Trend of Electric Vehicle Sales.jpg",
+        description: "Analyzing Electric Vehicle (EV) sales trends and market performance.",
+        details: `<img src="assets/Images/Car Dealership  Sales Analysis/Top 10 Vehicle Sold.jpg" alt="EV Sales Trends">`
+    },
+    project6: {
+        title: "Paris 2024 Olympic Analysis",
+        image: "assets/Images/Paris 2024/Screenshot 2025-02-21 185843.png",
+        description: "Tableau dashboard analyzing athlete participation in the 2024 Olympics.",
+        details: `<img src="assets/Images/Paris 2024/Screenshot 2025-02-21 185954.png" alt="Olympic Analysis">`
     }
 };
 
