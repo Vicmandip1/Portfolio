@@ -129,7 +129,10 @@ body {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 50px;
+        right: 10px;
+      overflow: hidden;
+      max-width: 250px;
+      width: 80%
         background: rgba(30, 30, 30, 0.95);
         width: 200px;
         border-radius: 5px;
