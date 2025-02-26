@@ -225,6 +225,30 @@ canvas#heroCanvas {
         padding: 20px;
     }
 }
+/* Ensure images fit well inside the modal */
+.modal-content img {
+    width: 100%; /* Keep full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Base height */
+    object-fit: contain; /* Ensures full image is visible */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+/* Increase image height for larger screens */
+@media (min-width: 1024px) { /* Laptops and desktops */
+    .modal-content img {
+        max-height: 600px; /* Increase height for better visibility */
+    }
+}
+
+/* Further increase height for ultra-wide screens */
+@media (min-width: 1440px) {
+    .modal-content img {
+        max-height: 700px; /* Adjust height for bigger screens */
+    }
+}
+
 
 /* Close Button (Top Right) */
 .close-btn {
