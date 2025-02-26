@@ -82,6 +82,7 @@ const projects = {
             <p>Developed a user-centered health dashboard with interactive tracking for physical activity, nutrition, and wellness goals.</p>
             <img src="assets/Images/Healthy living Figma'/WIRE FRAMEWORK.jpg" alt="Wireframe">
         `
+    },
     project5: {
         title: "Car Dealership Sales Analysis",
         image: "assets/Images/Car Dealership  Sales Analysis/Trend of Electric Vehicle Sales.jpg",
