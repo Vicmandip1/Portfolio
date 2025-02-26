@@ -9,15 +9,29 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-            <li><a href="projects.html"><i class="fas fa-briefcase"></i></a></li>
-            <li><a href="about.html"><i class="fas fa-user"></i></a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i></a></li>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">My Portfolio</a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-    </nav>
+
+        <!-- Hamburger Icon (For Mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
 
 <!-- Hero Section -->
 <section class="hero">
