@@ -210,7 +210,7 @@
             <!-- Project Title Only -->
             <h2>COVID-19 Mapping (ArcGIS Storytelling)</h2>
             <!-- More Button to Toggle Details -->
-           <button class="more-btn" onclick="showDetails('project3-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
+           <button class="more-btn" onclick="toggleDetails('project3-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
             <!-- Detailed Section Hidden Initially -->
             <div class="project-details" id="project3-details" style="display: none;">
                 <p>
@@ -238,17 +238,17 @@
             <!-- Project Title Only -->
             <h2>Healthy Lifestyle (UCD)</h2>
             <!-- More Button to Toggle Details -->
-           <button class="more-btn" onclick="showDetails('project4-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
+           <button class="more-btn" onclick="toggleDetails('project4-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
             <!-- Detailed Section Hidden Initially -->
             <div class="project-details" id="project4-details" style="display: none;">
                 <p>
                     This project used a User-Centered Design approach to create a personalized health dashboard. Through user research and feedback, a dashboard was developed to help the user track daily steps, set walking goals, monitor sleep, and heart rate. The design prioritizes usability and personalization to promote healthier habits and well-being.
                 </p>
                 <!-- Image Related to the Project -->
-                     <embed src="assets/Images/Healthy living Figma'/Assignment #1 UCD Participant Workbook.pdf" alt="UCD Participant Workbook">
+                     <object data="assets/Images/Healthy living Figma'/Assignment #1 UCD Participant Workbook.pdf" type="application/pdf" alt="UCD Participant Workbook" width="600" height="400"></object>
                 <!-- Full Description -->
                 <p>
-                    The <b>Participant Workbook</b> documents the research process, including user interview questions and responses, wireframe sketches, and usability test details. It highlights the user's goals and challenges, providing insights into the design decisions made for the health dashboard. The workbook serves as a foundation for the iterative design process, ensuring the final product aligns with the user's needs and preferences.         
+                    The Participant Workbook documents the research process, including user interview questions and responses, wireframe sketches, and usability test details. It highlights the user's goals and challenges, providing insights into the design decisions made for the health dashboard. The workbook serves as a foundation for the iterative design process, ensuring the final product aligns with the user's needs and preferences.         
                 </p>
                 <!-- Image Related to the Project -->
                 <img src="assets/Images/Healthy living Figma'/WIRE FRAMEWORK.jpg" alt="WIRE FRAMEWORK">
@@ -259,7 +259,7 @@
                     <img src="assets/Images/Healthy living Figma'/Figma Healthy Lifestyle.jpg" alt="Healthy Lifestyle Dashboard">
                 <!-- Full Description -->
                 <p>
-                  The <b>Health and Wellness Dashboard</b> is an interactive tool designed to help individuals track and manage their health by providing real-time insights into key metrics such as steps, heart rate, sleep condition, blood pressure, weight, and height. It features an event tracker and calendar to keep users organized with reminders for health-related events, workouts, and appointments. The dashboard allows users to monitor their progress with personalized goals and offers data-driven insights that help identify trends and inform lifestyle decisions. It also includes a heart rate monitor, step tracker, blood pressure tracker, and sleep condition tracker, all presented in an easy-to-use, visually engaging interface. The dashboard promotes motivation through reminders, daily health quotes, and progress tracking, offering a comprehensive view of one's health journey. It helps users stay accountable, improve their fitness levels, and maintain a balanced lifestyle by consolidating various health parameters in one place, ensuring they stay on top of their wellness goals.
+                  The Health and Wellness Dashboard is an interactive tool designed to help individuals track and manage their health by providing real-time insights into key metrics such as steps, heart rate, sleep condition, blood pressure, weight, and height. It features an event tracker and calendar to keep users organized with reminders for health-related events, workouts, and appointments. The dashboard allows users to monitor their progress with personalized goals and offers data-driven insights that help identify trends and inform lifestyle decisions. It also includes a heart rate monitor, step tracker, blood pressure tracker, and sleep condition tracker, all presented in an easy-to-use, visually engaging interface. The dashboard promotes motivation through reminders, daily health quotes, and progress tracking, offering a comprehensive view of one's health journey. It helps users stay accountable, improve their fitness levels, and maintain a balanced lifestyle by consolidating various health parameters in one place, ensuring they stay on top of their wellness goals.
                 </p>
                                 <!-- "See Less" button inside the paragraph -->
            <button class="see-less-btn" onclick="hideDetails('project4-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">See Less</button>
@@ -275,7 +275,7 @@
             <!-- Project Title Only -->
             <h2>Car Dearlership Sales Analysis</h2>
             <!-- More Button to Toggle Details -->
-           <button class="more-btn" onclick="showDetails('project5-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
+           <button class="more-btn" onclick="toggleDetails('project5-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
             <!-- Detailed Section Hidden Initially -->
             <div class="project-details" id="project5-details" style="display: none;">
                 <p>
@@ -285,13 +285,13 @@
                      <img src="assets/Images/Car Dealership  Sales Analysis/Trend of Electric Vehicle Sales.jpg" alt="Trend of Electric Vehicle Sales">
                 <!-- Full Description -->
                 <p>
-                    The <b>Trend of Electric Vehicle Sales</b> visualization highlights the sales performance of two main types of electric vehicles <b>Battery Electric Vehicles (BEVs)</b> and <b>Plug-in Hybrid Electric Vehicles (PHEVs)</b> from 2018 to 2022. This visualization shows a clear upward trend in sales, with a significant spike in **BEV** sales in **2022**. The data illustrates the growing preference for fully electric vehicles, showcasing how the market is shifting towards BEVs as a more sustainable and popular option. The spike in 2022 reflects both the increasing adoption of electric vehicles and the impact of global efforts to transition to cleaner transportation options.
+                    The Trend of Electric Vehicle Sales visualization highlights the sales performance of two main types of electric vehicles Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) from 2018 to 2022. This visualization shows a clear upward trend in sales, with a significant spike in BEV sales in 2022. The data illustrates the growing preference for fully electric vehicles, showcasing how the market is shifting towards BEVs as a more sustainable and popular option. The spike in 2022 reflects both the increasing adoption of electric vehicles and the impact of global efforts to transition to cleaner transportation options.
                 </p>
                 <!-- Image Related to the Project -->
                 <img src="assets/Images/Car Dealership  Sales Analysis/Top 10 Vehicle Sold.jpg" alt="Experience Analysis">
                 <!-- Full Description -->
                 <p>
-                  In the deeper analysis of <b>Electric Vehicle Sales in 2022</b>, a closer look at the <b>top 10 electric vehicles</b> reveals that the <b>BMW X5</b> emerged as the <b>top-selling electric vehicle</b>, with a total of <b>571 units sold</b>. This insight highlights the popularity of the X5 among consumers, showcasing its strong market demand. By focusing on the top sellers, we can understand consumer preferences, identify the best-performing models, and potentially predict future sales trends. The X5's dominance in 2022 sales suggests it’s a key player in the electric vehicle market, setting a benchmark for other models to follow.
+                  In the deeper analysis of Electric Vehicle Sales in 2022, a closer look at the top 10 electric vehicles reveals that the BMW X5 emerged as the top-selling electric vehicle, with a total of 71 units sold. This insight highlights the popularity of the X5 among consumers, showcasing its strong market demand. By focusing on the top sellers, we can understand consumer preferences, identify the best-performing models, and potentially predict future sales trends. The X5's dominance in 2022 sales suggests it’s a key player in the electric vehicle market, setting a benchmark for other models to follow.
                 </p>
                 
                 <!-- "See Less" button inside the paragraph -->
@@ -309,11 +309,11 @@
             <!-- Project Title Only -->
             <h2>Paris 2024</h2>
             <!-- More Button to Toggle Details -->
-           <button class="more-btn" onclick="showDetails('project6-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
+           <button class="more-btn" onclick="toggleDetails('project6-details')" style="display: inline-block; padding: 10px 20px; margin-top: 0px; margin-bottom: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">View</button>
             <!-- Detailed Section Hidden Initially -->
             <div class="project-details" id="project6-details" style="display: none;">
                 <p>
-                    For this project, I used <b>Tableau</b> to analyze the 2024 Olympic Games data, focusing on athlete participation, gender distribution, and country contributions. The analysis revealed 11,110 athletes from 206 countries, with a near-equal gender split of 5,655 male and 5,455 female athletes. The United States led with 619 athletes, contributing 5.572% of the total. Sports like Equestrian, 3x3 Basketball, and Triathlon showcased gender balance, while Athletics had a slight male skew. The project highlighted the progress toward gender parity in sports and showcased the diversity and inclusivity of the Games through insightful Tableau visualizations.
+                    For this project, I used Tableau to analyze the 2024 Olympic Games data, focusing on athlete participation, gender distribution, and country contributions. The analysis revealed 11,110 athletes from 206 countries, with a near-equal gender split of 5,655 male and 5,455 female athletes. The United States led with 619 athletes, contributing 5.572% of the total. Sports like Equestrian, 3x3 Basketball, and Triathlon showcased gender balance, while Athletics had a slight male skew. The project highlighted the progress toward gender parity in sports and showcased the diversity and inclusivity of the Games through insightful Tableau visualizations.
                 </p>
                 <!-- Image Related to the Project -->
                      <img src="assets/Images/Paris 2024/Screenshot 2025-02-21 185843.png" alt="Landing Page">
