@@ -185,7 +185,7 @@ canvas#heroCanvas {
     background: #4456c7;
 }
 
-/* Full-Screen Modal */
+/* Full-Screen Modal - Now Fully Responsive */
 .project-modal {
     position: fixed;
     top: 0;
@@ -200,8 +200,11 @@ canvas#heroCanvas {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
+    padding: 20px;
+    overflow-y: auto;
 }
 
+/* Modal Content */
 .modal-content {
     background: #222;
     width: 80%;
@@ -211,9 +214,19 @@ canvas#heroCanvas {
     overflow-y: auto;
     position: relative;
     text-align: left;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Close Button */
+/* Make modal scrollable on small screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-height: 85vh; /* Adjust height for smaller screens */
+        padding: 20px;
+    }
+}
+
+/* Close Button (Top Right) */
 .close-btn {
     position: absolute;
     top: 15px;
@@ -227,10 +240,55 @@ canvas#heroCanvas {
     color: #ff6b6b;
 }
 
+/* Bottom Close Button (For Scrolling Users) */
+.close-btn-bottom {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.close-btn-bottom:hover {
+    background: #f9d423;
+    color: #222;
+}
+
 /* Show Modal */
 .project-modal.show {
     visibility: visible;
     opacity: 1;
+}
+
+/* Ensure Images in the Modal Fit Well */
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Prevent overly large images */
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Improve Scroll Experience */
+.project-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-modal::-webkit-scrollbar-thumb {
+    background: #ff6b6b;
+    border-radius: 5px;
+}
+
+.project-modal::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Footer */
