@@ -45,6 +45,23 @@ window.addEventListener('load', function() {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollLink = document.querySelector(".hero-btn"); // Select the "View Projects" button
+
+    scrollLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default jump
+
+        const targetSection = document.querySelector("#project1"); // Target Project 1 section
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: "smooth", // Enables smooth scrolling
+                block: "start" // Scrolls to the top of Project 1
+            });
+        }
+    });
+});
+
 // 🔥 Full-Screen Project Modal Functionality (New Feature)
 const projects = {
     project1: {
