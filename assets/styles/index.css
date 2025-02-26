@@ -21,6 +21,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000; /* Ensure it's on top */
     background: rgba(30, 30, 30, 0.9); /* Slight transparency */
     backdrop-filter: blur(10px); /* Frosted glass effect */
     display: flex !important;
