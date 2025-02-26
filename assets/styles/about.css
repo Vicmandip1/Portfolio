@@ -7,20 +7,160 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
+/* Navbar Styling */
 .navbar {
-    position: fixed;
+    position: fixed; /* Sticks to the top */
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(30, 30, 30, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(30, 30, 30, 0.9); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: 0.3s ease-in-out;
+}
+
+/* Navigation Container */
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.nav-logo {
+    color: #ffcc00;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+    color: #ffffff;
+}
+
+/* Navigation Links */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* Navigation Items */
+.nav-item {
+    position: relative;
+}
+
+/* Navigation Links */
+.nav-link {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Underline Effect on Hover */
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: #ffcc00;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active Link Effect */
+.nav-link.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Sticky Navbar Effect */
+.scrolled {
+    background: rgba(30, 30, 30, 1); /* Full opaque on scroll */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hamburger Menu (For Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: white;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(30, 30, 30, 0.95);
+        width: 200px;
+        width: 80%;
+        max-width: 250px;
+        overflow: hidden;
+        border-radius: 5px;
+        text-align: right;
+        padding: 15px 0;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Animate Hamburger Menu */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hero Section */
