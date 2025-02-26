@@ -36,22 +36,93 @@ body {
     color: #fff;
 }
 
-/* Hero Section */
+/* Hero Section - Stunning Animated Header */
 .hero {
-    background: url('./assets/Images/Portfolio wallpaper.jpeg') no-repeat center center/cover;
-    color: white;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to right, #201e30, #5768e5);
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+/* Overlay Effect */
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
-.hero p {
+/* Text Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #ff6b6b, #f9d423);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
     font-size: 20px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
 }
+
+/* Call-to-Action Button */
+.hero-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background: #f9d423;
+    color: #201e30;
+}
+
+/* Floating Particles Animation */
+canvas#heroCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* Projects Grid */
 .projects {
