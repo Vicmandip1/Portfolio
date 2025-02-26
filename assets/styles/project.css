@@ -124,7 +124,7 @@ canvas#heroCanvas {
 }
 
 
-/* Projects Grid */
+/* Project Section */
 .projects {
     padding: 50px;
     background-color: #fff;
@@ -170,7 +170,7 @@ canvas#heroCanvas {
     color: #666;
 }
 
-.view-btn, .close-btn {
+.view-btn {
     padding: 10px 15px;
     margin-top: 10px;
     background: #5768e5;
@@ -181,17 +181,56 @@ canvas#heroCanvas {
     transition: 0.3s;
 }
 
-.view-btn:hover, .close-btn:hover {
+.view-btn:hover {
     background: #4456c7;
 }
 
-/* Project Details */
-.project-details {
-    display: none;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    margin-top: 10px;
+/* Full-Screen Modal */
+.project-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-content {
+    background: #222;
+    width: 80%;
+    max-height: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    overflow-y: auto;
+    position: relative;
+    text-align: left;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff6b6b;
+}
+
+/* Show Modal */
+.project-modal.show {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Footer */
