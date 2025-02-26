@@ -162,6 +162,7 @@ body {
 /* Contact Section Styles */
 section {
   max-width: 600px;
+  margin-top: 80px; /* Adjusts spacing to prevent navbar overlap */
   margin: 50px auto;
   padding: 20px;
   background: #fff;
