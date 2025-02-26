@@ -18,36 +18,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar Section -->
-    <nav class="navbar">
-        <!-- Navigation List Items Styled as Flexbox for Alignment -->
-        <ul style="list-style: none; padding: 0; display: flex; gap: 25px; justify-content: flex-start;">
-            <!-- Home Icon -->
-            <li>
-                <a href="index.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                    <i class="fas fa-home" style="font-size: 25px; color: #5768e5;"></i>
-                </a>
-            </li>
-                    <!-- Projects Icon Link: This section links to the projects page and displays the briefcase icon -->
-        <li>
-            <a href="projects.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                <i class="fas fa-briefcase" style="font-size: 25px; color: #5ae295;"></i> <!-- Projects icon with custom size and color -->
-            </a>
-        </li> 
-            <!-- About Icon -->
-            <li>
-                <a href="about.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                    <i class="fas fa-user" style="font-size: 25px; color: #8a48f4;"></i>
-                </a>
-            </li>
-            <!-- Contact Icon -->
-            <li>
-                <a href="contact.html" style="display: inline-block; padding: 13px; background-color: #f0f0f0; border-radius: 50%;">
-                    <i class="fas fa-envelope" style="font-size: 25px; color: #ab78c4;"></i>
-                </a>
-            </li>
+   <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">My Portfolio</a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-    </nav>
+
+        <!-- Hamburger Icon (For Mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
 
   <section>
     <h1>Contact Me</h1>
