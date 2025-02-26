@@ -64,10 +64,10 @@ const projects = {
             <p>Resume Database Dashboard visualizes all the data in the database in a tabular format, allowing users to easily track applicants and their resume information. This page serves as a centralized view of the raw data, eliminating the need to return to the ATS to access the dataset.</p>
             <img src="assets/Images/BOTG Project/Backend view using dax function to segment data.jpg" alt="Experience Analysis">
             <p>This view showcases the DAX functions used for segmentation purposes.</p>
-            //<img src="%%" alt="Experience Analysis">
+            /* <img src="%%" alt="TITTLE">
           //  <p>###</p>
-           // <img src="%%" alt="Experience Analysis">
-           // <p>###</p>
+           // <img src="%%" alt="TITTLE">
+           // <p>###</p> */
 
 
 
@@ -91,13 +91,8 @@ const projects = {
             <img src="assets/Images/AutoInsurance Analysis/Insurance by Vehicle Type.png" alt="Insurance by Vehicle Type">
             <p><b>Insurance by Vehicle Type</b>: This dashboard categorizes vehicles into Mid-Size, Small, and Large types, analyzing total policies, revenue by date, and the geographical distribution of these vehicle categories. By organizing the data in this manner, stakeholders can easily identify which vehicle types generate the most revenue and understand regional demand patterns. This insight allows for more targeted marketing strategies, better inventory management, and optimized policy pricing tailored to customer preferences and regional trends, ultimately enhancing profitability and customer satisfaction.</p>
             <img src="assets/Images/AutoInsurance Analysis/Auto Insurance Raw Data.jpg" alt="Auto Insurance Raw Data">
-            <p>Above is a snapshot of the dataset used for this analysis. The data was sourced from <a href="https://www.kaggle.com/code/madhushreesannigrahi/jenks-natural-breaks-and-k-means-clustering/data" target="_blank">Kaggle</a>.</p>
-            <img src="%%" alt="TITLTE">
-            <p>###</p>
-
-
-
-
+            <p>Above is a snapshot of the dataset used for this analysis. The data was sourced from 
+            <a href="https://www.kaggle.com/code/madhushreesannigrahi/jenks-natural-breaks-and-k-means-clustering/data" target="_blank" style="color: #ffcc00; font-weight: bold;">Kaggle.</a></p>
             
         `
     },
@@ -108,10 +103,7 @@ const projects = {
         details: `
         <p>This project uses ArcGIS to visually analyze and map the global impact of the COVID-19 pandemic, highlighting key statistics like confirmed cases and deaths across various countries, with a focus on the United States, India, Brazil, Mexico, Russia, the United Kingdom, and Canada. By integrating real-time data, the project showcases how different public health measures, including mask mandates, social distancing, and vaccination campaigns, influenced the spread and severity of the virus. The interactive maps provide a clear representation of infection trends over time, offering insights into how geography and healthcare strategies shaped the pandemic’s outcomes worldwide.</p>
         <embed src="assets/Images/Covid-19-Global-Mapping/Mapping Covid-19.pdf" type="application/pdf" width="100%" height="500px">
-            // <p>Designed an ArcGIS-powered dashboard to track COVID-19 case spikes, public health measures, and regional policy impacts.</p>
-            
-
-// I NEED TO COME BACK AND ADJUST THE PDF FILE HERE TO DISPLAY PROPERLY        
+             
         `
     },
     project4: {
