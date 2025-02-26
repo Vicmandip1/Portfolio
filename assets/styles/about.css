@@ -163,91 +163,33 @@ body {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Hero Section - Compact & Elegant */
+/* Hero Section */
 .hero {
-    height: 60vh;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    height: 100vh;
+    background: url('../Images/hero-bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
 }
 
-/* Glassmorphism Overlay */
 .hero-overlay {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 10px;
     color: white;
-    text-align: center;
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Animated Hero Text */
-.hero-title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Dynamic Text Animation */
-#dynamic-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #ffcc00;
+.hero h1 {
     font-size: 3rem;
-    font-weight: bold;
-    color: #ffcc00;
-    animation: typing 4s steps(30, end) infinite, blink 0.7s infinite;
+    margin-bottom: 10px;
 }
 
-/* Subtitle Styling */
-.hero-subtitle {
+.hero p {
     font-size: 1.2rem;
-    margin-top: 10px;
-    opacity: 0.9;
 }
-
-/* CTA Buttons */
-.hero-buttons {
-    margin-top: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
-    border-radius: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    transform: scale(1.1);
-}
-
-.cta-button.secondary {
-    background: linear-gradient(45deg, #007bff, #0056b3);
-}
-
-/* Smooth Scrolling Effect */
-html {
-    scroll-behavior: smooth;
-}
-
 
 /* About Section */
 .about {
@@ -266,6 +208,72 @@ html {
     align-items: center;
 }
 
+.profile-image {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+/* Certifications Section */
+.certifications {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.cert-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cert-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+    color: white;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.testimonial {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 .profile-image {
     border-radius: 50%;
     width: 180px;
