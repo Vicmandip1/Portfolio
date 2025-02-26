@@ -35,6 +35,7 @@ body {
 .nav-container {
     width: 100%;
     max-width: 1200px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,9 +132,11 @@ body {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 10px;
         background: rgba(30, 30, 30, 0.95);
         width: 200px;
+        width: 80%
+        max-width: 250px
         border-radius: 5px;
         text-align: right;
         padding: 15px 0;
@@ -170,6 +173,8 @@ body {
 .hero {
     position: relative;
     width: 100%;
+    max-width: 100%
+    padding: 20%
     height: 90vh;
     display: flex;
     align-items: center;
