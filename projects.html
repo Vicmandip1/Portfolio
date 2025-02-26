@@ -34,7 +34,7 @@
 <!-- Projects Grid -->
 <section class="projects">
     <div class="container">
-        <!-- Project Card Template -->
+        <!-- Project 1: Equitable Recruitment Analysis -->
         <div class="project-card">
             <img src="assets/Images/BOTG Project/Landing Page.png" alt="Project Image">
             <h3>Equitable Recruitment Analysis</h3>
@@ -42,6 +42,7 @@
             <button class="view-btn" onclick="openProject('project1')">View Details</button>
         </div>
 
+        <!-- Project 2: Auto Insurance Analysis -->
         <div class="project-card">
             <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Project Image">
             <h3>Auto Insurance Analysis</h3>
@@ -49,6 +50,7 @@
             <button class="view-btn" onclick="openProject('project2')">View Details</button>
         </div>
 
+        <!-- Project 3: COVID-19 Mapping -->
         <div class="project-card">
             <img src="assets/Images/Covid-19-Global-Mapping/Mapping Covid-19.pdf" alt="Project Image">
             <h3>COVID-19 Mapping</h3>
@@ -56,11 +58,28 @@
             <button class="view-btn" onclick="openProject('project3')">View Details</button>
         </div>
 
+        <!-- Project 4: Healthy Lifestyle Dashboard -->
         <div class="project-card">
             <img src="assets/Images/Healthy living Figma'/Figma Healthy Lifestyle.jpg" alt="Project Image">
             <h3>Healthy Lifestyle Dashboard</h3>
             <p>Figma-designed health tracker based on user-centered research.</p>
             <button class="view-btn" onclick="openProject('project4')">View Details</button>
+        </div>
+
+        <!-- Project 5: Car Dealership Sales Analysis -->
+        <div class="project-card">
+            <img src="assets/Images/Car Dealership  Sales Analysis/Trend of Electric Vehicle Sales.jpg" alt="Project Image">
+            <h3>Car Dealership Sales Analysis</h3>
+            <p>Analyzing Electric Vehicle sales trends and market performance.</p>
+            <button class="view-btn" onclick="openProject('project5')">View Details</button>
+        </div>
+
+        <!-- Project 6: Paris 2024 Olympic Data Analysis -->
+        <div class="project-card">
+            <img src="assets/Images/Paris 2024/Screenshot 2025-02-21 185843.png" alt="Project Image">
+            <h3>Paris 2024 Olympic Analysis</h3>
+            <p>Tableau dashboard showcasing athlete participation and gender insights.</p>
+            <button class="view-btn" onclick="openProject('project6')">View Details</button>
         </div>
     </div>
 </section>
@@ -68,8 +87,11 @@
 <!-- Full-Screen Project Details Modal -->
 <div id="project-modal" class="project-modal">
     <div class="modal-content">
-        <!-- Top Close Button -->
         <span class="close-btn" onclick="closeProject()">&times;</span>
+        <div id="project-details"></div>
+        <button class="close-btn-bottom" onclick="closeProject()">Close</button>
+    </div>
+</div>
 
         <!-- Project Details -->
         <div id="project-details"></div>
