@@ -1,3 +1,10 @@
+/* Ensures no horizontal scrolling */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents content from being too wide */
+}
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
