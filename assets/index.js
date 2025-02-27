@@ -3,6 +3,9 @@ gsap.from(".hero-content h1", { opacity: 0, y: -50, duration: 1, ease: "power3.o
 gsap.from(".hero-content p", { opacity: 0, y: 50, duration: 1, delay: 0.5, ease: "power3.out" });
 gsap.from(".cta-button", { opacity: 0, scale: 0.8, duration: 1, delay: 1, ease: "elastic.out(1, 0.3)" });
 
+gsap.registerPlugin(ScrollTrigger);
+
+
 // Animate sections on scroll
 gsap.utils.toArray(".about, .skills, .projects, .contact").forEach(section => {
     gsap.from(section, {
