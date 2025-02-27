@@ -22,8 +22,8 @@ body {
     background: rgba(30, 30, 30, 0.9);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
+    justify-content: space-between; /* ✅ Space between logo & menu */
+    padding: 10px 20px;
     z-index: 9999;
 }
 
@@ -52,8 +52,7 @@ body {
 /* ✅ Mobile Navigation */
 @media screen and (max-width: 768px) {
     .navbar {
-        padding: 15px;
-        justify-content: space-between;
+        padding: 10px 15px;
     }
 
     .hamburger-menu {
@@ -93,8 +92,9 @@ body {
 
 /* ✅ Stylish "My Portfolio" Logo */
 .nav-logo {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
+   flex-grow: 1; /* ✅ Pushes the logo left */
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffcc00;
