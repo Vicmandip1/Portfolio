@@ -172,6 +172,24 @@ body {
 .profile-image:hover {
     transform: scale(1.1);
 }
+/* ✅ Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ✅ Chart Container */
+#skillsChart {
+    max-width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* ==============================
    ✅ "What I Do" Section Alignment Fix
