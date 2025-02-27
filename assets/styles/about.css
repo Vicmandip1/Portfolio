@@ -157,7 +157,7 @@ body {
 ================================= */
 .about {
     max-width: 900px;
-    margin: 100px auto 40px;
+    margin: 80px auto;
     padding: 40px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -181,11 +181,16 @@ body {
 ================================= */
 .profile-image {
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-image:hover {
@@ -276,6 +281,25 @@ body {
     border-radius: 10px;
     max-width: 400px;
     text-align: center;
+}
+/* ✅ List Styles */
+.expertise-list, .skills-list, .certifications-list, .project-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.expertise-list li, .skills-list li, .certifications-list li, .project-list li {
+    margin: 10px 0;
+}
+
+/* ✅ Contact Section */
+.contact {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
 }
 
 /* ==============================
