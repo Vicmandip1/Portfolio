@@ -1,143 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata for the document -->
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on different devices -->
-    <title>Victor` S. Dipeolu - Data Analyst</title> <!-- Title that appears in the browser tab -->
-    
-    <!-- Link to external Font Awesome icons stylesheet for using icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor S. Dipeolu - Data Analyst</title>
+
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <!-- Link to an external stylesheet for custom styling (styles.css) -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-   <!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="nav-container">
-        <!-- Logo -->
-        <a href="index.html" class="nav-logo">My Portfolio</a>
-
-        <!-- Navigation Links -->
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-
-        <!-- Hamburger Icon (For Mobile) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">My Portfolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+            </ul>
         </div>
-    </div>
-</nav>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particles"></canvas>
+        <div class="hero-content">
+            <h1>Victor S. Dipeolu</h1>
+            <p><span id="typing-text"></span></p>
+            <a href="#projects" class="cta-button">View Projects</a>
+        </div>
+    </section>
 
+    <!-- About Me Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am an experienced data professional with a strong background in analytics, business intelligence, and statistical analysis.</p>
+        <a href="about.html" class="learn-more">Learn More</a>
+    </section>
 
-<!-- Hero Section with Finisher Header Effect -->
-<section class="hero">
-    <!-- Finisher Header Background -->
-    <div id="finisher-header" class="finisher-header"></div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-card">SQL & Python</div>
+            <div class="skill-card">Power BI & Tableau</div>
+            <div class="skill-card">Data Visualization</div>
+            <div class="skill-card">Machine Learning</div>
+        </div>
+    </section>
 
-    <!-- Hero Content (Heading & Subheading) -->
-    <div class="hero-content">
-        <h1 class="hero-title">Victor S. Dipeolu</h1>
-        <p class="hero-subtitle">Data Analyst | Business Analyst | Research Analyst</p>
-    </div>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Project">
+                <h3>Healthy Lifestyle Dashboard</h3>
+                <p>Visualizing health metrics with user-friendly design.</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Project">
+                <h3>Auto Insurance Analysis</h3>
+                <p>Analyzing customer behavior & policy sales.</p>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:dipeoluvictors@gmail.com">dipeoluvictors@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/victor-dipeolu-685893267">Victor S. Dipeolu</a></p>
+    </section>
 
-<!-- About Me Section: Provides a brief summary of the individual -->
-<section class="about" style="padding: 30px 0; display: flex; justify-content: center; align-items: center; height: auto; text-align: center;">
-    <div style="width: 100%; max-width: 800px; padding: 0 20px;">
-        <!-- Heading for the summary section, centered -->
-        <h2 style="font-size: 28px; margin-top: 0;">Summary</h2>
-        <!-- Paragraph now spans 100% width of the screen, but text is centered -->
-        <p style="font-size: 18px; width: 100%; margin: 0;">
-            I am an experienced data professional with a strong background in data analytics, business intelligence, and statistical analysis. Proficient in leveraging data to drive insights, optimize processes, and support decision-making. Skilled in SQL, Python, Power BI, Tableau, PowerPoint, ArcGIS, and cloud technologies. Adept at handling large datasets, developing automated workflows, and delivering data-driven solutions. I am a proactive problem-solver with strong communication and leadership skills, able to collaborate effectively with cross-functional teams. Passionate about utilizing data to generate meaningful business insights and improve organizational performance.
-        </p>
-        <!-- Link to the detailed About page, centered -->
-        <a href="about.html" class="learn-more" style="display: inline-block; padding: 10px 20px; margin-top: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">Learn More</a>
-    </div>
-</section>
-
-<!-- Skills Section: Displays a list of skills and expertise -->
-<section class="skills" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 30px 0;">
-    <h2 style="font-size: 28px; margin-top: 0;">Skills & Expertise</h2> <!-- Heading for skills section -->
-    <!-- Unordered list of key skills -->
-    <ul style="list-style-type: none; padding: 0;">
-        <li style="font-size: 18px; margin-bottom: 10px;">Data Analysis</li>
-        <li style="font-size: 18px; margin-bottom: 10px;">SQL & Python</li>
-        <li style="font-size: 18px; margin-bottom: 10px;">Power BI & Tableau</li>
-        <li style="font-size: 18px; margin-bottom: 10px;">Digital Transformation</li>
-    </ul>
-</section>
-
-<!-- Featured Projects Section: Highlights key projects -->
-<section class="projects" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 30px 0;">
-    <h2 style="font-size: 28px; margin-top: 0;">Featured Projects</h2> <!-- Heading for featured projects -->
-  
-    <!-- Project 1 -->
-    <div class="project-item" style="margin-bottom: 20px; max-width: 800px; width: 100%;">
-        <h3 style="font-size: 18px; margin-bottom: 10px;">Healthy Lifestyle Dashboard</h3> <!-- Project name -->
-        <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Project 1" style="width: 100%; height: auto; border-radius: 8px;"> <!-- Project image -->
-        <p style="font-size: 18px; margin-top: 10px;">This is a <b>User-Centered Design (UCD)</b> to track client's healthy lifestyles.</p> <!-- Project description -->
-       <!-- <a href="projects.html" style="display: inline-block; padding: 10px 20px; margin-top: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">See More</a> <!-- Link to view more about the project -->
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-item" style="margin-bottom: 30px; max-width: 800px; width: 100%;">
-        <h3 style="font-size: 18px; margin-top: 10px;">Auto Insurance Analysis</h3> <!-- Project name -->
-        <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Project 2" style="width: 100%; height: auto; border-radius: 8px;"> <!-- Project image -->
-        <p style="font-size: 18px; margin-top: 10px;">visualize customer behavior, policy sales, and revenue insights, helping stakeholders make data-driven decisions.</p> <!-- Project description -->
-        <a href="projects.html" style="display: inline-block; padding: 10px 20px; margin-top: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">See More</a> <!-- Link to view more about the project -->
-    </div>
-</section>
-
-<!-- Contact Section: Displays contact informations -->
-<section class="contact" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 50px 0;">
-    <h2 style="font-size: 28px; margin-top: 0;">Contact Me</h2> <!-- Heading for contact section -->
-    
-    <!-- Email contact -->
-    <p style="font-size: 20px; margin-bottom: 10px;">
-        <i class="fas fa-envelope" style="margin-right: 8px;"></i> 
-        <a href="mailto:dipeoluvictors@gmail.com" style="color: #cc24db;">dipeoluvictors@gmail.com</a> <!-- Email link -->
-    </p>
-
-    <!-- LinkedIn contact link and icon -->
-    <p style="font-size: 20px; margin-bottom: 10px;">
-        <i class="fab fa-linkedin" style="margin-right: 8px;"></i> 
-        <a href="https://linkedin.com/in/victor-dipeolu-685893267" target="_blank" style="color: #4179be;">Victor S. Dipeolu</a> <!-- LinkedIn profile link -->
-    </p>
-
-    <!-- Phone number contact -->
-    <p style="font-size: 20px;">
-        <i class="fas fa-phone" style="margin-right: 8px;"></i> 
-        <a href="tel:+16476681292" style="color: #9ded12;">+1 (647) 668-1292</a> <!-- Phone number link -->
-    </p>
-</section>
-
-
-<!-- Footer: Footer section at the bottom of the page -->
-<footer>
-    <p>&copy; 2025 Victor S. Dipeolu. All Rights Reserved.</p> <!-- Copyright text -->
-</footer>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Victor S. Dipeolu. All Rights Reserved.</p>
+    </footer>
 
     <!-- External JavaScript -->
- <!--   <script src="finisher-header.es5.min.js"></script> -->
- <!--   <script src="main.js"></script> -->
-    <script src="assets/script.js" defer></script>  <!-- Project smooth scrolling -->
-    <script src="assets/nav.js" defer></script>  <!-- Navigation functionality -->
-<script src="assets/finisher-header.es5.min.js"></script>
-<script src="assets/headerConfig.js"></script>
-
-
-
+    <script src="index.js" defer></script>
 </body>
 </html>
