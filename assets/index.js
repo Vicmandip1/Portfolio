@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 1.5, 
         delay: 1, 
         ease: "elastic.out(1, 0.3)" 
+        y: 20 /* ✅ Moves button slightly down instead of fading out */
     });
 
     // ✅ Smooth Scroll Animations for All Sections
