@@ -1,33 +1,61 @@
 /* ==============================
-   ✅ Typing Effect Styling
+   ✅ Typing Effect Styles
 ================================= */
 
-/* ✅ Ensure Smooth Typing Effect */
+/* ✅ Reduce Typing Effect Font Size */
 #typing-text {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    white-space: nowrap; /* Prevents breaking into multiple lines */
-    overflow: hidden; /* Hides overflowing text */
-    display: inline-block; /* Ensures it aligns properly */
-    min-height: 50px; /* Prevents layout shifts */
-    animation: blinkCursor 1s infinite; /* Cursor blink effect */
+    font-size: 1.8rem; /* Adjust font size to fit both pages */
+    font-weight: 600;
+    color: #ffcc00; /* Highlight color */
+    display: inline-block;
+    min-height: 40px; /* Ensure fixed height to prevent layout shifting */
 }
 
-/* ✅ Cursor Blink Effect */
-@keyframes blinkCursor {
-    50% {
-        border-right: 2px solid white;
-    }
-    100% {
-        border-right: 2px solid transparent;
-    }
+/* ✅ Move Typing Effect Closer to Heading */
+.hero-title {
+    font-size: 3rem; /* Maintain size */
+    margin-bottom: 5px; /* Reduce spacing between title and typing effect */
+    position: relative;
 }
 
-/* ✅ Mobile Adjustments */
-@media screen and (max-width: 768px) {
-    #typing-text {
-        font-size: 32px;
-        min-height: 40px; /* Ensures text doesn't jump */
-    }
+/* ✅ Position the Typing Effect Closer to the Title */
+.hero-title #typing-text {
+    position: relative;
+    top: -10px; /* Moves text slightly upwards */
+}
+
+/* ✅ Ensure Buttons Stay Visible & Properly Positioned */
+.hero-buttons {
+    margin-top: 15px; /* Adjust spacing */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px; /* Space between buttons */
+}
+
+/* ✅ Reduce Background Size of "View Projects" Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px; /* Reduce padding for smaller button */
+    font-size: 0.9rem; /* Reduce text size */
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Fix Layout for About Page */
+.about-hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* ✅ Prevent Typing Effect from Disrupting Layout */
+.about-hero #typing-text {
+    min-height: 40px; /* Maintain consistent spacing */
+    display: inline-block;
 }
