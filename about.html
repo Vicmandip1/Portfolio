@@ -126,24 +126,35 @@
     </div>
 </section>
 
-<!-- Skills & Certifications -->
+<!-- ✅ Skills & Certifications -->
 <section class="skills">
     <div class="container">
         <h2>Technical Skills & Certifications</h2>
-        <p><b>Key Technical Skills:</b></p>
-        <ul class="skills-list">
-            <li>✔️ **Data Analysis & BI** – SQL | Python | Power BI | Tableau | Google Analytics</li>
-            <li>✔️ **Database Management** – MySQL | PostgreSQL | MongoDB | Talend ETL</li>
-            <li>✔️ **Cloud & GIS** – AWS | Azure | ArcGIS | Google Cloud</li>
-        </ul>
 
-        <p><b>Certifications:</b></p>
-        <ul class="certifications-list">
-            <li>📜 AWS Cloud Architecting</li>
-            <li>📜 SAS Visual Analytics</li>
-            <li>📜 Data Engineering & Business Intelligence</li>
-            <li>📜 Applied Project Management</li>
-        </ul>
+        <div class="skills-content">
+            <!-- ✅ Skills List -->
+            <div class="skills-text">
+                <p><b>Key Technical Skills:</b></p>
+                <ul class="skills-list">
+                    <li>✔️ <b>Data Analysis & BI</b> – SQL | Python | Power BI | Tableau | Google Analytics</li>
+                    <li>✔️ <b>Database Management</b> – MySQL | PostgreSQL | MongoDB | Talend ETL</li>
+                    <li>✔️ <b>Cloud & GIS</b> – AWS | Azure | ArcGIS | Google Cloud</li>
+                </ul>
+
+                <p><b>Certifications:</b></p>
+                <ul class="certifications-list">
+                    <li>📜 AWS Cloud Architecting</li>
+                    <li>📜 SAS Visual Analytics</li>
+                    <li>📜 Data Engineering & Business Intelligence</li>
+                    <li>📜 Applied Project Management</li>
+                </ul>
+            </div>
+
+            <!-- ✅ Skills Breakdown Chart -->
+            <div class="skills-chart-container">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -199,5 +210,8 @@
 <script src="assets/scroll.js" defer></script>  <!-- Smooth scrolling effect -->
 <script src="assets/dynamicText.js" defer></script>  <!-- New dynamic text animation script -->
 <script src="assets/certificates.js" defer></script>  <!-- Certificate Modal Script -->
+    <!-- ✅ Chart.js Library (Place before closing `</body>` tag) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/skills-chart.js"></script> <!-- External Script for Chart Logic -->
 </body>
 </html>
