@@ -98,7 +98,65 @@ body {
 .nav-logo:hover {
     color: white;
     text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+
 }
+/* 🎨 Stylish View Projects Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffcc00, #ff5733); /* Gradient effect */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 87, 51, 0.3);
+    z-index: 2; /* Ensure it stays above particles */
+    position: relative; /* Required for z-index */
+}
+
+/* 🎭 Hover Effect */
+.cta-button:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0px 10px 20px rgba(255, 87, 51, 0.6);
+    background: linear-gradient(45deg, #ff5733, #ffcc00); /* Reverse gradient on hover */
+}
+
+/* 🔄 Click Effect */
+.cta-button:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+}
+/* 📘 Stylish Learn More Button */
+.learn-more {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #5768e5; /* Blue default background */
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(87, 104, 229, 0.3);
+}
+
+/* ✨ Hover Effect */
+.learn-more:hover {
+    background: #4453c5; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 10px 20px rgba(87, 104, 229, 0.6);
+}
+
+/* 🖱 Click Effect */
+.learn-more:active {
+    transform: scale(0.95);
+}
+
+
 /* Fix Particles.js Position */
 #particles-js {
     position: absolute;
@@ -130,7 +188,7 @@ body {
 }
 
 #typing-text {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
     color: white;
 }
@@ -147,7 +205,7 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 45px;
+        font-size: 70px;
         font-weight: bold;
         color: white;
     }
