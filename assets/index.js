@@ -170,6 +170,7 @@ function typeEffect() {
     // ✅ Toggle Menu on Click
     toggleButton.addEventListener("click", () => {
         menu.classList.toggle("active");
+        toggleButton.classList.toggle("active"); // ✅ Rotates icon
     });
     }
 
