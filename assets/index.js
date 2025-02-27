@@ -100,7 +100,8 @@ function typeEffect() {
                 }, 2000);
             }
         }
-        setTimeout(typeEffect, 1000); // Delay to prevent instant start
+    if (typingText) {
+        setTimeout(typeEffect, 1000); // ✅ Added delay before starting
     } else {
         console.error("❌ Typing effect target (#typing-text) not found.");
     }
