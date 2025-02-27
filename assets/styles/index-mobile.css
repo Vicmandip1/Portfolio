@@ -130,6 +130,20 @@
         padding: 40px 15px;
         margin-bottom: 30px;
     }
+/* ==============================
+   ✅ Learn More Button Styling (Mobile)
+================================= */
+@media screen and (max-width: 768px) {
+    .learn-more {
+        display: block; /* ✅ Makes button full-width */
+        padding: 10px 25px;
+        font-size: 14px;
+        margin: 15px auto; /* ✅ Centers the button */
+        text-align: center;
+        width: 80%; /* ✅ Ensures proper sizing */
+        max-width: 250px; /* ✅ Prevents excessive width */
+    }
+}
 
     /* ==============================
        ✅ Buttons (Adjusted for Mobile)
