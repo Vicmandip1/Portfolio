@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 start: "top 80%",
                 end: "top 50%",
                 toggleActions: "play none none reverse"
+                markers: false // Set to true for debugging
             }
         });
     });
