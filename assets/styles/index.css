@@ -37,11 +37,16 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
+    font-weight: 500;
     transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
+    background: rgba(255, 204, 0, 0.3);
     color: #ffcc00;
+    transition: 0.3s ease-in-out;
 }
 
 /* ✅ Mobile Navigation */
@@ -109,7 +114,7 @@ body {
 ================================= */
 .hero {
     position: relative;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +127,7 @@ body {
 
 /* ✅ Hero Content */
 .hero-content h1 {
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
     color: white;
 }
@@ -130,14 +135,14 @@ body {
 /* ✅ Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .hero-content h1 {
-        font-size: 32px;
+        font-size: 38px;
     }
 }
 
 /* ==============================
-   ✅ Buttons (View Projects, Learn More)
+   ✅ Buttons (View Projects, Learn More, See More)
 ================================= */
-.cta-button, .learn-more {
+.cta-button, .learn-more, .see-more-btn {
     display: inline-block;
     padding: 12px 30px;
     font-size: 16px;
@@ -184,6 +189,29 @@ body {
     transform: scale(0.95);
 }
 
+/* ✅ See More Button */
+.see-more-btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    box-shadow: 0px 5px 15px rgba(0, 114, 255, 0.3);
+}
+
+.see-more-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    box-shadow: 0px 10px 20px rgba(0, 114, 255, 0.6);
+}
+
+.see-more-btn:active {
+    transform: scale(0.95);
+}
+
 /* ==============================
    ✅ Centered Content Sections
 ================================= */
@@ -197,7 +225,6 @@ body {
     text-align: center;
 }
 
-/* ✅ Ensure Sections Stay Centered */
 .about, .skills, .projects, .contact, footer {
     width: 100%;
     text-align: center;
@@ -211,81 +238,6 @@ body {
 .about, .skills, .projects, .contact {
     padding: 40px 20px;
     margin-bottom: 30px;
-}
-
-/* ==============================
-   ✅ Image Styles
-================================= */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-/* ✅ Fix Project Images */
-.project-item img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* ✅ Small Screens Image Adjustments */
-@media screen and (max-width: 768px) {
-    .project-item img {
-        max-width: 90%;
-        border-radius: 5px;
-    }
-}
-
-/* ==============================
-   ✅ Dark Mode Styles
-================================= */
-.dark-mode {
-    background: #181818;
-    color: white;
-}
-
-/* ✅ Navbar Adjustments in Dark Mode */
-.dark-mode .navbar {
-    background: rgba(20, 20, 20, 0.95);
-}
-
-/* ✅ Button Colors in Dark Mode */
-.dark-mode .cta-button {
-    background: linear-gradient(45deg, #ff9900, #ff3300);
-    color: white;
-}
-
-/* ✅ Text & Links in Dark Mode */
-.dark-mode a {
-    color: #ffcc00;
-}
-
-.dark-mode a:hover {
-    color: #ff9900;
-}
-
-/* ✅ Section Background in Dark Mode */
-.dark-mode .about, 
-.dark-mode .skills, 
-.dark-mode .projects, 
-.dark-mode .contact {
-    background: #222;
-    color: white;
-}
-
-/* ✅ Footer in Dark Mode */
-.dark-mode footer {
-    background: #111;
-    color: white;
-}
-
-/* ✅ Dark Mode Toggle Icon */
-.dark-mode #dark-mode-toggle i {
-    color: yellow;
 }
 
 /* ==============================
