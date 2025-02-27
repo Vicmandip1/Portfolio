@@ -155,12 +155,11 @@ function typeEffect() {
         console.error("❌ Particles.js library is not loaded.");
     }
 
-    /** ============================
-     * ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
-     * ============================ */
+// ✅ Toggle Mobile Menu
+document.addEventListener("DOMContentLoaded", function () {
     const menu = document.querySelector(".nav-menu");
     const toggleButton = document.createElement("button");
-    
+
     toggleButton.classList.add("hamburger-menu");
     toggleButton.innerHTML = "☰"; // Hamburger Icon
 
@@ -170,8 +169,8 @@ function typeEffect() {
     // ✅ Toggle Menu on Click
     toggleButton.addEventListener("click", () => {
         menu.classList.toggle("active");
-        toggleButton.classList.toggle("active"); // ✅ Rotates icon
     });
+});
     }
 
 /** ============================
