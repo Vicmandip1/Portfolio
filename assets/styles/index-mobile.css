@@ -10,6 +10,11 @@
         padding: 10px 15px;
         justify-content: flex-end;
         background: rgba(30, 30, 30, 0.98);
+       position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     /* ✅ Hide "My Portfolio" Logo on Mobile */
