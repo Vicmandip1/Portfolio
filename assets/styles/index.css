@@ -93,8 +93,11 @@ body {
     z-index: 3; /* Ensure always visible */
 }
 
-.hero-content h1 {
-    font-size: 50px;
+/* Ensure Name and Typing Effect are White */
+.hero-content h1,
+#typing-text {
+    color: white;
+    
 }
 
 .cta-button {
