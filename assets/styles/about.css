@@ -105,9 +105,7 @@ body {
 
 /* Hamburger Menu (For Mobile) */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+    display: block;
 }
 
 .hamburger span {
