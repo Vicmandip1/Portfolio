@@ -172,7 +172,7 @@ body {
     transform: scale(0.95);
 }
 /* ==============================
-   ✅ Learn More Button Styling (Fix)
+   ✅ Learn More Button Styling (Desktop)
 ================================= */
 .learn-more {
     display: inline-block;
@@ -180,20 +180,20 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    background: #5768e5; /* ✅ Default blue color */
+    background: #5768e5; /* ✅ Default blue */
     color: white;
     border-radius: 30px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 5px 10px rgba(87, 104, 229, 0.3);
-    text-align: center; /* ✅ Ensure text is centered */
-    margin-top: 20px; /* ✅ Adds spacing */
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* ✅ Hover Effect */
 .learn-more:hover {
-    background: #4453c5; /* ✅ Darker blue */
-    transform: scale(1.1); /* ✅ Slight zoom effect */
+    background: #4453c5; /* ✅ Darker blue on hover */
+    transform: scale(1.1);
     box-shadow: 0px 10px 20px rgba(87, 104, 229, 0.6);
 }
 
@@ -201,6 +201,7 @@ body {
 .learn-more:active {
     transform: scale(0.95);
 }
+
 
 /* ==============================
    ✅ Images Styling
