@@ -24,17 +24,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // ✅ Dark Mode Toggle
+    // ✅ Dark Mode Toggle with Local Storage
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
     const icon = darkModeToggle.querySelector("i");
 
+    // Check saved mode in localStorage
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+        icon.classList.replace("fa-moon", "fa-sun");
+    }
+
     darkModeToggle.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
-        icon.classList.toggle("fa-moon");
-        icon.classList.toggle("fa-sun");
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("dark-mode", "enabled");
+            icon.classList.replace("fa-moon", "fa-sun");
+        } else {
+            localStorage.setItem("dark-mode", "disabled");
+            icon.classList.replace("fa-sun", "fa-moon");
+        }
     });
-
     // ✅ Typing Effect
     const textArray = ["Data Analyst", "Business Analyst", "Research Analyst"];
     let index = 0;
@@ -58,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect();
 
     // ✅ Particle.js Configuration
-    particlesJS("particles", {
+    particlesJS("particles-js", {
         particles: {
             number: { value: 80, density: { enable: true, value_area: 800 } },
             color: { value: "#ffffff" },
