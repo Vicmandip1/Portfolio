@@ -1,15 +1,33 @@
-/* ✅ Typing Effect Styling */
+/* ==============================
+   ✅ Typing Effect Styling
+================================= */
+
+/* ✅ Ensure Smooth Typing Effect */
 #typing-text {
     font-size: 40px;
     font-weight: bold;
     color: white;
-    margin-bottom: 30px; /* Push down to avoid overlap */
+    white-space: nowrap; /* Prevents breaking into multiple lines */
+    overflow: hidden; /* Hides overflowing text */
+    display: inline-block; /* Ensures it aligns properly */
+    min-height: 50px; /* Prevents layout shifts */
+    animation: blinkCursor 1s infinite; /* Cursor blink effect */
+}
+
+/* ✅ Cursor Blink Effect */
+@keyframes blinkCursor {
+    50% {
+        border-right: 2px solid white;
+    }
+    100% {
+        border-right: 2px solid transparent;
+    }
 }
 
 /* ✅ Mobile Adjustments */
 @media screen and (max-width: 768px) {
     #typing-text {
         font-size: 32px;
-        margin-bottom: 25px;
+        min-height: 40px; /* Ensures text doesn't jump */
     }
 }
