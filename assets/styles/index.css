@@ -64,6 +64,7 @@ body {
     text-align: center;
     background: #201e30;
     overflow: hidden;
+    z-index: 2; /* Ensure Hero is on top */
 }
 
 /* Particle.js Canvas */
@@ -71,7 +72,9 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /* Hide Elements Before GSAP Animation */
@@ -79,7 +82,15 @@ body {
     opacity: 0;
     transform: translateY(50px);
     position: relative; /* Ensures they stay above particles.js */
-    z-index: 1;
+    z-index: 2;
+    min-height: 100vh; /* Ensure it takes space */
+}
+
+
+/* Ensure Navbar & Content is Visible */
+.navbar, .hero-content, .about, .skills, .projects, .contact {
+    position: relative;
+    z-index: 3; /* Ensure always visible */
 }
 
 .hero-content h1 {
@@ -133,5 +144,7 @@ footer {
     background: #201e30;
     text-align: center;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 3;
 }
