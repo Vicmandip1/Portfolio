@@ -173,23 +173,66 @@ body {
     transform: scale(1.1);
 }
 /* ✅ Skills Section */
-.skills-section {
+.skills {
     text-align: center;
-    padding: 50px 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    max-width: 800px;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
     margin: auto;
 }
 
-/* ✅ Chart Container */
-#skillsChart {
-    max-width: 400px;
-    height: 300px;
-    display: block;
-    margin: 0 auto;
+/* ✅ Skills Content Layout */
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
+
+/* ✅ Skills Text */
+.skills-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* ✅ Skills List */
+.skills-list, .certifications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li, .certifications-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* ✅ Skills Chart Container */
+.skills-chart-container {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* ✅ Chart Styling */
+#skillsChart {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* ✅ Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .skills-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-text {
+        text-align: center;
+    }
 
 /* ==============================
    ✅ "What I Do" Section Alignment Fix
