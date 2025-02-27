@@ -174,14 +174,26 @@ function typeEffect() {
     });
     }
 
-    /** ============================
-     * ✅ Smooth Scroll for "View Projects" Button
-     * ============================ */
+/** ============================
+ * ✅ Smooth Scroll for "View Projects" Button (Improved)
+ * ============================ */
+document.addEventListener("DOMContentLoaded", function () {
     const ctaButton = document.querySelector(".cta-button");
+
     if (ctaButton) {
         ctaButton.addEventListener("click", function (event) {
             event.preventDefault();
-            document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+
+            // ✅ Ensure the "projects" section exists
+            const projectsSection = document.querySelector("#projects");
+            if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+                console.error("❌ Error: #projects section not found.");
+            }
         });
+    } else {
+        console.error("❌ Error: View Projects button not found.");
     }
 });
+
