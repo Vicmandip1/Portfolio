@@ -1,7 +1,9 @@
-// Ensure the document is fully loaded before running scripts
+// ✅ Ensure the document is fully loaded before running scripts
 document.addEventListener("DOMContentLoaded", function () {
     
-    // ✅ Register GSAP ScrollTrigger Plugin
+    /** ============================
+     * ✅ GSAP Animations
+     * ============================ */
     gsap.registerPlugin(ScrollTrigger);
 
     // ✅ Smooth Hero Section Animations (Restored & Improved)
@@ -45,18 +47,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // ✅ Dark Mode Toggle with Local Storage (Improved)
+    /** ============================
+     * ✅ Dark Mode Toggle with Local Storage (Fixed)
+     * ============================ */
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
     const icon = darkModeToggle.querySelector("i");
 
-    // Check if Dark Mode is Enabled
-    if (localStorage.getItem("dark-mode") === "enabled") {
-        body.classList.add("dark-mode");
-        icon.classList.replace("fa-moon", "fa-sun");
-    } else {
-        body.classList.remove("dark-mode");
-        icon.classList.replace("fa-sun", "fa-moon"); // Change back
+    function updateDarkMode() {
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            body.classList.add("dark-mode");
+            icon.classList.replace("fa-moon", "fa-sun");
+        } else {
+            body.classList.remove("dark-mode");
+            icon.classList.replace("fa-sun", "fa-moon");
         }
     }
 
@@ -73,72 +77,86 @@ document.addEventListener("DOMContentLoaded", function () {
         updateDarkMode(); // Update Mode
     });
 
-    // ✅ Typing Effect (Improved for Smoothness)
+    /** ============================
+     * ✅ Typing Effect (Fixed to Avoid Crashes)
+     * ============================ */
     const textArray = ["Data Analyst", "Business Analyst", "Research Analyst"];
     let index = 0;
     let charIndex = 0;
     const typingText = document.getElementById("typing-text");
 
-    function typeEffect() {
-        if (charIndex < textArray[index].length) {
-            typingText.innerHTML += textArray[index].charAt(charIndex);
-            charIndex++;
-            setTimeout(typeEffect, 100);
-        } else {
-            setTimeout(() => {
-                typingText.innerHTML = ""; // Clear text before restarting
-                charIndex = 0;
-                index = (index + 1) % textArray.length;
-                typeEffect();
-            }, 2000);
+    if (typingText) {  // ✅ Ensure element exists before executing
+        function typeEffect() {
+            if (charIndex < textArray[index].length) {
+                typingText.innerHTML += textArray[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeEffect, 100);
+            } else {
+                setTimeout(() => {
+                    typingText.innerHTML = ""; // Clear text before restarting
+                    charIndex = 0;
+                    index = (index + 1) % textArray.length;
+                    typeEffect();
+                }, 2000);
+            }
         }
+        setTimeout(typeEffect, 1000); // Delay to prevent instant start
+    } else {
+        console.error("❌ Typing effect target (#typing-text) not found.");
     }
-    typeEffect();
 
-   // ✅ Fix Particles.js - Ensure Full Background Coverage
-setTimeout(() => {
-particlesJS("particles-js", {
-    particles: {
-        number: { value: 120, density: { enable: true, value_area: 1000 } }, // Increase particles & spread
-        color: { value: "#ffffff" },
-        shape: {
-            type: "circle", 
-            stroke: { width: 0, color: "#000000" }
-        },
-        opacity: { value: 0.6 },
-        size: { value: 3, random: true },
-        line_linked: { 
-            enable: true, 
-            distance: 140, 
-            color: "#ffffff", 
-            opacity: 0.4, 
-            width: 1 
-        },
-        move: { 
-            enable: true, 
-            speed: 2.5, // Slightly increase speed for a dynamic effect
-            direction: "none", 
-            random: false, 
-            out_mode: "out" 
-        }
-    },
-    interactivity: {
-        detect_on: "canvas",
-        events: {
-            onhover: { enable: true, mode: "grab" }, 
-            onclick: { enable: true, mode: "push" }, 
-            resize: true
-        },
-        modes: {
-            grab: { distance: 140, line_linked: { opacity: 1 } },
-            push: { particles_nb: 4 } // Increase new particles on click
-        }
-    },
-    retina_detect: true
-});
-}, 500); // Delay initialization slightly
+    /** ============================
+     * ✅ Fix Particles.js - Ensure Full Background Coverage
+     * ============================ */
+    if (typeof particlesJS !== "undefined") {
+        setTimeout(() => {
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 100, density: { enable: true, value_area: 900 } }, 
+                    color: { value: "#ffffff" },
+                    shape: {
+                        type: "circle",
+                        stroke: { width: 0, color: "#000000" }
+                    },
+                    opacity: { value: 0.6 },
+                    size: { value: 2.5, random: true },
+                    line_linked: { 
+                        enable: true, 
+                        distance: 150, 
+                        color: "#ffffff", 
+                        opacity: 0.4, 
+                        width: 1 
+                    },
+                    move: { 
+                        enable: true, 
+                        speed: 3, 
+                        direction: "none", 
+                        random: false, 
+                        out_mode: "out" 
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "grab" }, 
+                        onclick: { enable: true, mode: "push" }, 
+                        resize: true
+                    },
+                    modes: {
+                        grab: { distance: 140, line_linked: { opacity: 1 } },
+                        push: { particles_nb: 5 } 
+                    }
+                },
+                retina_detect: true
+            });
+        }, 500);
+    } else {
+        console.error("❌ Particles.js library is not loaded.");
+    }
 
-    // ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
+    /** ============================
+     * ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
+     * ============================ */
     const menu = document.querySelector(".nav-menu");
     const toggleButton = document.getElementById("nav-toggle");
 
@@ -149,10 +167,13 @@ particlesJS("particles-js", {
     }
 
     /** ============================
-     *  ✅ Smooth Scroll for "View Projects" Button
-     *  ============================ */
-    document.querySelector(".cta-button").addEventListener("click", function (event) {
-        event.preventDefault();
-        document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
-    });
+     * ✅ Smooth Scroll for "View Projects" Button
+     * ============================ */
+    const ctaButton = document.querySelector(".cta-button");
+    if (ctaButton) {
+        ctaButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+        });
+    }
 });
