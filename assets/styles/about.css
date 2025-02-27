@@ -257,100 +257,132 @@ body {
 .cta-button:hover {
     transform: scale(1.1);
 }
-==============================
-   ✅ Testimonials Section
-================================= */
-.testimonials {
-    text-align: center;
-    padding: 50px;
-    background: #222;
-    color: white;
-}
-
-.testimonial-slider {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.testimonial {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-}
 /* ==============================
    ✅ Notable Projects Section
 ================================= */
 .projects-section {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     background: #f4f4f4;
 }
 
 .projects-section h2 {
-    font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 20px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2-column layout for desktop */
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.project-card p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.project-card .view-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 2.8rem;
     font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.projects-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* ✅ Centering the Project List */
+.project-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.project-list li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.project-list a {
     text-decoration: none;
-    color: #fff;
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
-    border-radius: 30px;
+    font-weight: bold;
+    color: #ff9900;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-list a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* ==============================
+   ✅ Testimonials Section
+================================= */
+.testimonials {
+    text-align: center;
+    padding: 80px 20px;
+    background: #222;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.testimonial {
+    background: #333;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.project-card .view-btn:hover {
+.testimonial:hover {
     transform: scale(1.05);
 }
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* ✅ Mobile Adjustments */
+@media screen and (max-width: 768px) {
+    .projects-section h2,
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .projects-section p {
+        font-size: 1rem;
+    }
+
+    .project-list li {
+        font-size: 1rem;
+    }
+
+    .testimonial-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        max-width: 90%;
+    }
+}
+
 /* ==============================
    ✅ Let's Connect Section
 ================================= */
