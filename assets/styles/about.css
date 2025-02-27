@@ -1,19 +1,24 @@
-/* Reset and General Styles */
+/* ==============================
+   ✅ Global Styles
+================================= */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Navbar Styling */
+/* ==============================
+   ✅ Navbar Styling (Without Hamburger Menu)
+================================= */
 .navbar {
     position: fixed; /* Sticks to the top */
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(30, 30, 30, 0.9); /* Slight transparency */
+    background: rgba(30, 30, 30, 0.95);
     backdrop-filter: blur(10px); /* Frosted glass effect */
     display: flex;
     justify-content: center;
@@ -24,17 +29,16 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-/* Navigation Container */
+/* ✅ Navigation Container */
 .nav-container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo Styling */
+/* ✅ "My Portfolio" Logo */
 .nav-logo {
     color: #ffcc00;
     font-size: 22px;
@@ -47,19 +51,19 @@ body {
     color: #ffffff;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-/* Navigation Items */
+/* ✅ Navigation Items */
 .nav-item {
     position: relative;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-link {
     color: white;
     font-size: 16px;
@@ -69,12 +73,12 @@ body {
     position: relative;
 }
 
-/* Hover Effect */
+/* ✅ Hover Effect */
 .nav-link:hover {
     color: #ffcc00;
 }
 
-/* Underline Effect on Hover */
+/* ✅ Underline Effect on Hover */
 .nav-link::after {
     content: "";
     display: block;
@@ -91,165 +95,24 @@ body {
     width: 100%;
 }
 
-/* Active Link Effect */
+/* ✅ Active Link Effect */
 .nav-link.active {
     color: #ffcc00;
     font-weight: bold;
 }
 
-/* Sticky Navbar Effect */
+/* ✅ Sticky Navbar Effect */
 .scrolled {
-    background: rgba(30, 30, 30, 1); /* Full opaque on scroll */
+    background: rgba(30, 30, 30, 1);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Hamburger Menu (For Mobile) */
-.hamburger {
-    display: block;
-}
-
-.hamburger span {
-    background: white;
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-    transition: 0.3s ease-in-out;
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background: rgba(30, 30, 30, 0.95);
-        width: 200px;
-        width: 80%;
-        max-width: 250px;
-        overflow: hidden;
-        border-radius: 5px;
-        text-align: right;
-        padding: 15px 0;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-item {
-        padding: 10px 20px;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-/* Animate Hamburger Menu */
-.hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Hero Section - Compact & Elegant */
-.hero {
-    height: 80vh;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Glassmorphism Overlay */
-.hero-overlay {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Animated Hero Text */
-.hero-title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Dynamic Text Animation */
-#dynamic-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #ffcc00;
-    font-size: 2.0rem;
-    font-weight: bold;
-    color: #ffcc00;
-    animation: typing 4s steps(30, end) infinite, blink 0.7s infinite;
-}
-
-/* Subtitle Styling */
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    opacity: 0.9;
-}
-
-/* CTA Buttons */
-.hero-buttons {
-    margin-top: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
-    border-radius: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    transform: scale(1.1);
-}
-
-.cta-button.secondary {
-    background: linear-gradient(45deg, #007bff, #0056b3);
-}
-
-/* Smooth Scrolling Effect */
-html {
-    scroll-behavior: smooth;
-}
-
-/* About Section */
+/* ==============================
+   ✅ About Section Styles
+================================= */
 .about {
     max-width: 900px;
-    margin: 80px auto;
+    margin: 100px auto 40px;
     padding: 40px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -257,12 +120,20 @@ html {
     text-align: center;
 }
 
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about h1 {
+    font-size: 2.5rem;
+    color: #222;
 }
 
+.about p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ==============================
+   ✅ Profile Image
+================================= */
 .profile-image {
     border-radius: 50%;
     width: 180px;
@@ -276,17 +147,19 @@ html {
     transform: scale(1.1);
 }
 
-/* Certifications Section */
+/* ==============================
+   ✅ Certifications Section
+================================= */
 .certifications {
     text-align: center;
     padding: 60px 20px;
     background: #f4f4f4;
 }
 
-/* Certification Grid - Ensures Perfect Layout */
+/* ✅ Certification Grid */
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -294,7 +167,7 @@ html {
     margin: auto;
 }
 
-/* Certification Item - Styles each certification */
+/* ✅ Certification Item */
 .cert-item {
     background: white;
     padding: 20px;
@@ -309,13 +182,15 @@ html {
     transform: scale(1.05);
 }
 
-/* "View More" Button Container */
+/* ✅ "View More" Button */
 .cert-more {
     margin-top: 30px;
     text-align: center;
 }
 
-/* CTA Button Styling */
+/* ==============================
+   ✅ CTA Buttons (Modern & Stylish)
+================================= */
 .cta-button {
     display: inline-block;
     padding: 12px 25px;
@@ -333,104 +208,108 @@ html {
     transform: scale(1.1);
 }
 
-/* Responsive Design - Adjust grid for smaller screens */
-@media (max-width: 768px) {
-    .cert-grid {
-        grid-template-columns: repeat(1, 1fr); /* Switch to 1 column for mobile */
+/* ==============================
+   ✅ Testimonials Section
+================================= */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+    color: white;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.testimonial {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* ==============================
+   ✅ Footer Styles
+================================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ==============================
+   ✅ Mobile-Specific Styles (For Better Experience)
+================================= */
+@media screen and (max-width: 768px) {
+    
+    /* ✅ Adjust Navbar */
+    .navbar {
+        padding: 10px 15px;
+        justify-content: space-between;
+        background: rgba(30, 30, 30, 0.98);
     }
-}
 
-/* Testimonials Section */
-.testimonials {
-    text-align: center;
-    padding: 50px;
-    background: #222;
-    color: white;
-}
+    /* ✅ Centered Menu */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.98);
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    }
 
-.testimonial-slider {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
+    /* ✅ Show Menu When Active */
+    .nav-menu.active {
+        display: flex;
+    }
 
-.testimonial {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-}
+    .nav-item {
+        padding: 14px 0;
+        font-size: 18px;
+    }
 
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.profile-image {
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
-}
+    .nav-link {
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
 
-.profile-image:hover {
-    transform: scale(1.1);
-}
+    .nav-link:hover {
+        color: #ffcc00;
+    }
 
-/* Certifications Section */
-.certifications {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f4f4f4;
-}
+    /* ✅ Adjust Sections for Mobile */
+    .about {
+        width: 90%;
+        padding: 30px;
+    }
 
-.cert-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    /* ✅ Adjust Grid for Smaller Screens */
+    .cert-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-.cert-item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.cert-item:hover {
-    transform: translateY(-10px);
-}
-
-/* Testimonials Section */
-.testimonials {
-    text-align: center;
-    padding: 50px;
-    background: #222;
-    color: white;
-}
-
-.testimonial-slider {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.testimonial {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    /* ✅ Footer Adjustments */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
