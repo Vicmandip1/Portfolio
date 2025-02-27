@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -21,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 15px 30px; /* Added padding for better spacing */
-    z-index: 1000;
+    z-index: 9999;
 }
 
 /* Navigation Links */
@@ -91,8 +90,8 @@ body {
     color: #ffcc00;
     text-decoration: none;
     transition: 0.3s ease;
-    margin-left: 0; /* Moves it fully to the left */
-    padding-left: 10px; /* Adjusts small spacing for better alignment */
+    position: absolute; /* ❗ Ensures it sticks to the left */
+    left: 20px; /* ❗ Pushes it away from the left */
 }
 
 .nav-logo:hover {
@@ -205,7 +204,7 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 70px;
+        font-size: 32px;
         font-weight: bold;
         color: white;
     }
@@ -217,8 +216,8 @@ body {
 /* Improve View Projects Button */
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 12px 25px;
+    font-size: 16px;
     font-weight: bold;
     background: linear-gradient(45deg, #ffcc00, #ff5733); /* Gradient effect */
     color: white;
@@ -236,13 +235,35 @@ body {
     box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.6);
 }
 
-}
-
 /* Ensure All Sections are Centered */
 .about, .skills, .projects, .contact {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+}
+/* 🔹 Ensure Images Fit Mobile Screens Properly */
+img {
+    max-width: 100%; /* Ensures images do not overflow the screen */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Ensures images are properly aligned */
+    margin: 0 auto; /* Centers images */
+    border-radius: 8px; /* Optional: Makes edges slightly rounded */
+}
+
+/* 🔹 Fix Project Images in Project Section */
+.project-item img {
+    width: 100%; /* Ensures full width responsiveness */
+    max-width: 500px; /* Sets a reasonable max width */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px; /* Adds smooth edges */
+}
+
+/* 🔹 Adjust Image Size Specifically for Small Screens */
+@media screen and (max-width: 768px) {
+    .project-item img {
+        max-width: 90%; /* Makes sure it fits within mobile screens */
+        border-radius: 5px; /* Slightly smaller rounded corners */
+    }
 }
 
 /* Sections */
