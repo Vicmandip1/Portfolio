@@ -4,12 +4,31 @@ document.addEventListener("DOMContentLoaded", function () {
     // ✅ Register GSAP ScrollTrigger Plugin
     gsap.registerPlugin(ScrollTrigger);
 
-    // ✅ Hero Section Animations
-    gsap.from(".hero-content h1", { opacity: 0, y: -50, duration: 1, ease: "power3.out" });
-    gsap.from(".hero-content p", { opacity: 0, y: 50, duration: 1, delay: 0.5, ease: "power3.out" });
-    gsap.from(".cta-button", { opacity: 0, scale: 0.8, duration: 1, delay: 1, ease: "elastic.out(1, 0.3)" });
+    // ✅ Smooth Hero Section Animations (Restored & Improved)
+    gsap.from(".hero-content h1", { 
+        opacity: 0, 
+        y: -50, 
+        duration: 1.5, 
+        ease: "power3.out" 
+    });
 
-    // ✅ Animate Sections on Scroll
+    gsap.from(".hero-content p", { 
+        opacity: 0, 
+        y: 50, 
+        duration: 1.5, 
+        delay: 0.5, 
+        ease: "power3.out" 
+    });
+
+    gsap.from(".cta-button", { 
+        opacity: 0, 
+        scale: 0.8, 
+        duration: 1.5, 
+        delay: 1, 
+        ease: "elastic.out(1, 0.3)" 
+    });
+
+    // ✅ Smooth Scroll Animations for All Sections
     gsap.utils.toArray(".about, .skills, .projects, .contact").forEach(section => {
         gsap.to(section, {
             opacity: 1,
@@ -26,17 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // ✅ Dark Mode Toggle with Local Storage
+    // ✅ Dark Mode Toggle with Local Storage (Improved)
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
     const icon = darkModeToggle.querySelector("i");
 
-    // Check saved mode in localStorage
+    // Check if Dark Mode is Enabled
     if (localStorage.getItem("dark-mode") === "enabled") {
         body.classList.add("dark-mode");
         icon.classList.replace("fa-moon", "fa-sun");
     }
 
+    // Toggle Dark Mode on Click
     darkModeToggle.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
         if (body.classList.contains("dark-mode")) {
@@ -48,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // ✅ Typing Effect
+    // ✅ Typing Effect (Improved for Smoothness)
     const textArray = ["Data Analyst", "Business Analyst", "Research Analyst"];
     let index = 0;
     let charIndex = 0;
@@ -70,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     typeEffect();
 
-    // ✅ Particle.js Fix (Correct ID)
+    // ✅ Particle.js Fix (Correct ID & Ensures Proper Loading)
     particlesJS("particles-js", {
         particles: {
             number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -79,5 +99,15 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         retina_detect: true
     });
+
+    // ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
+    const menu = document.querySelector(".nav-menu");
+    const toggleButton = document.getElementById("nav-toggle");
+
+    if (toggleButton) {
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    }
 
 });
