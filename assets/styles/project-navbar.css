@@ -1,0 +1,72 @@
+/* ==============================
+   ✅ Navbar Styling (Universal)
+================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+}
+
+/* ✅ Navigation Container */
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ✅ "My Portfolio" Logo */
+.nav-logo {
+    color: #ffcc00;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+    color: #ffffff;
+}
+
+/* ✅ Navigation Links */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* ✅ Navigation Items */
+.nav-item {
+    position: relative;
+}
+
+/* ✅ Navigation Links */
+.nav-link {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* ✅ Active Link Effect */
+.nav-link.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
