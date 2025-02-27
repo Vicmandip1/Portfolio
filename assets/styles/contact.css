@@ -1,26 +1,24 @@
-/* Ensures no horizontal scrolling */
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden; /* Prevents content from being too wide */
-}
-
-/* General Page Styles */
+/* ==============================
+   ✅ Global Styles
+================================= */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Navbar Styling */
+/* ==============================
+   ✅ Navbar Styling (Without Hamburger Menu)
+================================= */
 .navbar {
     position: fixed; /* Sticks to the top */
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(30, 30, 30, 0.9); /* Slight transparency */
+    background: rgba(30, 30, 30, 0.95);
     backdrop-filter: blur(10px); /* Frosted glass effect */
     display: flex;
     justify-content: center;
@@ -31,7 +29,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-/* Navigation Container */
+/* ✅ Navigation Container */
 .nav-container {
     width: 100%;
     max-width: 1200px;
@@ -40,7 +38,7 @@ body {
     align-items: center;
 }
 
-/* Logo Styling */
+/* ✅ "My Portfolio" Logo */
 .nav-logo {
     color: #ffcc00;
     font-size: 22px;
@@ -53,19 +51,19 @@ body {
     color: #ffffff;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-/* Navigation Items */
+/* ✅ Navigation Items */
 .nav-item {
     position: relative;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-link {
     color: white;
     font-size: 16px;
@@ -75,12 +73,12 @@ body {
     position: relative;
 }
 
-/* Hover Effect */
+/* ✅ Hover Effect */
 .nav-link:hover {
     color: #ffcc00;
 }
 
-/* Underline Effect on Hover */
+/* ✅ Underline Effect on Hover */
 .nav-link::after {
     content: "";
     display: block;
@@ -97,153 +95,183 @@ body {
     width: 100%;
 }
 
-/* Active Link Effect */
+/* ✅ Active Link Effect */
 .nav-link.active {
     color: #ffcc00;
     font-weight: bold;
 }
 
-/* Sticky Navbar Effect */
+/* ✅ Sticky Navbar Effect */
 .scrolled {
-    background: rgba(30, 30, 30, 1); /* Full opaque on scroll */
+    background: rgba(30, 30, 30, 1);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Hamburger Menu (For Mobile) */
-.hamburger {
-    display: block;
-
-}
-
-.hamburger span {
-    background: white;
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-    transition: 0.3s ease-in-out;
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: rgba(30, 30, 30, 0.95);
-        width: 200px;
-        border-radius: 5px;
-        text-align: right;
-        padding: 15px 0;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-item {
-        padding: 10px 20px;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-/* Animate Hamburger Menu */
-.hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Contact Section Styles */
+/* ==============================
+   ✅ Contact Section Styles
+================================= */
 section {
-  max-width: 600px;
-  margin-top: 80px; /* Adjusts spacing to prevent navbar overlap */
-  margin: 50px auto;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  text-align: center;
+    max-width: 600px;
+    margin-top: 80px; /* Prevents navbar overlap */
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
 }
 
 section h1 {
-  color: #ab78c4;
-  font-size: 36px;
-  margin-bottom: 10px;
+    color: #ab78c4;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 section p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
 }
 
-/* Form Styles */
+/* ==============================
+   ✅ Contact Form Styles
+================================= */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
 }
 
 form label {
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+    color: #333;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background: #f9f9f9;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
 }
 
 form textarea {
-  height: 120px;
-  resize: vertical;
+    height: 120px;
+    resize: vertical;
 }
 
 form button {
-  background: #ab78c4;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
+    background: #ab78c4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
 }
 
 form button:hover {
-  background: #8a48f4;
-  transition: background 0.3s;
+    background: #8a48f4;
 }
 
-/* Footer Styles */
+/* ==============================
+   ✅ Footer Styles
+================================= */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: #fff;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-  margin: 0;
+    margin: 0;
+}
+
+/* ==============================
+   ✅ Mobile-Specific Styles (For Better Experience)
+================================= */
+@media screen and (max-width: 768px) {
+    
+    /* ✅ Adjust Navbar */
+    .navbar {
+        padding: 10px 15px;
+        justify-content: space-between;
+        background: rgba(30, 30, 30, 0.98);
+    }
+
+    /* ✅ Centered Menu */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.98);
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ✅ Show Menu When Active */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 14px 0;
+        font-size: 18px;
+    }
+
+    .nav-link {
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: #ffcc00;
+    }
+
+    /* ✅ Contact Section Mobile */
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    section h1 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    /* ✅ Form Adjustments */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /* ✅ Footer Adjustments */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
