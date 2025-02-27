@@ -90,15 +90,46 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     typeEffect();
 
-    // ✅ Particle.js Fix (Correct ID & Ensures Proper Loading)
-    particlesJS("particles-js", {
-        particles: {
-            number: { value: 200, density: { enable: true, value_area: 800 } },
-            color: { value: "#ffffff" },
-            size: { value: 3, random: true },
+   // ✅ Fix Particles.js - Ensure Full Background Coverage
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 100, density: { enable: true, value_area: 900 } }, // Increase particles & spread
+        color: { value: "#ffffff" },
+        shape: {
+            type: "circle", 
+            stroke: { width: 0, color: "#000000" }
         },
-        retina_detect: true
-    });
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: { 
+            enable: true, 
+            distance: 150, 
+            color: "#ffffff", 
+            opacity: 0.4, 
+            width: 1 
+        },
+        move: { 
+            enable: true, 
+            speed: 3, // Slightly increase speed for a dynamic effect
+            direction: "none", 
+            random: false, 
+            out_mode: "out" 
+        }
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: { enable: true, mode: "grab" }, 
+            onclick: { enable: true, mode: "push" }, 
+            resize: true
+        },
+        modes: {
+            grab: { distance: 140, line_linked: { opacity: 1 } },
+            push: { particles_nb: 5 } // Increase new particles on click
+        }
+    },
+    retina_detect: true
+});
 
     // ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
     const menu = document.querySelector(".nav-menu");
