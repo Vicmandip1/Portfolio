@@ -86,9 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let charIndex = 0;
     const typingText = document.getElementById("typing-text");
 
-    if (typingText) {  // ✅ Ensure element exists before executing
-        function typeEffect() {
-            if (charIndex < textArray[index].length) {
+function typeEffect() {
+    if (charIndex < textArray[index].length) {
                 typingText.innerHTML += textArray[index].charAt(charIndex);
                 charIndex++;
                 setTimeout(typeEffect, 100);
