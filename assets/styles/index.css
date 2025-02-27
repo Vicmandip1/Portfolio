@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     background: #f5f5f5;
     color: #333;
     transition: background 0.3s ease, color 0.3s ease;
@@ -12,6 +13,7 @@ body {
 /* Navbar */
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 60px;
     background: rgba(30, 30, 30, 0.9);
@@ -89,7 +91,8 @@ body {
     color: #ffcc00;
     text-decoration: none;
     transition: 0.3s ease;
-    margin-right: auto; /* Pushes it to the left */
+    margin-left: 0; /* Moves it fully to the left */
+    padding-left: 10px; /* Adjusts small spacing for better alignment */
 }
 
 .nav-logo:hover {
@@ -121,13 +124,13 @@ body {
 
 /* Hero Content */
 .hero-content h1 {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     color: white;
 }
 
 #typing-text {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
 }
@@ -144,17 +147,37 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 28px;
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
     }
 
     .hero-content p {
         font-size: 18px;
     }
 
-    .cta-button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
+/* Improve View Projects Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffcc00, #ff5733); /* Gradient effect */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
+    z-index: 2; /* Ensure it stays above particles */
+    position: relative; /* Required for z-index to work */
+}
+
+.cta-button:hover {
+    transform: scale(1.1); /* Smooth hover effect */
+    box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.6);
+}
+
 }
 
 /* Ensure All Sections are Centered */
