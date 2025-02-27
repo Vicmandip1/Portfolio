@@ -291,6 +291,51 @@ img {
         max-width: 90%; /* Makes sure it fits within mobile screens */
         border-radius: 5px; /* Slightly smaller rounded corners */
     }
+    /* ✅ Dark Mode Styles */
+.dark-mode {
+    background: #181818;
+    color: white;
+}
+
+/* ✅ Ensure Navbar Colors Adjust in Dark Mode */
+.dark-mode .navbar {
+    background: rgba(20, 20, 20, 0.95);
+}
+
+/* ✅ Ensure Buttons Adjust in Dark Mode */
+.dark-mode .cta-button {
+    background: linear-gradient(45deg, #ff9900, #ff3300);
+    color: white;
+}
+
+/* ✅ Ensure Text and Links Adjust in Dark Mode */
+.dark-mode a {
+    color: #ffcc00;
+}
+
+.dark-mode a:hover {
+    color: #ff9900;
+}
+
+/* ✅ Ensure Sections Look Good in Dark Mode */
+.dark-mode .about, 
+.dark-mode .skills, 
+.dark-mode .projects, 
+.dark-mode .contact {
+    background: #222;
+    color: white;
+}
+
+/* ✅ Ensure Footer Matches Dark Mode */
+.dark-mode footer {
+    background: #111;
+    color: white;
+}
+
+/* ✅ Ensure Navbar Icons Change in Dark Mode */
+.dark-mode #dark-mode-toggle i {
+    color: yellow; /* Sun Icon Color */
+
 }
 
 /* Sections */
