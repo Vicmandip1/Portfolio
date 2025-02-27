@@ -10,14 +10,16 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Include Particle.js for Animated Background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
-    <!-- Include GSAP for Smooth Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="index.css">
+
+    <!-- Include Particle.js for Animated Background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Include GSAP for Smooth Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -39,7 +41,8 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <canvas id="particles"></canvas>
+        <!-- ✅ Changed from <canvas> to <div> -->
+        <div id="particles-js"></div>
         <div class="hero-content">
             <h1>Victor S. Dipeolu</h1>
             <p><span id="typing-text"></span></p>
