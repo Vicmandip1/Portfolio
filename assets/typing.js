@@ -14,16 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(typeEffect, 100);
         } else {
             setTimeout(() => {
-                typingText.innerHTML = ""; // Clear text before restarting
-                charIndex = 0;
-                index = (index + 1) % textArray.length;
-                typeEffect();
-            }, 2000);
+                typingText.innerHTML = textArray[index]; // ✅ Keeps last word visible
+                setTimeout(() => {
+                    typingText.innerHTML = ""; // ✅ Clears before switching words
+                    charIndex = 0;
+                    index = (index + 1) % textArray.length;
+                    typeEffect();
+                }, 2000);
+            }, 1000);
         }
     }
 
     if (typingText) {
-        setTimeout(typeEffect, 1000); // ✅ Added delay before starting
+        typingText.style.minHeight = "40px"; // ✅ Ensures a fixed space
+        setTimeout(typeEffect, 1000);
     } else {
         console.error("❌ Typing effect target (#typing-text) not found.");
     }
