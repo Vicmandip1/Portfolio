@@ -159,12 +159,18 @@ document.addEventListener("DOMContentLoaded", function () {
      * ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
      * ============================ */
     const menu = document.querySelector(".nav-menu");
-    const toggleButton = document.getElementById("nav-toggle");
+    const toggleButton = document.createElement("button");
+    
+    toggleButton.classList.add("hamburger-menu");
+    toggleButton.innerHTML = "☰"; // Hamburger Icon
 
-    if (toggleButton) {
-        toggleButton.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
+    // ✅ Append Button to Navbar
+    document.querySelector(".navbar").appendChild(toggleButton);
+
+    // ✅ Toggle Menu on Click
+    toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
     }
 
     /** ============================
