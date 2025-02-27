@@ -1,21 +1,24 @@
-}
-
-/* General Styles */
+/* ==============================
+   ✅ Global Styles
+================================= */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Navbar Styling */
+/* ==============================
+   ✅ Navbar Styling (Without Hamburger Menu)
+================================= */
 .navbar {
     position: fixed; /* Sticks to the top */
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(30, 30, 30, 0.9); /* Slight transparency */
+    background: rgba(30, 30, 30, 0.95);
     backdrop-filter: blur(10px); /* Frosted glass effect */
     display: flex;
     justify-content: center;
@@ -26,17 +29,16 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-/* Navigation Container */
+/* ✅ Navigation Container */
 .nav-container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo Styling */
+/* ✅ "My Portfolio" Logo */
 .nav-logo {
     color: #ffcc00;
     font-size: 22px;
@@ -49,19 +51,19 @@ body {
     color: #ffffff;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-/* Navigation Items */
+/* ✅ Navigation Items */
 .nav-item {
     position: relative;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-link {
     color: white;
     font-size: 16px;
@@ -71,12 +73,12 @@ body {
     position: relative;
 }
 
-/* Hover Effect */
+/* ✅ Hover Effect */
 .nav-link:hover {
     color: #ffcc00;
 }
 
-/* Underline Effect on Hover */
+/* ✅ Underline Effect on Hover */
 .nav-link::after {
     content: "";
     display: block;
@@ -93,83 +95,24 @@ body {
     width: 100%;
 }
 
-/* Active Link Effect */
+/* ✅ Active Link Effect */
 .nav-link.active {
     color: #ffcc00;
     font-weight: bold;
 }
 
-/* Sticky Navbar Effect */
+/* ✅ Sticky Navbar Effect */
 .scrolled {
-    background: rgba(30, 30, 30, 1); /* Full opaque on scroll */
+    background: rgba(30, 30, 30, 1);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Hamburger Menu (For Mobile) */
-.hamburger {
-    display: block;
-
-}
-
-.hamburger span {
-    background: white;
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-    transition: 0.3s ease-in-out;
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background: rgba(30, 30, 30, 0.95);
-        width: 200px;
-        width: 80%;
-        max-width: 250px;
-        overflow: hidden;
-        border-radius: 5px;
-        text-align: right;
-        padding: 15px 0;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-item {
-        padding: 10px 20px;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-/* Animate Hamburger Menu */
-.hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Hero Section - Stunning Animated Header */
+/* ==============================
+   ✅ Hero Section (Modern Design)
+================================= */
 .hero {
     position: relative;
     width: 100%;
-    max-width: 100%
-    padding: 20%;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -180,7 +123,7 @@ body {
     background: linear-gradient(to right, #201e30, #5768e5);
 }
 
-/* Overlay Effect */
+/* ✅ Overlay Effect */
 .hero-overlay {
     position: absolute;
     width: 100%;
@@ -189,7 +132,7 @@ body {
     z-index: 1;
 }
 
-/* Text Content */
+/* ✅ Hero Text Content */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -214,7 +157,7 @@ body {
     color: #e0e0e0;
 }
 
-/* Call-to-Action Button */
+/* ✅ Call-to-Action Button */
 .hero-btn {
     display: inline-block;
     padding: 12px 25px;
@@ -232,29 +175,9 @@ body {
     color: #201e30;
 }
 
-/* Floating Particles Animation */
-canvas#heroCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Fade In Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* Project Section */
+/* ==============================
+   ✅ Projects Section (Grid Layout)
+================================= */
 .projects {
     padding: 50px;
     background-color: #fff;
@@ -269,6 +192,7 @@ canvas#heroCanvas {
     margin: auto;
 }
 
+/* ✅ Individual Project Cards */
 .project-card {
     background: white;
     border-radius: 10px;
@@ -300,6 +224,7 @@ canvas#heroCanvas {
     color: #666;
 }
 
+/* ✅ View Button */
 .view-btn {
     padding: 10px 15px;
     margin-top: 10px;
@@ -315,141 +240,64 @@ canvas#heroCanvas {
     background: #4456c7;
 }
 
-/* Full-Screen Modal - Now Fully Responsive */
-.project-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-/* Modal Content */
-.modal-content {
-    background: #222;
-    width: 80%;
-    max-height: 90%;
-    padding: 30px;
-    border-radius: 10px;
-    overflow-y: auto;
-    position: relative;
-    text-align: left;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-
-/* Make modal scrollable on small screens */
-@media (max-width: 768px) {
-    .modal-content {
-        width: 90%;
-        max-height: 85vh; /* Adjust height for smaller screens */
-        padding: 20px;
-    }
-}
-/* Ensure images fit well inside the modal */
-.modal-content img {
-    width: 100%; /* Keep full width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 500px; /* Base height */
-    object-fit: contain; /* Ensures full image is visible */
-    display: block;
-    margin: 20px auto; /* Center the image */
-}
-
-/* Increase image height for larger screens */
-@media (min-width: 1024px) { /* Laptops and desktops */
-    .modal-content img {
-        max-height: 600px; /* Increase height for better visibility */
-    }
-}
-
-/* Further increase height for ultra-wide screens */
-@media (min-width: 1440px) {
-    .modal-content img {
-        max-height: 700px; /* Adjust height for bigger screens */
-    }
-}
-
-
-/* Close Button (Top Right) */
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 35px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close-btn:hover {
-    color: #ff6b6b;
-}
-
-/* Bottom Close Button (For Scrolling Users) */
-.close-btn-bottom {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.close-btn-bottom:hover {
-    background: #f9d423;
-    color: #222;
-}
-
-/* Show Modal */
-.project-modal.show {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* Ensure Images in the Modal Fit Well */
-.modal-content img {
-    width: 100%;
-    height: auto;
-    max-height: 400px; /* Prevent overly large images */
-    border-radius: 5px;
-    display: block;
-    margin: 20px 0;
-}
-
-/* Improve Scroll Experience */
-.project-modal::-webkit-scrollbar {
-    width: 8px;
-}
-
-.project-modal::-webkit-scrollbar-thumb {
-    background: #ff6b6b;
-    border-radius: 5px;
-}
-
-.project-modal::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Footer */
+/* ==============================
+   ✅ Footer
+================================= */
 footer {
     text-align: center;
     padding: 15px;
     background: #201e30;
     color: white;
     margin-top: 30px;
+}
+
+/* ==============================
+   ✅ Mobile-Specific Styles
+================================= */
+@media screen and (max-width: 768px) {
+    
+    /* ✅ Adjust Navbar */
+    .navbar {
+        padding: 10px 15px;
+        justify-content: space-between;
+        background: rgba(30, 30, 30, 0.98);
+    }
+
+    /* ✅ Centered Menu */
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: transparent;
+        padding: 0;
+        text-align: center;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .nav-link {
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: #ffcc00;
+    }
+
+    /* ✅ Adjust Projects Grid */
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ✅ Footer Adjustments */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
