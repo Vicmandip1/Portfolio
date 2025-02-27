@@ -1,4 +1,6 @@
-/* General Styles */
+/* ==============================
+   ✅ General Styles
+================================= */
 body {
     margin: 0;
     padding: 0;
@@ -6,10 +8,12 @@ body {
     background: #f5f5f5;
     color: #333;
     transition: background 0.3s ease, color 0.3s ease;
-    padding-top: 60px; /* Push content down to avoid navbar overlap */
+    padding-top: 60px; /* Avoid navbar overlap */
 }
 
-/* Navbar */
+/* ==============================
+   ✅ Navbar Styling
+================================= */
 .navbar {
     position: fixed;
     top: 0;
@@ -19,11 +23,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 30px; /* Added padding for better spacing */
+    padding: 15px 30px;
     z-index: 9999;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -40,7 +44,7 @@ body {
     color: #ffcc00;
 }
 
-/* Mobile Navigation Fix */
+/* ✅ Mobile Navigation */
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 15px;
@@ -57,7 +61,7 @@ body {
         color: white;
         font-size: 24px;
         cursor: pointer;
-        z-index: 1001; /* Ensure it's above everything */
+        z-index: 1001;
     }
 
     .nav-menu {
@@ -82,7 +86,7 @@ body {
     }
 }
 
-/* Stylish "My Portfolio" Design */
+/* ✅ Stylish "My Portfolio" Logo */
 .nav-logo {
     font-size: 24px;
     font-weight: bold;
@@ -91,87 +95,23 @@ body {
     color: #ffcc00;
     text-decoration: none;
     transition: 0.3s ease;
-    position: absolute; /* ❗ Ensures it sticks to the left */
-    left: 20px; /* ❗ Pushes it away from the left */
+    position: absolute;
+    left: 20px;
 }
 
 .nav-logo:hover {
     color: white;
     text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
-
-}
-/* 🎨 Stylish View Projects Button */
-.cta-button {
-    display: inline-block;
-    padding: 15px 40px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #ffcc00, #ff5733); /* Gradient effect */
-    color: white;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(255, 87, 51, 0.3);
-    z-index: 2; /* Ensure it stays above particles */
-    position: relative; /* Required for z-index */
 }
 
-/* 🎭 Hover Effect */
-.cta-button:hover {
-    transform: scale(1.1); /* Slight zoom-in effect */
-    box-shadow: 0px 10px 20px rgba(255, 87, 51, 0.6);
-    background: linear-gradient(45deg, #ff5733, #ffcc00); /* Reverse gradient on hover */
-}
-
-/* 🔄 Click Effect */
-.cta-button:active {
-    transform: scale(0.95); /* Shrinks slightly when clicked */
-}
-/* 📘 Stylish Learn More Button */
-.learn-more {
-    display: inline-block;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #5768e5; /* Blue default background */
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 10px rgba(87, 104, 229, 0.3);
-}
-
-/* ✨ Hover Effect */
-.learn-more:hover {
-    background: #4453c5; /* Darker blue on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0px 10px 20px rgba(87, 104, 229, 0.6);
-}
-
-/* 🖱 Click Effect */
-.learn-more:active {
-    transform: scale(0.95);
-}
-
-
-/* Fix Particles.js Position */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1; /* Lower than text but above background */
-}
-/* Hero Section */
+/* ==============================
+   ✅ Hero Section Styling
+================================= */
 .hero {
     position: relative;
     height: 80vh;
     display: flex;
-    flex-direction: column; /* Ensure vertical centering */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -180,89 +120,84 @@ body {
     z-index: 2;
 }
 
-/* Hero Content */
+/* ✅ Hero Content */
 .hero-content h1 {
     font-size: 55px;
     font-weight: bold;
     color: white;
 }
 
-#typing-text {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 30px; /* ✅ Increased margin to push "View Projects" down */
-}
-/* ✅ Ensure spacing remains correct on mobile */
+/* ✅ Mobile Adjustments */
 @media screen and (max-width: 768px) {
-    #typing-text {
-        font-size: 32px;
-        margin-bottom: 25px; /* ✅ Adjusted for mobile */
-    }
-
-    .cta-button {
-        padding: 12px 30px;
-        font-size: 16px;
-        margin-top: 25px; /* ✅ Ensures spacing stays correct on mobile */
-    }
-        
-
-@media screen and (max-width: 768px) {
-    /* Fix Hero Section Centering */
-    .hero {
-        height: 100vh; /* Ensure it takes full screen */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 15px;
-    }
-
     .hero-content h1 {
         font-size: 32px;
-        font-weight: bold;
-        color: white;
     }
+}
 
-    .hero-content p {
-        font-size: 18px;
-    }
-
-/* Improve View Projects Button */
-.cta-button {
+/* ==============================
+   ✅ Buttons (View Projects, Learn More)
+================================= */
+.cta-button, .learn-more {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 12px 30px;
     font-size: 16px;
     font-weight: bold;
-    background: linear-gradient(45deg, #ffcc00, #ff5733); /* Gradient effect */
-    color: white;
-    border: none;
+    text-transform: uppercase;
     border-radius: 30px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
-    z-index: 2; /* Ensure it stays above particles */
-    position: relative; /* Required for z-index to work */
-    margin-top: 30px; /* ✅ Pushes the button further down */
-    opacity: 1 !important; /* ✅ Prevents accidental fading */
+}
+
+/* ✅ View Projects Button */
+.cta-button {
+    background: linear-gradient(45deg, #ffcc00, #ff5733);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(255, 87, 51, 0.3);
+    z-index: 2;
+    position: relative;
 }
 
 .cta-button:hover {
-    transform: scale(1.1); /* Smooth hover effect */
-    box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.6);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 87, 51, 0.6);
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
 }
-/* ✅ Center Content from About Me to Footer */
+
+.cta-button:active {
+    transform: scale(0.95);
+}
+
+/* ✅ Learn More Button */
+.learn-more {
+    background: #5768e5;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(87, 104, 229, 0.3);
+}
+
+.learn-more:hover {
+    background: #4453c5;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(87, 104, 229, 0.6);
+}
+
+.learn-more:active {
+    transform: scale(0.95);
+}
+
+/* ==============================
+   ✅ Centered Content Sections
+================================= */
 .content-container {
-    max-width: 1000px; /* ✅ Ensures a good balance */
+    max-width: 1000px;
     width: 90%;
-    margin: 0 auto; /* ✅ Ensures horizontal centering */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-/* ✅ Ensure Sections Inside "content-container" Stay Centered */
+/* ✅ Ensure Sections Stay Centered */
 .about, .skills, .projects, .contact, footer {
     width: 100%;
     text-align: center;
@@ -278,52 +213,53 @@ body {
     margin-bottom: 30px;
 }
 
-/* ✅ Fix Buttons & Images */
-.learn-more, .cta-button, img {
-    margin: 20px auto; /* ✅ Ensures they are properly centered */
-}
-
-/* 🔹 Ensure Images Fit Mobile Screens Properly */
+/* ==============================
+   ✅ Image Styles
+================================= */
 img {
-    max-width: 100%; /* Ensures images do not overflow the screen */
-    height: auto; /* Keeps aspect ratio */
-    display: block; /* Ensures images are properly aligned */
-    margin: 0 auto; /* Centers images */
-    border-radius: 8px; /* Optional: Makes edges slightly rounded */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
-/* 🔹 Fix Project Images in Project Section */
+/* ✅ Fix Project Images */
 .project-item img {
-    width: 100%; /* Ensures full width responsiveness */
-    max-width: 500px; /* Sets a reasonable max width */
-    height: auto; /* Keeps aspect ratio */
-    border-radius: 10px; /* Adds smooth edges */
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* 🔹 Adjust Image Size Specifically for Small Screens */
+/* ✅ Small Screens Image Adjustments */
 @media screen and (max-width: 768px) {
     .project-item img {
-        max-width: 90%; /* Makes sure it fits within mobile screens */
-        border-radius: 5px; /* Slightly smaller rounded corners */
+        max-width: 90%;
+        border-radius: 5px;
     }
-    /* ✅ Dark Mode Styles */
+}
+
+/* ==============================
+   ✅ Dark Mode Styles
+================================= */
 .dark-mode {
     background: #181818;
     color: white;
 }
 
-/* ✅ Ensure Navbar Colors Adjust in Dark Mode */
+/* ✅ Navbar Adjustments in Dark Mode */
 .dark-mode .navbar {
     background: rgba(20, 20, 20, 0.95);
 }
 
-/* ✅ Ensure Buttons Adjust in Dark Mode */
+/* ✅ Button Colors in Dark Mode */
 .dark-mode .cta-button {
     background: linear-gradient(45deg, #ff9900, #ff3300);
     color: white;
 }
 
-/* ✅ Ensure Text and Links Adjust in Dark Mode */
+/* ✅ Text & Links in Dark Mode */
 .dark-mode a {
     color: #ffcc00;
 }
@@ -332,7 +268,7 @@ img {
     color: #ff9900;
 }
 
-/* ✅ Ensure Sections Look Good in Dark Mode */
+/* ✅ Section Background in Dark Mode */
 .dark-mode .about, 
 .dark-mode .skills, 
 .dark-mode .projects, 
@@ -341,29 +277,20 @@ img {
     color: white;
 }
 
-/* ✅ Ensure Footer Matches Dark Mode */
+/* ✅ Footer in Dark Mode */
 .dark-mode footer {
     background: #111;
     color: white;
 }
 
-/* ✅ Ensure Navbar Icons Change in Dark Mode */
+/* ✅ Dark Mode Toggle Icon */
 .dark-mode #dark-mode-toggle i {
-    color: yellow; /* Sun Icon Color */
-
+    color: yellow;
 }
 
-/* Sections */
-.about, .skills, .projects, .contact {
-    opacity: 1;
-    transform: translateY(0);
-    position: relative;
-    z-index: 2;
-    padding: 40px 20px; /* Reduce padding */
-    margin-bottom: 20px; /* Reduce bottom margin */
-}
-
-/* Footer */
+/* ==============================
+   ✅ Footer Styling
+================================= */
 footer {
     background: #201e30;
     text-align: center;
@@ -373,9 +300,9 @@ footer {
     z-index: 3;
 }
 
+/* ✅ Footer Mobile Adjustments */
 @media screen and (max-width: 768px) {
     footer {
-        text-align: center;
         padding: 15px;
     }
 }
