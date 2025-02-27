@@ -78,13 +78,8 @@ body {
 .about, .skills, .projects, .contact {
     opacity: 0;
     transform: translateY(50px);
-    
-}
-/* Hero Content on Top of Particles */
-.hero-content {
-    position: relative;
+    position: relative; /* Ensures they stay above particles.js */
     z-index: 1;
-    color: white;
 }
 
 .hero-content h1 {
