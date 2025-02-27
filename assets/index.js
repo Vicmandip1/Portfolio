@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect();
 
    // ✅ Fix Particles.js - Ensure Full Background Coverage
+setTimeout(() => {
 particlesJS("particles-js", {
     particles: {
         number: { value: 120, density: { enable: true, value_area: 1000 } }, // Increase particles & spread
@@ -135,6 +136,7 @@ particlesJS("particles-js", {
     },
     retina_detect: true
 });
+}, 500); // Delay initialization slightly
 
     // ✅ Mobile Menu Toggle (Ensures Navbar Works on Mobile)
     const menu = document.querySelector(".nav-menu");
