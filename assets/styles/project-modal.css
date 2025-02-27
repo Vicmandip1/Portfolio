@@ -17,12 +17,19 @@
     transition: 0.3s ease-in-out;
     padding: 20px;
     overflow-y: auto;
+   z-index: 1000; /* ✅ Ensure it appears above everything */
 }
 
+/* ✅ Show Modal When Active */
+.project-modal.show {
+    visibility: visible;  /* ✅ Ensure visibility is applied */
+    opacity: 1;           /* ✅ Ensure full opacity */
+}
 /* ✅ Modal Content */
 .modal-content {
     background: #222;
     width: 80%;
+   max-width: 800px;  /* ✅ Prevent modal from being too wide */
     max-height: 90%;
     padding: 30px;
     border-radius: 10px;
@@ -44,4 +51,29 @@
 
 .close-btn:hover {
     color: #ff6b6b;
+}
+/* ✅ Ensure Modal Scrolls Properly (For Long Content) */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #ff6b6b;
+    border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+/* ✅ Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;  /* ✅ Increase width on smaller screens */
+        max-height: 80vh; /* ✅ Reduce height on smaller screens */
+        padding: 20px;
+    }
+
+    .close-btn {
+        font-size: 28px; /* ✅ Slightly smaller close button */
+    }
 }
