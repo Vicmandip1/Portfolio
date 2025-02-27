@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ✅ Particle.js Fix (Correct ID & Ensures Proper Loading)
     particlesJS("particles-js", {
         particles: {
-            number: { value: 80, density: { enable: true, value_area: 800 } },
+            number: { value: 200, density: { enable: true, value_area: 800 } },
             color: { value: "#ffffff" },
             size: { value: 3, random: true },
         },
