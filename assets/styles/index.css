@@ -57,6 +57,7 @@ body {
         color: white;
         font-size: 24px;
         cursor: pointer;
+        z-index: 1001; /* Ensure it's above everything */
     }
 
     .nav-menu {
