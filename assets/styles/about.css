@@ -11,7 +11,7 @@ body {
 }
 
 /* ==============================
-   ✅ Navbar Styling (Without Hamburger Menu)
+   ✅ Navbar Styling
 ================================= */
 .navbar {
     position: fixed;
@@ -172,7 +172,10 @@ body {
 .profile-image:hover {
     transform: scale(1.1);
 }
-/* ✅ Skills Section */
+
+/* ==============================
+   ✅ Skills Section
+================================= */
 .skills {
     text-align: center;
     padding: 60px 20px;
@@ -183,7 +186,6 @@ body {
     margin: auto;
 }
 
-/* ✅ Skills Content Layout */
 .skills-content {
     display: flex;
     justify-content: space-between;
@@ -192,13 +194,11 @@ body {
     flex-wrap: wrap;
 }
 
-/* ✅ Skills Text */
 .skills-text {
     flex: 1;
     text-align: left;
 }
 
-/* ✅ Skills List */
 .skills-list, .certifications-list {
     list-style: none;
     padding: 0;
@@ -209,13 +209,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* ✅ Skills Chart Container */
 .skills-chart-container {
     flex: 1;
     max-width: 300px;
 }
 
-/* ✅ Chart Styling */
 #skillsChart {
     width: 100%;
     height: auto;
@@ -223,101 +221,6 @@ body {
     margin: auto;
 }
 
-/* ✅ Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .skills-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .skills-text {
-        text-align: center;
-    }
-
-/* ==============================
-   ✅ "What I Do" Section Alignment Fix
-================================= */
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* ==============================
-   ✅ Centering Lists (Skills, Expertise, Certifications)
-================================= */
-.expertise-list, .skills-list, .certifications-list, .project-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.expertise-list li, 
-.skills-list li, 
-.certifications-list li, 
-.project-list li {
-    text-align: center;
-    font-size: 18px;
-    margin: 8px 0;
-}
-
-/* ==============================
-   ✅ Certifications Section
-================================= */
-.certifications {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f4f4f4;
-}
-
-/* Certifications Grid */
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    margin: auto;
-}
-
-.cert-item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-}
-
-.cert-item:hover {
-    transform: scale(1.05);
-}
-
-/* ==============================
-   ✅ CTA Buttons
-================================= */
-.cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
-    border-radius: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    transform: scale(1.1);
-}
 /* ==============================
    ✅ Notable Projects Section
 ================================= */
@@ -327,31 +230,12 @@ body {
     background: #f4f4f4;
 }
 
-.projects-section h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.projects-section p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-/* ✅ Centering the Project List */
 .project-list {
     list-style: none;
     padding: 0;
     max-width: 800px;
     margin: auto;
     text-align: center;
-}
-
-.project-list li {
-    font-size: 1.2rem;
-    margin: 15px 0;
 }
 
 .project-list a {
@@ -374,12 +258,6 @@ body {
     padding: 80px 20px;
     background: #222;
     color: white;
-}
-
-.testimonials h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .testimonial-slider {
@@ -419,31 +297,6 @@ body {
     color: #ffcc00;
 }
 
-/* ✅ Mobile Adjustments */
-@media screen and (max-width: 768px) {
-    .projects-section h2,
-    .testimonials h2 {
-        font-size: 2rem;
-    }
-
-    .projects-section p {
-        font-size: 1rem;
-    }
-
-    .project-list li {
-        font-size: 1rem;
-    }
-
-    .testimonial-slider {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial {
-        max-width: 90%;
-    }
-}
-
 /* ==============================
    ✅ Let's Connect Section
 ================================= */
@@ -458,25 +311,6 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.connect-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.connect-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #e0e0e0;
-}
-
-.connect-text {
-    font-size: 1rem;
-    font-style: italic;
-    margin-bottom: 30px;
-    color: #d1d1d1;
-}
-
-/* ✅ "Let's Connect" Button */
 .connect-btn {
     display: inline-block;
     padding: 12px 25px;
@@ -493,56 +327,4 @@ body {
 .connect-btn:hover {
     transform: scale(1.1);
     background: linear-gradient(45deg, #ff9900, #ffcc00);
-}
-
-/* ✅ Responsive Design */
-@media screen and (max-width: 768px) {
-    .contact-section {
-        padding: 50px 15px;
-    }
-
-    .contact-section h2 {
-        font-size: 2rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9rem;
-    }
-}
-
-/* ==============================
-   ✅ Footer
-================================= */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* ==============================
-   ✅ Mobile Optimizations
-================================= */
-@media screen and (max-width: 768px) {
-    .about {
-        width: 90%;
-        padding: 30px;
-    }
-
-    .cert-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 14px;
-    }
 }
