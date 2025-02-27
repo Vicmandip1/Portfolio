@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Victor S. Dipeolu - A professional Data Analyst specializing in business intelligence, visualization, and analytics.">
     <title>Victor S. Dipeolu - Data Analyst</title>
 
-    <!-- Font Awesome for Icons -->
+    <!-- ✅ Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <!-- Google Fonts -->
+    <!-- ✅ Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- External CSS -->
+    <!-- ✅ External CSS -->
     <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/particles.css">
+    <link rel="stylesheet" href="assets/styles/typing.css">
 
-    <!-- Include Particle.js for Animated Background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <!-- Include GSAP for Smooth Animations -->
+    <!-- ✅ Include GSAP for Smooth Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- ✅ Include Particle.js (Before `particles.js`) -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- ✅ Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">My Portfolio</a>
             <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-item">
                     <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
                 </li>
@@ -39,68 +42,76 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ✅ Hero Section -->
     <section class="hero" id="home">
-        <!-- ✅ Changed from <canvas> to <div> -->
-        <div id="particles-js"></div>
+        <div id="particles-js"></div> <!-- ✅ This must be here for particles to work -->
         <div class="hero-content">
             <h1>Victor S. Dipeolu</h1>
             <p><span id="typing-text"></span></p>
+
+                    <!-- "View Projects" Button -->
+        <a href="#projects" class="cta-button">View Projects</a>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- ✅ Centering Content -->
     <div class="content-container">
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am an experienced data professional with a strong background in analytics, business intelligence, and statistical analysis.</p>
-        <a href="about.html" class="learn-more">Learn More</a>
-    </section>
+    
+        <!-- ✅ About Me Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am an experienced data professional with a strong background in analytics, business intelligence, and statistical analysis.</p>
+            <a href="about.html" class="learn-more">Learn More</a>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2>Skills & Expertise</h2>
-        <div class="skills-container">
-            <div class="skill-card">SQL & Python</div>
-            <div class="skill-card">Power BI & Tableau</div>
-            <div class="skill-card">Data Visualization</div>
-            <div class="skill-card">Machine Learning</div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Project">
-                <h3>Healthy Lifestyle Dashboard</h3>
-                <p>Visualizing health metrics with user-friendly design.</p>
+        <!-- ✅ Skills Section -->
+        <section class="skills" id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-card">SQL & Python</div>
+                <div class="skill-card">Power BI & Tableau</div>
+                <div class="skill-card">Data Visualization</div>
+                <div class="skill-card">Machine Learning</div>
             </div>
-            <div class="project-card">
-                <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Project">
-                <h3>Auto Insurance Analysis</h3>
-                <p>Analyzing customer behavior & policy sales.</p>
+        </section>
+
+        <!-- ✅ Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <img src="assets/Images/Figma Healthy Lifestyle.jpg" alt="Healthy Lifestyle Dashboard">
+                    <h3>Healthy Lifestyle Dashboard</h3>
+                    <p>Visualizing health metrics with user-friendly design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Images/AutoInsurance Analysis/Landing Page.png" alt="Auto Insurance Analysis">
+                    <h3>Auto Insurance Analysis</h3>
+                    <p>Analyzing customer behavior & policy sales.</p>
+                </div>
             </div>
-             <a href="projects.html" style="display: inline-block; padding: 10px 20px; margin-top: 20px; background-color: #5768e5; color: white; border-radius: 5px; text-decoration: none;">See More</a> <!-- Link to view more about the project -->
-        </div>
-        </div>
-    </section>
+            <a href="projects.html" class="see-more-btn">See More</a> <!-- ✅ Styled button for consistency -->
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:dipeoluvictors@gmail.com">dipeoluvictors@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/victor-dipeolu-685893267">Victor S. Dipeolu</a></p>
-    </section>
-    </div>
+        <!-- ✅ Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:dipeoluvictors@gmail.com">dipeoluvictors@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/victor-dipeolu-685893267">Victor S. Dipeolu</a></p>
+        </section>
 
-    <!-- Footer -->
+    </div> <!-- ✅ Closes `content-container` -->
+
+    <!-- ✅ Footer -->
     <footer>
         <p>&copy; 2025 Victor S. Dipeolu. All Rights Reserved.</p>
     </footer>
 
-    <!-- External JavaScript -->
+    <!-- ✅ External JavaScript (In Correct Order) -->
+    <script src="assets/particles.js" defer></script>
+    <script src="assets/typing.js" defer></script>
+    <script src="assets/dark-mode.js" defer></script>
     <script src="assets/index.js" defer></script>
+
 </body>
 </html>
