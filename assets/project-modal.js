@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalContent = document.getElementById("project-details");
     const closeModalBtns = document.querySelectorAll(".close-btn, .close-btn-bottom");
 
-    // ✅ Function to Open Modal
-    function openProject(projectId) {
+    // ✅ Define Projects Object Globally (Outside of Function)
 const projects = {
     project1: {
         title: "Equitable Recruitment Analysis",
@@ -101,26 +100,35 @@ const projects = {
         `
     }
 };
-        if (projectDetails[projectId]) {
-            const project = projectDetails[projectId];
+       // ✅ Function to Open Modal
+    function openProject(projectId) {
+        if (projects[projectId]) { // ✅ Ensure project exists
+            const project = projects[projectId];
             modalContent.innerHTML = `
                 <h2>${project.title}</h2>
                 <img src="${project.image}" alt="${project.title}">
                 <p>${project.description}</p>
+                ${project.details}
             `;
             modal.classList.add("show");
+            modal.style.visibility = "visible"; // ✅ Ensure modal is visible
+            modal.style.opacity = "1"; // ✅ Ensure opacity is set
+        } else {
+            console.error(`❌ Error: Project ID "${projectId}" not found in projects.`);
         }
     }
 
     // ✅ Function to Close Modal
     function closeProject() {
         modal.classList.remove("show");
+        modal.style.visibility = "hidden"; // ✅ Hide modal
+        modal.style.opacity = "0"; // ✅ Reset opacity
     }
 
     // ✅ Attach event listeners to close buttons
     closeModalBtns.forEach(btn => btn.addEventListener("click", closeProject));
 
-    // ✅ Attach function to window object for inline `onclick` calls
+    // ✅ Attach functions to `window` object for inline `onclick` calls in HTML
     window.openProject = openProject;
     window.closeProject = closeProject;
 });
