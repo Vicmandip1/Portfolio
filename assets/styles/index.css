@@ -67,11 +67,18 @@ body {
 }
 
 /* Particle.js Canvas */
-#particles {
+#particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 0;
+}
+
+/* Hide Elements Before GSAP Animation */
+.about, .skills, .projects, .contact {
+    opacity: 0;
+    transform: translateY(50px);
+    
 }
 /* Hero Content on Top of Particles */
 .hero-content {
