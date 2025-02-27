@@ -187,10 +187,24 @@ body {
 }
 
 #typing-text {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
+    margin-bottom: 30px; /* ✅ Increased margin to push "View Projects" down */
 }
+/* ✅ Ensure spacing remains correct on mobile */
+@media screen and (max-width: 768px) {
+    #typing-text {
+        font-size: 32px;
+        margin-bottom: 25px; /* ✅ Adjusted for mobile */
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 16px;
+        margin-top: 25px; /* ✅ Ensures spacing stays correct on mobile */
+    }
+        
 
 @media screen and (max-width: 768px) {
     /* Fix Hero Section Centering */
@@ -216,7 +230,7 @@ body {
 /* Improve View Projects Button */
 .cta-button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 15px 40px;
     font-size: 16px;
     font-weight: bold;
     background: linear-gradient(45deg, #ffcc00, #ff5733); /* Gradient effect */
@@ -228,17 +242,28 @@ body {
     box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
     z-index: 2; /* Ensure it stays above particles */
     position: relative; /* Required for z-index to work */
+    margin-top: 20px; /* ✅ Pushes the button further down */
 }
 
 .cta-button:hover {
     transform: scale(1.1); /* Smooth hover effect */
     box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.6);
 }
+/* ✅ Center content properly from "About Me" downwards */
+.content-container {
+    max-width: 1000px; /* Prevents content from stretching too wide */
+    width: 90%; /* Ensures responsiveness */
+    margin: 0 auto; /* Centers the content */
+    text-align: center; /* Ensures text alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Ensure All Sections are Centered */
 .about, .skills, .projects, .contact {
     text-align: center;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 /* 🔹 Ensure Images Fit Mobile Screens Properly */
