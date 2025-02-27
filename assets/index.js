@@ -54,18 +54,23 @@ document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem("dark-mode") === "enabled") {
         body.classList.add("dark-mode");
         icon.classList.replace("fa-moon", "fa-sun");
+    } else {
+        body.classList.remove("dark-mode");
+        icon.classList.replace("fa-sun", "fa-moon"); // Change back
+        }
     }
 
-    // Toggle Dark Mode on Click
+    // ✅ Apply Dark Mode on Page Load
+    updateDarkMode();
+
+    // ✅ Toggle Dark Mode on Click
     darkModeToggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
         if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("dark-mode", "enabled");
-            icon.classList.replace("fa-moon", "fa-sun");
-        } else {
             localStorage.setItem("dark-mode", "disabled");
-            icon.classList.replace("fa-sun", "fa-moon");
+        } else {
+            localStorage.setItem("dark-mode", "enabled");
         }
+        updateDarkMode(); // Update Mode
     });
 
     // ✅ Typing Effect (Improved for Smoothness)
@@ -93,24 +98,24 @@ document.addEventListener("DOMContentLoaded", function () {
    // ✅ Fix Particles.js - Ensure Full Background Coverage
 particlesJS("particles-js", {
     particles: {
-        number: { value: 100, density: { enable: true, value_area: 900 } }, // Increase particles & spread
+        number: { value: 120, density: { enable: true, value_area: 1000 } }, // Increase particles & spread
         color: { value: "#ffffff" },
         shape: {
             type: "circle", 
             stroke: { width: 0, color: "#000000" }
         },
-        opacity: { value: 0.5 },
+        opacity: { value: 0.6 },
         size: { value: 3, random: true },
         line_linked: { 
             enable: true, 
-            distance: 150, 
+            distance: 140, 
             color: "#ffffff", 
             opacity: 0.4, 
             width: 1 
         },
         move: { 
             enable: true, 
-            speed: 3, // Slightly increase speed for a dynamic effect
+            speed: 2.5, // Slightly increase speed for a dynamic effect
             direction: "none", 
             random: false, 
             out_mode: "out" 
@@ -125,7 +130,7 @@ particlesJS("particles-js", {
         },
         modes: {
             grab: { distance: 140, line_linked: { opacity: 1 } },
-            push: { particles_nb: 5 } // Increase new particles on click
+            push: { particles_nb: 4 } // Increase new particles on click
         }
     },
     retina_detect: true
@@ -141,4 +146,11 @@ particlesJS("particles-js", {
         });
     }
 
+    /** ============================
+     *  ✅ Smooth Scroll for "View Projects" Button
+     *  ============================ */
+    document.querySelector(".cta-button").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+    });
 });
