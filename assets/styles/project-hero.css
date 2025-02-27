@@ -4,14 +4,16 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 90vh;
+    min-height: 100vh; /* ✅ Full viewport height for proper centering */
     display: flex;
+    flex-direction: column; /* ✅ Ensure vertical alignment */
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     overflow: hidden;
     background: linear-gradient(to right, #201e30, #5768e5);
+    padding-top: 70px; /* ✅ Adjust for navbar */
 }
 
 /* ✅ Overlay Effect */
@@ -31,6 +33,10 @@
     text-align: center;
     padding: 20px;
     animation: fadeInUp 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column; /* ✅ Stack elements properly */
+    align-items: center; /* ✅ Ensure horizontal centering */
+    justify-content: center;
 }
 
 .hero-content h1 {
