@@ -85,6 +85,14 @@ body {
     font-weight: bold;
     color: white;
 }
+.hero-buttons {
+    margin-top: 20px; /* Adds space between text and buttons */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Ensures proper spacing */
+}
+
 
 /* ✅ View Projects Button */
 .cta-button {
