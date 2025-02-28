@@ -13,36 +13,26 @@
 </head>
 <body>
 
-    <!-- ✅ Mobile App-Style Bottom Navigation -->
-<div class="bottom-nav">
-    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-    <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
-    <a href="about.html"><i class="fas fa-user"></i> About</a>
-    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-</div>
-
-<!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="nav-container">
-        <!-- Logo -->
-        <a href="index.html" class="nav-logo">My Portfolio</a>
-
-        <!-- Navigation Links -->
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-
-        <!-- Hamburger Icon (For Mobile) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <!-- ✅ Top Navigation Bar (For Desktop) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">My Portfolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <!-- ✅ Bottom Navigation Bar (For Mobile) -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+        <a href="projects.html" class="nav-item"><i class="fas fa-briefcase"></i> Projects</a>
+        <a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html" class="nav-item active"><i class="fas fa-envelope"></i> Contact</a>
     </div>
-</nav>
 
 <!-- Hero Section -->
 <header class="hero">
