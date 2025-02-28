@@ -290,3 +290,10 @@ footer {
         padding: 15px;
     }
 }
+/* ✅ Hide Bottom Navigation on Larger Screens (769px and above) */
+@media screen and (min-width: 769px) {
+    .bottom-nav {
+        display: none; /* ❌ Hide it on screens wider than 768px */
+
+    }
+}
