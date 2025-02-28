@@ -209,6 +209,9 @@ body {
 .skills-list li {
     font-size: 16px;
     margin-bottom: 10px;
+   font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 /* ✅ Skills Chart */
