@@ -468,7 +468,7 @@ body {
 }
 
 /* ✅ Ensure Sections Stay Centered */
-.skills, .projects, .contact {
+.skills, .projects {
     width: 100%;
     text-align: center;
     display: flex;
@@ -478,7 +478,7 @@ body {
 }
 
 /* ✅ Section Spacing */
-.about, .skills, .projects, .contact {
+.about, .skills, .projects {
     padding: 50px 20px;
     margin-bottom: 40px;
 }
@@ -559,6 +559,129 @@ img {
     max-width: 500px;
     height: auto;
     border-radius: 10px;
+}
+/* ==============================
+   ✅ Contact Section Styling
+================================= */
+.contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #201e30, #3a3a56);
+    color: white;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* ✅ Contact Title */
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* ✅ Contact Subtitle */
+.contact p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* ✅ Contact Info (Email & LinkedIn) */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffcc00;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect */
+.contact-item:hover {
+    background: rgba(255, 204, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* ✅ Icons */
+.contact-item i {
+    font-size: 1.5rem;
+}
+
+/* ✅ CTA Button */
+.contact-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(255, 153, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* ✅ Button Hover Effect */
+.contact-btn:hover {
+    background: linear-gradient(45deg, #ff9900, #ffcc00);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 153, 0, 0.6);
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 50px 20px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* ✅ Fade-In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==============================
