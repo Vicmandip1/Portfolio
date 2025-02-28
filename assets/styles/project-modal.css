@@ -51,6 +51,40 @@
 
 .close-btn:hover {
     color: #ff6b6b;
+    transform: scale(1.2);
+/* ✅ Close Button (Bottom) */
+}
+.close-btn-bottom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffcc00, #ff5733);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+/* ✅ Close Button Hover Effect */
+.close-btn-bottom:hover {
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
+    transform: scale(1.1);
+}
+
+/* ✅ Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /* ✅ Ensure Modal Scrolls Properly (For Long Content) */
 .modal-content::-webkit-scrollbar {
