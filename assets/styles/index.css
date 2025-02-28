@@ -124,6 +124,203 @@ body {
 }
 
 /* ==============================
+   ✅ Why Data? & What Makes Me Different? Sections
+================================= */
+
+/* ✅ General Styling */
+.why-data, .why-me {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 50px auto;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* ✅ Section Titles */
+.why-data h2, .why-me h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* ✅ Title Underline Effect */
+.why-data h2::after, .why-me h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* ✅ Section Content */
+.why-data p, .why-me p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ✅ Highlighted Text Effect */
+.why-data p span, .why-me p span {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+/* ✅ Unique Features List */
+.differentiators {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.differentiator-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 250px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect */
+.differentiator-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+    .why-data, .why-me {
+        width: 90%;
+        padding: 40px 15px;
+    }
+
+    .differentiators {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .differentiator-item {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/* ✅ Fade-In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ==============================
+   ✅ Skills Section (Home Page)
+================================= */
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 50px auto;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* ✅ Section Title */
+.skills h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* ✅ Skills Grid Layout */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ✅ Skill Cards */
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect */
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.6);
+}
+
+/* ✅ Skill Icons */
+.skill-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff9900;
+}
+
+/* ✅ Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .skills h2 {
+        font-size: 2rem;
+    }
+    
+    .skill-card {
+        font-size: 1rem;
+    }
+}
+
+/* ✅ Smooth Fade-In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================
    ✅ About, Skills, Projects, Contact
 ================================= */
 .content-container {
