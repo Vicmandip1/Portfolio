@@ -30,16 +30,7 @@
 </head>
 <body>
 
-    <!-- ✅ Bottom Navigation Bar for Mobile -->
-<div class="bottom-nav">
-    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-    <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
-    <a href="about.html"><i class="fas fa-user"></i> About</a>
-    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-</div>
-
-
-    <!-- ✅ Navbar -->
+    <!-- ✅ Top Navigation Bar (For Desktop) -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">My Portfolio</a>
@@ -47,13 +38,18 @@
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-item">
-                    <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
-                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- ✅ Bottom Navigation Bar (For Mobile) -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+        <a href="projects.html" class="nav-item"><i class="fas fa-briefcase"></i> Projects</a>
+        <a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a>
+        <a href="contact.html" class="nav-item active"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
 
     <!-- ✅ Hero Section -->
     <section class="hero" id="home">
