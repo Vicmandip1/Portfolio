@@ -194,3 +194,21 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("❌ Error: View Projects button not found.");
     }
 });
+
+// ✅ Reveal Contact Section on Scroll
+document.addEventListener("DOMContentLoaded", function () {
+    const contactSection = document.querySelector(".contact");
+
+    function revealContact() {
+        const sectionTop = contactSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight - 100) {
+            contactSection.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealContact);
+    revealContact(); // Run once on load in case it's already in view
+});
+
