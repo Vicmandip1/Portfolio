@@ -145,6 +145,19 @@ body {
     color: #555;
     line-height: 1.6;
 }
+.expertise-list {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.expertise-list li {
+    font-size: 1.2rem;
+    margin-bottom: 12px; /* Adds spacing between lines */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
 
 /* ==============================
    ✅ Profile Image
@@ -168,6 +181,106 @@ body {
 .profile-image:hover {
     transform: scale(1.1);
 }
+
+/* ✅ Experience Section */
+.experience {
+    text-align: left;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ✅ Section Title */
+.experience h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* ✅ Job Container */
+.job {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect */
+.job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Job Title */
+.job-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #201e30;
+    margin-bottom: 5px;
+}
+
+/* ✅ Company & Date */
+.company {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-weight: 600;
+    color: #ff9900;
+}
+
+/* ✅ Job Description */
+.job-description {
+    list-style: none;
+    padding: 0;
+}
+
+.job-description li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ Icons Inside List */
+.job-description li::before {
+    content: "✔";
+    color: #ff9900;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* ✅ Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .experience {
+        width: 90%;
+    }
+
+    .job {
+        padding: 15px;
+    }
+
+    .job-title {
+        font-size: 1.6rem;
+    }
+
+    .company {
+        font-size: 1rem;
+    }
+
+    .job-description li {
+        font-size: 1rem;
+    }
+}
+
 
 /* ==============================
    ✅ Skills Section
