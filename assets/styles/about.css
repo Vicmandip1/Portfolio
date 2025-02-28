@@ -201,6 +201,19 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
 }
+/* ==============================
+   ✅ Progress Bar Styling
+================================= */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+    z-index: 10000;
+    transition: width 0.2s ease-in-out;
+}
 
 /* ==============================
    ✅ Notable Projects - Hover Animations
