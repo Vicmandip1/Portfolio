@@ -22,10 +22,6 @@ const projects = {
             <p>Resume Database Dashboard visualizes all the data in the database in a tabular format, allowing users to easily track applicants and their resume information. This page serves as a centralized view of the raw data, eliminating the need to return to the ATS to access the dataset.</p>
             <img src="assets/Images/BOTG Project/Backend view using dax function to segment data.jpg" alt="Experience Analysis">
             <p>This view showcases the DAX functions used for segmentation purposes.</p>
-            /* <img src="%%" alt="TITTLE">
-          //  <p>###</p>
-           // <img src="%%" alt="TITTLE">
-           // <p>###</p> */
 
 
 
