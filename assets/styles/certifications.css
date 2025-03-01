@@ -9,10 +9,11 @@ body {
     color: #333;
 }
 
-/* ✅ Navigation Bar */
+/* ✅ Fix Navbar Display */
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 70px;
     background: rgba(30, 30, 30, 0.95);
@@ -20,8 +21,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 15px 30px;
-    z-index: 9999;
+    z-index: 10000; /* 🔥 Ensure it's on top */
 }
+
 
 .nav-menu {
     display: flex;
@@ -123,12 +125,13 @@ body {
 /* ==============================
    ✅ Lightbox Modal
 ================================= */
+/* ✅ Fix Certificate Modal */
 .cert-modal {
     position: fixed;
-    top: 0;
+    top: 70px; /* 🔥 Push down below navbar */
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 70px); /* Adjust for navbar height */
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
@@ -136,6 +139,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
+    z-index: 9999; /* 🔥 Ensure modal stays above everything */
 }
 
 .cert-modal.show {
@@ -143,6 +147,7 @@ body {
     opacity: 1;
 }
 
+/* ✅ Fix Modal Content */
 .modal-content {
     position: relative;
     background: white;
@@ -150,6 +155,7 @@ body {
     border-radius: 10px;
     max-width: 90%;
     text-align: center;
+    z-index: 10001; /* 🔥 Ensure modal is above navbar */
 }
 
 #cert-preview {
