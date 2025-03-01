@@ -1,7 +1,21 @@
 let currentIndex = 0;
 let imagesArray = [];
 
-// Open Modal with Multiple Images
+// ✅ Open Modal for Single Image Certificates
+function openModal(imageSrc) {
+    imagesArray = [imageSrc]; // Store only one image
+    currentIndex = 0;
+
+    document.getElementById("cert-title").innerText = "";
+    document.getElementById("cert-preview").src = imagesArray[currentIndex];
+    document.getElementById("cert-modal").classList.add("show");
+
+    // Hide navigation buttons for single image
+    document.getElementById("prev-btn").style.display = "none";
+    document.getElementById("next-btn").style.display = "none";
+}
+
+// ✅ Open Modal with Multiple Images
 function openMultiModal(images, certTitle) {
     imagesArray = images;
     currentIndex = 0;
@@ -15,7 +29,7 @@ function openMultiModal(images, certTitle) {
     document.getElementById("next-btn").style.display = imagesArray.length > 1 ? "block" : "none";
 }
 
-// Navigate Between Images
+// ✅ Navigate Between Multiple Images
 function changeImage(direction) {
     currentIndex += direction;
 
@@ -28,12 +42,12 @@ function changeImage(direction) {
     document.getElementById("cert-preview").src = imagesArray[currentIndex];
 }
 
-// Close Modal
+// ✅ Close Modal
 function closeModal() {
     document.getElementById("cert-modal").classList.remove("show");
 }
 
-// Close Modal When Clicking Outside
+// ✅ Close Modal When Clicking Outside
 window.onclick = function(event) {
     let modal = document.getElementById("cert-modal");
     if (event.target === modal) {
