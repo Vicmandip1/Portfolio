@@ -60,7 +60,7 @@
             </div>
 
             <!-- ✅ Contact Form -->
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/xqaerlqv" method="POST" class="contact-form">
                 <div class="input-group">
                     <input type="text" id="name" name="name" required>
                     <label for="name">Your Name</label>
@@ -92,5 +92,29 @@
     <script src="assets/script.js" defer></script>
     <script src="assets/nav.js" defer></script>
     <script src="assets/scroll.js" defer></script> <!-- ✅ Ensure Smooth Scrolling -->
+
+            <!-- ✅ Form Submission Script (Placed Before </body>) -->
+    <script>
+        document.querySelector(".contact-form").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent the form from refreshing the page
+            
+            fetch(this.action, {
+                method: this.method,
+                body: new FormData(this),
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById("success-message").style.display = "block";
+
+                    // Reset form fields
+                    document.querySelector(".contact-form").reset();
+                } else {
+                    alert("Oops! Something went wrong, please try again.");
+                }
+            }).catch(error => console.error("Error:", error));
+        });
+    </script>
+        
 </body>
 </html>
