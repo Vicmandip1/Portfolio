@@ -62,7 +62,7 @@ body {
 }
 
 /* ==============================
-   ✅ Certifications Grid
+   ✅ Certifications Grid (Masonry Layout)
 ================================= */
 .certifications-section {
     text-align: center;
@@ -71,14 +71,13 @@ body {
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
 }
 
+/* ✅ Certificate Cards */
 .cert-item {
     background: white;
     padding: 20px;
@@ -100,7 +99,7 @@ body {
 }
 
 /* ==============================
-   ✅ Modal (Lightbox) Styling
+   ✅ Lightbox Modal
 ================================= */
 .cert-modal {
     position: fixed;
@@ -154,6 +153,6 @@ body {
 /* ✅ Responsive Design */
 @media screen and (max-width: 768px) {
     .cert-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
