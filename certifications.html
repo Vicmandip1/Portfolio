@@ -129,13 +129,19 @@
         </div>
     </section>
 
-    <!-- ✅ Lightbox Modal -->
-    <div id="cert-modal" class="cert-modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <img id="cert-preview" src="" alt="Certificate Preview">
-        </div>
+<!-- ✅ Lightbox Modal -->
+<div id="cert-modal" class="cert-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="cert-title"></h2>
+
+        <!-- ✅ Navigation Buttons -->
+        <button id="prev-btn" class="modal-nav" onclick="changeImage(-1)">&#10094;</button>
+        <img id="cert-preview" src="" alt="Certificate Preview">
+        <button id="next-btn" class="modal-nav" onclick="changeImage(1)">&#10095;</button>
     </div>
+</div>
+
 
     <!-- ✅ Footer -->
     <footer>
