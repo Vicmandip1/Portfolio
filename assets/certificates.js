@@ -1,18 +1,8 @@
-// Open the certificate modal and display the selected certificate
-function openCertificate(imageSrc) {
-    document.getElementById("certificateImage").src = imageSrc;
-    document.getElementById("certificateModal").style.display = "flex";
+function openModal(imageSrc) {
+    document.getElementById("cert-preview").src = imageSrc;
+    document.getElementById("cert-modal").classList.add("show");
 }
 
-// Close the certificate modal
-function closeCertificate() {
-    document.getElementById("certificateModal").style.display = "none";
+function closeModal() {
+    document.getElementById("cert-modal").classList.remove("show");
 }
-
-// Close modal when clicking outside the image
-window.onclick = function(event) {
-    let modal = document.getElementById("certificateModal");
-    if (event.target === modal) {
-        closeCertificate();
-    }
-};
