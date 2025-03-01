@@ -171,6 +171,36 @@ body {
 .close-btn:hover {
     color: darkred;
 }
+/* ✅ Modal Navigation Buttons */
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-nav:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+/* ✅ Left Button */
+#prev-btn {
+    left: 10px;
+    display: none;
+}
+
+/* ✅ Right Button */
+#next-btn {
+    right: 10px;
+    display: none;
+}
 
 /* ==============================
    ✅ Responsive Design
