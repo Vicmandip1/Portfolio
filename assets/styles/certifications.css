@@ -9,39 +9,116 @@ body {
     color: #333;
 }
 
-/* ✅ Fix Navbar Display */
+/* ==============================
+   ✅ Navbar Styling (Universal)
+================================= */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
     background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(10px);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 15px 30px;
-    z-index: 10000; /* 🔥 Ensure it's on top */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 🔥 Ensures navbar stays on top */
+    transition: 0.3s ease-in-out;
 }
 
+/* ✅ Navigation Container */
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+/* ✅ "My Portfolio" Logo */
+.nav-logo {
+    color: #ffcc00;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+    color: #ffffff;
+}
+
+/* ✅ Navigation Links */
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
 }
 
+/* ✅ Navigation Items */
+.nav-item {
+    position: relative;
+}
+
+/* ✅ Navigation Links */
 .nav-link {
     color: white;
+    font-size: 16px;
     text-decoration: none;
-    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* ✅ Active Link Effect */
+.nav-link.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* ==============================
+   ✅ Bottom Navigation Bar (Mobile)
+================================= */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* ✅ Bottom Navigation Items */
+.bottom-nav .nav-item {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-.nav-link:hover,
-.nav-link.active {
-    color: #ffcc00;
+.bottom-nav .nav-item i {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
+
+.bottom-nav .nav-item:hover,
+.bottom-nav .nav-item.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
 
 /* ==============================
    ✅ Page Header
