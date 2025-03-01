@@ -62,40 +62,51 @@ body {
 }
 
 /* ==============================
-   ✅ Certifications Grid (Masonry Layout)
+   ✅ Certifications Grid (Refined)
 ================================= */
 .certifications-section {
     text-align: center;
     padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
+/* ✅ New Flexbox Grid */
 .cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* ✅ Certificate Cards */
 .cert-item {
     background: white;
+    width: calc(33.333% - 20px);  /* 3 columns on large screens */
+    min-width: 280px;  /* Ensures proper sizing on smaller screens */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
     text-align: center;
 }
 
 .cert-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .cert-item img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-item img:hover {
+    transform: scale(1.05);
 }
 
 /* ==============================
@@ -150,9 +161,17 @@ body {
     color: darkred;
 }
 
-/* ✅ Responsive Design */
+/* ==============================
+   ✅ Responsive Design
+================================= */
+@media screen and (max-width: 1024px) {
+    .cert-item {
+        width: calc(50% - 20px); /* ✅ 2 columns on medium screens */
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .cert-grid {
-        grid-template-columns: repeat(1, 1fr);
+    .cert-item {
+        width: 100%; /* ✅ Single column layout on small screens */
     }
 }
