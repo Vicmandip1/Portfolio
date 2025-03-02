@@ -157,77 +157,118 @@ body {
 }
 
 /* ==============================
-   ✅ Contact Form
+   ✅ Contact Form Styling
 ================================= */
 .contact-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* ✅ Floating Labels for Inputs */
+/* ✅ Input Fields */
 .input-group {
     position: relative;
     width: 100%;
 }
 
+/* ✅ Input & Textarea Styling */
 .input-group input,
 .input-group textarea {
     width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    background: transparent;
-    border: 2px solid #ffcc00;
-    color: white;
-    border-radius: 5px;
+    padding: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
     outline: none;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
-/* ✅ Input Labels */
+/* ✅ Focus Effect */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ffcc00;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+/* ✅ Labels Positioning */
 .input-group label {
     position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    color: #ffcc00;
-    font-size: 1rem;
-    pointer-events: none;
+    top: 14px;
+    left: 16px;
+    font-size: 16px;
+    color: #777;
     transition: 0.3s ease-in-out;
+    pointer-events: none;
 }
 
-/* ✅ Animation when Focused */
-.input-group input:focus ~ label,
-.input-group input:valid ~ label,
-.input-group textarea:focus ~ label,
-.input-group textarea:valid ~ label {
-    top: 5px;
-    font-size: 0.85rem;
+/* ✅ Floating Label Animation */
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    background: #ffffff;
+    padding: 3px 5px;
+    font-size: 14px;
+    font-weight: bold;
     color: #ff9900;
 }
 
-.input-group input:focus,
-.input-group textarea:focus {
-    border-color: #ff9900;
+/* ✅ Adjust Textarea Size */
+.input-group textarea {
+    height: 120px;
+    resize: none;
 }
 
-/* ==============================
-   ✅ Send Button
-================================= */
+/* ✅ Send Button */
 .send-btn {
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    background: linear-gradient(45deg, #ffcc00, #ff5733);
     color: white;
-    padding: 12px;
-    font-size: 1.1rem;
     border: none;
-    border-radius: 5px;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .send-btn:hover {
     transform: scale(1.05);
-    background: linear-gradient(45deg, #ff9900, #ffcc00);
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
+}
+
+/* ✅ Success Message */
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ✅ Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .send-btn {
+        font-size: 16px;
+    }
 }
 
 /* ==============================
